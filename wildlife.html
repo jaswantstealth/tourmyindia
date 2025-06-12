@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tmi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="./assets/css/swiper.min.css" rel="stylesheet" />
+    <link href="./assets/css/bootsrap.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="./assets/css/base.css" />
+  </head>
+  <body>
+    <header class="header-main" >
+      <div class="d-lg-flex d-none d-flex justify-content-between">
+        <div>
+          <a href="/" class="logo">
+            <img src="./assets/images/inner_logo.png" alt="logo" />
+          </a>
+          <nav class="navigation">
+            <ul class="list-unstyled">
+              <li class="dropdown">
+                <a href="#" class="fw-semibold">Destinations</a>
+                <ul class="drop-menu destinations-menu">
+                  <div class="drop-menu-submenu1">
+                    <div class="container">
+                      <div class="row justify-content-center">
+                        <div class="col-md-9">
+                          <ul class="list-unstyled p-0">
+                            <li>
+                              <h2>North India</h2>
+                              <ul class="list-unstyled p-0">
+                                <li>
+                                  <a href="#">Rajasthan</a>
+                                </li>
+                                <li>
+                                  <a href="#">Rajasthan</a>
+                                </li>
+                                <li>
+                                  <a href="#">Rajasthan</a>
+                                </li>
+                                <li>
+                                  <a href="#">Rajasthan</a>
+                                </li>
+                                <li>
+                                  <a href="#">Rajasthan</a>
+                                </li>
+
+                                <li class="more">
+                                  <a href="#"><span>More...</span></a>
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="col-md-3">
+                          <ul>
+                            <li>
+                              <a
+                                href="https://www.tourmyindia.com/packages-tour-india/uttarakhand/"
+                                ><img
+                                  src="https://www.tourmyindia.com/imgnew/destination-packages-menu.jpg"
+                                  alt="package"
+                                  class="img-fluid"
+                              /></a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="nav-right">
+          <ul class="d-flex list-unstyled gap-3 mb-0">
+            <li>
+              <a href="https://www.tourmyindia.com/wedding/"
+                ><img
+                  src="https://www.tourmyindia.com/imgnew/destinaton-wedding.svg"
+                  alt="image"
+                />
+                Destination Weddings</a
+              >
+            </li>
+            <li>
+              <a href="https://www.tourmyindia.com/mice/"
+                ><img
+                  src="https://www.tourmyindia.com/imgnew/mics.svg"
+                  alt="image"
+                />MICE</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="d-flex d-lg-none justify-content-end">
+        <a href="#" class="logo">
+          <img src="./assets/images/inner_logo.png" alt="logo" />
+        </a>
+        <button
+          class="navbar-toggler p-0 border-0 collapsed"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasWithBothOptions"
+          aria-controls="offcanvasWithBothOptions"
+          aria-expanded="false"
+        >
+          <svg width="50" height="50" viewBox="0 0 100 100">
+            <path
+              class="line line1"
+              d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"
+            ></path>
+            <path class="line line2" d="M 20,50 H 80"></path>
+            <path
+              class="line line3"
+              d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"
+            ></path>
+          </svg>
+        </button>
+      </div>
+    </header>
+    <div
+      class="offcanvas offcanvas-start"
+      data-bs-scroll="true"
+      tabindex="-1"
+      id="offcanvasWithBothOptions"
+      aria-labelledby="offcanvasWithBothOptionsLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+          Backdrop with scrolling
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseOne"
+                aria-expanded="true"
+                aria-controls="panelsStayOpen-collapseOne"
+              >
+                Destinations
+              </button>
+            </h2>
+            <div
+              id="panelsStayOpen-collapseOne"
+              class="accordion-collapse collapse show"
+            >
+              <div class="accordion-body py-0 px-0">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#inner-collapseOne"
+                      aria-expanded="true"
+                      aria-controls="inner-collapseOne"
+                    >
+                      Destinations
+                    </button>
+                  </h2>
+                  <div
+                    id="inner-collapseOne"
+                    class="accordion-collapse collapse show"
+                  >
+                    <div class="accordion-body">
+                      <ul class="list-unstyled p-0">
+                        <li>
+                          <a href="#">Rajasthan</a>
+                        </li>
+                        <li>
+                          <a href="#">Rajasthan</a>
+                        </li>
+                        <li>
+                          <a href="#">Rajasthan</a>
+                        </li>
+                        <li>
+                          <a href="#">Rajasthan</a>
+                        </li>
+                        <li>
+                          <a href="#">Rajasthan</a>
+                        </li>
+
+                        <li class="more">
+                          <a href="#"><span>More...</span></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseOne"
+                aria-expanded="true"
+                aria-controls="panelsStayOpen-collapseOne"
+              >
+                Destinations
+              </button>
+            </h2>
+            <div
+              id="panelsStayOpen-collapseOne"
+              class="accordion-collapse collapse show"
+            >
+              <div class="accordion-body py-0 px-0">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#inner-collapseOne"
+                      aria-expanded="true"
+                      aria-controls="inner-collapseOne"
+                    >
+                      Destinations
+                    </button>
+                  </h2>
+                  <div
+                    id="inner-collapseOne"
+                    class="accordion-collapse collapse show"
+                  >
+                    <div class="accordion-body">
+                      <ul class="list-unstyled p-0">
+                        <li>
+                          <a href="#">Rajasthan</a>
+                        </li>
+                        <li>
+                          <a href="#">Rajasthan</a>
+                        </li>
+                        <li>
+                          <a href="#">Rajasthan</a>
+                        </li>
+                        <li>
+                          <a href="#">Rajasthan</a>
+                        </li>
+                        <li>
+                          <a href="#">Rajasthan</a>
+                        </li>
+
+                        <li class="more">
+                          <a href="#"><span>More...</span></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseOne"
+                aria-expanded="true"
+                aria-controls="panelsStayOpen-collapseOne"
+              >
+                Destinations
+              </button>
+            </h2>
+            <div
+              id="panelsStayOpen-collapseOne"
+              class="accordion-collapse collapse show"
+            >
+              <div class="accordion-body py-0 px-0">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#inner-collapseOne"
+                      aria-expanded="true"
+                      aria-controls="inner-collapseOne"
+                    >
+                      Destinations
+                    </button>
+                  </h2>
+                  <div
+                    id="inner-collapseOne"
+                    class="accordion-collapse collapse show"
+                  >
+                    <div class="accordion-body">
+                      <ul class="list-unstyled p-0">
+                        <li>
+                          <a href="#">Rajasthan</a>
+                        </li>
+                        <li>
+                          <a href="#">Rajasthan</a>
+                        </li>
+                        <li>
+                          <a href="#">Rajasthan</a>
+                        </li>
+                        <li>
+                          <a href="#">Rajasthan</a>
+                        </li>
+                        <li>
+                          <a href="#">Rajasthan</a>
+                        </li>
+
+                        <li class="more">
+                          <a href="#"><span>More...</span></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section
+      class="hero d-flex align-items-end pb-5"
+      style="background-image: url(./assets/images/wildlifebanner.webp)"
+    >
+      <div class="container">
+        <div class="row justify-content-lg-center">
+          <div class="col-md-7">
+            <div class="home-page">
+              <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="#">Home</a></li>
+                  <li
+                    class="breadcrumb-item active text-white"
+                    aria-current="page"
+                  >
+                    Wildlife Sanctuaries in India
+                  </li>
+                </ol>
+              </nav>
+              <h1 class="text-white fw-semibold">
+                Wildlife Sanctuaries in India
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="parks">
+      <div class="container">
+        <div class="row justify-content-between border-bottom pb-5">
+          <div class="col-lg-5 col-md-12 col-12">
+            <div class="park-page">
+              <h3>Wildlife Sanctuaries & National Parks in India</h3>
+              <a href="" class="readbtn">Read more</a>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12 col-12">
+            <p class="">
+              The wildlife of India is diverse and its national parks and
+              biosphere reserves are home to many endangered wildlife species
+              like Royal Bengal Tigers and Red Panda, the vulnerable one-horned
+              Rhinoceros and Snow Leopards, and critically endangered Great
+              Indian Bustard, among many other species of flora and fauna. India
+              boasts 104 national parks, 551 Wildlife Sanctuaries, 131 Marine
+              Protected Areas, 18 Biosphere Reserves, 88 Conservation Reserves
+              and 127 Community Reserves, covering a total of 1,65,088.57 sq km.
+              In total, there are 870 Protected Areas which make 5.06% of the
+              geographical area of the country.
+            </p>
+            <p>
+              The oldest national park in India is Corbett National Park.
+              Sprawling in the foothills of the Himalayas in Uttarakhand, this
+              national park was established in 1936. It is spread in 520.82 sq
+              km area, and is home to a rich flora and fauna, including the
+              Royal Bengal Tigers. India's first biosphere reserve was
+              established in 1986 and is called Nilgiri Biosphere Reserve. This
+              reserve includes Wayanad, Nagarhole, Bandipur and Mudumalai,
+              Nilambur, Silent Valley protected areas situated in Tamil Nadu,
+              Kerala, and Karnataka. The Great Rann of Kutch, with an area of
+              12454 sq km, is the largest biosphere reserve in India. On the
+              other hand, with an area of 4400 sq km, Hemis National Park in
+              Ladakh is the largest national park in India.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="popular">
+      <div class="container">
+        <div class="main-heading">
+          
+          <h2>Popular National Parks in India</h2>
+        </div>
+        <a href="" class="readbtn">views more</a>
+        <div class="swiper mySwiper popularSlider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./assets/images/luxurytrainsec.webp" alt="lion" class="img-fluid" />
+              <div>
+                <h5>
+                  Panna National<br />
+                  Park
+                </h5>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./assets/images/rajasthanpackage.webp"
+                alt="lion"
+                class="img-fluid"
+              />
+              <div>
+                <h5>
+                  Panna National<br />
+                  Park
+                </h5>
+              </div>
+            </div>
+          
+          </div>
+          <div class="swiper-button-next">
+            <i class="fas fa-long-arrow-alt-right"></i>
+          </div>
+          <div class="swiper-button-prev">
+            <i class="fas fa-long-arrow-alt-left"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="state">
+      <div class="container">
+        <h2>Popular National Parks in India</h2>
+        <div class="">
+          <ul class="nav nav-tabs custom_tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link active"
+                id="home-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#home-tab-pane"
+                type="button"
+                role="tab"
+                aria-controls="home-tab-pane"
+                aria-selected="true"
+              >
+                North India
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="profile-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#profile-tab-pane"
+                type="button"
+                role="tab"
+                aria-controls="profile-tab-pane"
+                aria-selected="false"
+              >
+                South India
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="contact-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#contact-tab-pane"
+                type="button"
+                role="tab"
+                aria-controls="contact-tab-pane"
+                aria-selected="false"
+              >
+                East India
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="contact-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#contact-tab-pane"
+                type="button"
+                role="tab"
+                aria-controls="contact-tab-pane"
+                aria-selected="false"
+              >
+                West India
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="contact-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#contact-tab-pane"
+                type="button"
+                role="tab"
+                aria-controls="contact-tab-pane"
+                aria-selected="false"
+              >
+                East India
+              </button>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div
+              class="tab-pane fade show active"
+              id="home-tab-pane"
+              role="tabpanel"
+              aria-labelledby="home-tab"
+              tabindex="0"
+            >
+              <div class="state-page">
+                <div class="row">
+                  <div class="col-md-5">
+                    <h4>Wildlife Reserves in North India</h4>
+                    <p>
+                      Blessed with rich biodiversity, the region boasts renowned
+                      wildlife havens like Jim Corbett, Rajaji National Park,
+                      Ranthambore, Dudhwa, Keoladeo National Park, and Sariska,
+                      standing as crown jewels that draw wildlife enthusiasts
+                      with their diverse ecosystems. Each destination is a
+                      living example of India's commitment to conservation and
+                      ecotourism. From the iconic Bengal tiger sightings in
+                      Ranthambore to Dudhwa's rare swamp deer, witness majestic
+                      wildlife roam freely in their natural habitat in Northern
+                      India's wildlife reserves.
+                    </p>
+                  </div>
+                  <div class="col-md-7">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <a href="">
+                          <img
+                            src="assets/images/ranthambore.webp"
+                            alt=""
+                            class="img-fluid"
+                          />
+                        </a>
+                      </div>
+                      <div class="col-md-4">
+                        <a href="">
+                          <img
+                            src="assets/images/sariskanorth.webp"
+                            alt=""
+                            class="img-fluid"
+                          />
+                        </a>
+                      </div>
+                      <div class="col-md-4">
+                        <a href="">
+                          <img
+                            src="assets/images/jim.webp"
+                            alt=""
+                            class="img-fluid"
+                          />
+                        </a>
+                      </div>
+
+                      <div class="col-md-4">
+                        <a href="">
+                          <img
+                            src="assets/images/keoladeonorth.webp"
+                            alt=""
+                            class="img-fluid"
+                          />
+                        </a>
+                      </div>
+                      <div class="col-md-4">
+                        <a href="">
+                          <img
+                            src="assets/images/dudhwanorth.webp"
+                            alt=""
+                            class="img-fluid"
+                          />
+                        </a>
+                      </div>
+                      <div class="col-md-4">
+                        <a href="">
+                          <img
+                            src="assets/images/rajajinorth.webp"
+                            alt=""
+                            class="img-fluid"
+                          />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane"
+              id="profile-tab-pane"
+              role="tabpanel"
+              aria-labelledby="profile-tab"
+              tabindex="0"
+            >
+              ...
+            </div>
+            <div
+              class="tab-pane"
+              id="contact-tab-pane"
+              role="tabpanel"
+              aria-labelledby="contact-tab"
+              tabindex="0"
+            >
+              ...
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="sticky-box" class="sticky-box d-none">
+      <div class="container">
+        <ul>
+          <li>
+            <a href="https://www.tourmyindia.com/packagetours.html">
+              <img
+                src="https://www.tourmyindia.com/imgnew/india-tour.svg"
+                alt="india tour"
+              />
+              <h3>India Tours</h3>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.tourmyindia.com/international/packages/">
+              <img
+                src="https://www.tourmyindia.com/imgnew/international-tour.svg"
+                alt="international-tour"
+              />
+              <h3>International Tours</h3>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.tourmyindia.com/wedding/">
+              <img
+                src="https://www.tourmyindia.com/imgnew/destinaton-wedding.svg"
+                alt="destinaton-wedding"
+              />
+              <h3>Destination Wedding</h3>
+            </a>
+          </li>
+
+          <li class="enquire">
+            <a class="cont" href="tel:+91-9212777225">
+              <span
+                ><img
+                  src="https://www.tourmyindia.com/imgnew/phone.png"
+                  alt="phone"
+                />+91-9212777225</span
+              ></a
+            >
+            <a
+              href="javascript:void(0)"
+              class="open-popup myBtn"
+              data-id="popup_default"
+              tabindex="0"
+            >
+              <h3>
+                <img
+                  src="https://www.tourmyindia.com/imgnew/plan-location.png"
+                  alt="plan-location"
+                />Plan Your trip
+              </h3>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </body>
+  <script src="./assets/js/boootsrap.js"></script>
+  <script src="./assets/js/swiper-bundle.min.js"></script>
+  <script src="./assets/js/base.js"></script>
+</html>
