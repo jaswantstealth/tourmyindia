@@ -422,6 +422,9 @@
   color: var(--primary-text-color);
 }
 @media screen and (max-width: 768px) {
+  .pack-sec{
+    text-align: center;
+  }
   .tabstypetwo {
     padding-bottom: 30px;
   }

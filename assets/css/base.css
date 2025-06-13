@@ -184,7 +184,7 @@ header button.navbar-toggler:focus {
 .sticky-box ul {
   box-sizing: border-box;
   width: 100%;
-  padding: 0 55px;
+  padding: 0px;
   transition: all 0.5s;
   max-width: 130rem;
   width: 100%;
@@ -230,7 +230,7 @@ header button.navbar-toggler:focus {
   position: relative;
   top: 0;
 }
-.sticky-box ul li.enquire a h3 {
+.sticky-box ul li.enquire a span.loc {
   margin-top: 5px;
   text-transform: capitalize;
   display: inline-block;
@@ -242,7 +242,7 @@ header button.navbar-toggler:focus {
   text-align: center;
   color: #fff;
 }
-.sticky-box ul li.enquire a span {
+.sticky-box ul li.enquire a.cont  {
   display: inline-block;
   font-size: 14px;
   line-height: 17px;
@@ -262,6 +262,39 @@ header button.navbar-toggler:focus {
   .sticky-box ul li {
     padding: 0 20px;
   }
+}
+@media only screen and (max-width: 992px) {
+  .sticky-box ul li.enquire {
+    top: -47px;
+}
+}
+@media only screen and (max-width: 768px) {
+.sticky-box ul li {
+  padding: 0 6px;
+}
+
+    .sticky-box ul li.enquire a span.loc {
+      display: block;
+      
+      border-radius: 0;
+    }
+    .sticky-box ul li.enquire{
+      width: 100%;
+      top:-96px;
+    }
+    .sticky-box ul li.enquire img{
+      margin-right: 0;
+    }
+    .sticky-box ul li.enquire a.cont{
+      padding: 0;
+      right: 50px;
+      height: 50px;
+      width: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: auto;
+    }
 }
 
 .main-heading a {
@@ -307,7 +340,7 @@ header button.navbar-toggler:focus {
 }
 @media screen and (max-width: 700px) {
   .main-heading h2 {
-    font-size: 24px;
+    font-size: 24 px;
   }
   .main-heading a.dark_link i ,.main-heading a.dark_link {
     font-size: 16px;
