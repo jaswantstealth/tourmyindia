@@ -6,24 +6,29 @@
   color: #fff;
 }
 .destinaton_herosec h1 {
-  font-size: 22px;
+  font-size: 28px;
 }
 .destinaton_herosec .home-page {
   padding-left: 20px;
   border-left: 3px solid var(--secondary-color);
 }
 .destinaton_herosec_img {
-
   min-height: 60vh;
 }
 
-
-.home-page_wraper{
- width: 100%; 
+.home-page_wraper {
+  width: 100%;
 }
 
-
-@media screen  and (min-width:768px){
+@media screen and (max-width: 768px) {
+  .home-page_wraper {
+    top: 80% !important;
+  }
+}
+@media screen and (min-width: 768px) {
+  .home-page_wraper {
+    bottom: 100px !important;
+  }
   .destinaton_herosec h1 {
     font-size: 50px;
   }
@@ -31,11 +36,10 @@
     min-height: 60vh;
   }
 }
-@media screen  and (min-width:991px){
+@media screen and (min-width: 991px) {
   .destinaton_herosec h1 {
     font-size: 64px;
   }
-
 }
 /* destinaton_herosec */
 
@@ -74,7 +78,7 @@
 @media screen and (max-width: 767px) {
   .park-page h3 {
     font-size: 36px;
-      padding-bottom: 16px;
+    padding-bottom: 16px;
   }
 }
 
@@ -105,9 +109,9 @@
   font-size: 40px;
 }
 @media screen and (max-width: 767px) {
- .state .state-page h4 {
-  font-size: 28px;
-} 
+  .state .state-page h4 {
+    font-size: 28px;
+  }
 }
 /* state section end */
 
