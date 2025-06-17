@@ -1142,7 +1142,7 @@ padding: 8px 8px;
 .innerpagesearch_sec {
   display: none;
   padding: 14px 0 14px;
-   position: absolute;
+   position: fixed;
   top: 50px;
   z-index: 9;
   width: 100%;
