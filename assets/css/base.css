@@ -49,6 +49,9 @@ header.header-main .navbar-toggler {
   width: 65px;
 }
 @media screen and (max-width: 991px) {
+  p {
+  font-size: 14px;
+}
   header.header-main {
     height: 50px;
 
@@ -333,6 +336,9 @@ header button.navbar-toggler:focus {
   }
 }
 @media screen and (max-width: 700px) {
+  .main-heading a {
+    padding: 8px 16px;
+  }
   .main-heading h2 {
     font-size: 24px;
   }
@@ -354,6 +360,7 @@ header button.navbar-toggler:focus {
   color: var(--secondary-color);
   display: block;
   position: relative;
+  font-size: 16px !important;
   width: fit-content;
   z-index: 50;
 }
@@ -373,7 +380,8 @@ header button.navbar-toggler:focus {
 }
 @media screen and (max-width: 768px) {
   .readbtn {
-    padding: 12px 20px;
+    font-size: 14px !important;
+    padding: 8px 20px;
     color: #fff !important;
   }
   .readbtn::after {
@@ -474,6 +482,11 @@ header button.navbar-toggler:focus {
 
 .sec_padd {
   padding: 70px 0px 80px;
+}
+@media screen and (max-width: 992px) {
+  .sec_padd {
+    padding: 40px 0px 30px;
+  }
 }
 @media screen and (max-width: 768px) {
   .sec_padd {
@@ -1030,7 +1043,7 @@ footer .social-icons a {
 }
 @media screen and (max-width: 1200px) {
   .topbtn_slider {
-     padding: 135px 0px 0px;
+     padding: 100px 0px 0px;
   }
 }
 
@@ -1098,6 +1111,10 @@ footer .social-icons a {
 
 
 @media screen and (max-width: 767px) {
+  .topbtn_slider .swiper-button-prev,
+.topbtn_slider .swiper-button-next {
+  position: absolute;
+  top: 10%;}
   .homepage-search .form-select {
     max-width: 120px;
   }
