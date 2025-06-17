@@ -74,6 +74,7 @@
 @media screen and (max-width: 767px) {
   .park-page h3 {
     font-size: 36px;
+      padding-bottom: 16px;
   }
 }
 
@@ -103,7 +104,11 @@
 .state .state-page h4 {
   font-size: 40px;
 }
-
+@media screen and (max-width: 767px) {
+ .state .state-page h4 {
+  font-size: 28px;
+} 
+}
 /* state section end */
 
 .tour_package p {
