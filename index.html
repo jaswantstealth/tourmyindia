@@ -24,10 +24,10 @@
     <link rel="stylesheet" href="./assets/css/home.css" />
   </head>
   <body>
-    <header class="header-main">
+    <header class="header-main bg-white position-fixed w-100">
       <div class="d-lg-flex d-none d-flex justify-content-between">
         <div>
-          <a href="/" class="logo">
+          <a href="/" class="logo position-absolute">
             <img src="./assets/images/inner_logo.png" alt="logo" />
           </a>
           <nav class="navigation">
@@ -41,33 +41,35 @@
                         <div class="col-md-9">
                           <ul class="list-unstyled p-0">
                             <li>
-                              <h2>North India</h2>
+                              <h2 class="fw-semibold">North India</h2>
                               <ul class="list-unstyled p-0">
                                 <li>
-                                  <a href="#">Rajasthan</a>
+                                  <a href="#" class="p-0">Rajasthan</a>
                                 </li>
                                 <li>
-                                  <a href="#">Rajasthan</a>
+                                  <a href="#" class="p-0">Rajasthan</a>
                                 </li>
                                 <li>
-                                  <a href="#">Rajasthan</a>
+                                  <a href="#" class="p-0">Rajasthan</a>
                                 </li>
                                 <li>
-                                  <a href="#">Rajasthan</a>
+                                  <a href="#" class="p-0">Rajasthan</a>
                                 </li>
                                 <li>
-                                  <a href="#">Rajasthan</a>
+                                  <a href="#" class="p-0">Rajasthan</a>
                                 </li>
 
                                 <li class="more">
-                                  <a href="#"><span>More...</span></a>
+                                  <a href="#" class="p-0"
+                                    ><span>More...</span></a
+                                  >
                                 </li>
                               </ul>
                             </li>
                           </ul>
                         </div>
                         <div class="col-md-3">
-                          <ul>
+                          <ul class="list-unstyled p-0">
                             <li>
                               <a
                                 href="https://www.tourmyindia.com/packages-tour-india/uttarakhand/"
@@ -90,19 +92,21 @@
         <div class="nav-right">
           <ul class="d-flex list-unstyled gap-3 mb-0">
             <li>
-              <a href="https://www.tourmyindia.com/wedding/"
+              <a href="https://www.tourmyindia.com/wedding/" class="fw-semibold"
                 ><img
                   src="https://www.tourmyindia.com/imgnew/destinaton-wedding.svg"
                   alt="image"
+                  class="img-fluid pe-2"
                 />
                 Destination Weddings</a
               >
             </li>
             <li>
-              <a href="https://www.tourmyindia.com/mice/"
+              <a href="https://www.tourmyindia.com/mice/" class="fw-semibold"
                 ><img
                   src="https://www.tourmyindia.com/imgnew/mics.svg"
                   alt="image"
+                  class="img-fluid pe-2"
                 />MICE</a
               >
             </li>
@@ -110,7 +114,7 @@
         </div>
       </div>
       <div class="d-flex d-lg-none justify-content-end">
-        <a href="https://www.tourmyindia.com/" class="logo">
+        <a href="https://www.tourmyindia.com/" class="logo position-absolute">
           <img src="./assets/images/inner_logo.png" alt="logo" />
         </a>
         <button
@@ -279,9 +283,9 @@
         </div>
       </div>
     </div>
-    <section class="padding_top homepagebanner">
+    <section class=" homepagebanner padding_top">
       <div class="container-fluid">
-        <div class="row">
+        <div class="row gy-4">
           <div class="col-lg-4">
             <div class="swiper homebanner-slider">
               <div class="swiper-wrapper">
@@ -356,6 +360,28 @@
                 Custom-Crafted Tour Packages for Unforgettable Holiday
                 Experiences in India.
               </p>
+
+              <div class="mb-4">
+               <div class="input-group mb-0 align-items-center homepage-search">
+               
+                <select class="form-select shadow-none" id="inputGroupSelect01">
+    <option selected>Choose...</option>
+    <option value="1">One One efvfv wfweRFerrfE E FRERE</option>
+    <option value="2">Two</option>
+    <option value="3">Three</option>
+  </select>
+                <input
+                  type="text"
+                  placeholder="search by destination, holiday idea, package, etc."
+                  class="form-control border-0 shadow-none ms-0"
+                  aria-label="Text input with dropdown button"
+                />
+
+                <button class="btn search_btn ms-1">
+                  <i class="fa-solid fa-magnifying-glass fa-rotate-90"></i>
+                </button>
+              </div>
+              </div>
 
               <div class="d-flex gap-5 flex-nowrap overflow-auto ps-5">
                 <div class="">
@@ -547,14 +573,13 @@
         </div>
       </div>
     </section>
-
     <section class="destinationsbyreagion sec_padd">
       <div class="container">
         <div class="main-heading">
           <h2>Explore Top Destinations by Region</h2>
         </div>
         <ul
-          class="nav nav-tabs custom_tabs gap-2 gap-md-3 mt-3 flex-nowrap overflow-x-auto overflow-y-hidden" 
+          class="nav nav-tabs custom_tabs gap-2 gap-md-3 mt-3 flex-nowrap overflow-x-auto overflow-y-hidden"
           id="myTab"
           role="tablist"
         >
@@ -596,8 +621,8 @@
               role="tab"
               aria-controls="explor-3-pane"
               aria-selected="false"
-            >             
-          East India
+            >
+              East India
             </button>
           </li>
           <li class="nav-item" role="presentation">
@@ -610,11 +635,9 @@
               role="tab"
               aria-controls="explor-4-pane"
               aria-selected="false"
-            > 
+            >
               West India
             </button>
-          </li>
-        
           </li>
           <li class="nav-item" role="presentation">
             <button
@@ -626,11 +649,10 @@
               role="tab"
               aria-controls="explor-5-pane"
               aria-selected="false"
-            > 
-             Central India
+            >
+              Central India
             </button>
           </li>
-        
         </ul>
         <div class="tab-content" id="myTabContent">
           <div
@@ -661,7 +683,7 @@
                   </a>
                 </div>
               </div>
-              <div class="col-lg-7 ">
+              <div class="col-lg-7">
                 <div class="row gy-4">
                   <div class="col-lg-4 col-md-6 col-6">
                     <div class="float-content-wraper">
@@ -742,8 +764,7 @@
                         </div>
                       </a>
                     </div>
-                
-                </div>
+                  </div>
                   <div class="col-lg-4 col-md-6 col-6">
                     <div class="float-content-wraper">
                       <a href="">
@@ -784,10 +805,10 @@
                       </a>
                     </div>
                   </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
           <div
             class="tab-pane fade"
             id="explor-2-pane"
@@ -816,7 +837,7 @@
                   </a>
                 </div>
               </div>
-              <div class="col-lg-7 ">
+              <div class="col-lg-7">
                 <div class="row gy-4">
                   <div class="col-lg-4 col-md-6 col-6">
                     <div class="float-content-wraper">
@@ -897,8 +918,7 @@
                         </div>
                       </a>
                     </div>
-                
-                </div>
+                  </div>
                   <div class="col-lg-4 col-md-6 col-6">
                     <div class="float-content-wraper">
                       <a href="">
@@ -939,9 +959,9 @@
                       </a>
                     </div>
                   </div>
+                </div>
               </div>
             </div>
-          </div>
           </div>
           <div
             class="tab-pane fade"
@@ -971,7 +991,7 @@
                   </a>
                 </div>
               </div>
-              <div class="col-lg-7 ">
+              <div class="col-lg-7">
                 <div class="row gy-4">
                   <div class="col-lg-4 col-md-6 col-6">
                     <div class="float-content-wraper">
@@ -1052,8 +1072,7 @@
                         </div>
                       </a>
                     </div>
-                
-                </div>
+                  </div>
                   <div class="col-lg-4 col-md-6 col-6">
                     <div class="float-content-wraper">
                       <a href="">
@@ -1094,9 +1113,9 @@
                       </a>
                     </div>
                   </div>
+                </div>
               </div>
             </div>
-          </div>
           </div>
           <div
             class="tab-pane fade"
@@ -1126,7 +1145,7 @@
                   </a>
                 </div>
               </div>
-              <div class="col-lg-7 ">
+              <div class="col-lg-7">
                 <div class="row gy-4">
                   <div class="col-lg-4 col-md-6 col-6">
                     <div class="float-content-wraper">
@@ -1207,8 +1226,7 @@
                         </div>
                       </a>
                     </div>
-                
-                </div>
+                  </div>
                   <div class="col-lg-4 col-md-6 col-6">
                     <div class="float-content-wraper">
                       <a href="">
@@ -1249,9 +1267,9 @@
                       </a>
                     </div>
                   </div>
+                </div>
               </div>
             </div>
-          </div>
           </div>
           <div
             class="tab-pane fade"
@@ -1281,7 +1299,7 @@
                   </a>
                 </div>
               </div>
-              <div class="col-lg-7 ">
+              <div class="col-lg-7">
                 <div class="row gy-4">
                   <div class="col-lg-4 col-md-6 col-6">
                     <div class="float-content-wraper">
@@ -1362,8 +1380,7 @@
                         </div>
                       </a>
                     </div>
-                
-                </div>
+                  </div>
                   <div class="col-lg-4 col-md-6 col-6">
                     <div class="float-content-wraper">
                       <a href="">
@@ -1404,13 +1421,14 @@
                       </a>
                     </div>
                   </div>
+                </div>
               </div>
             </div>
           </div>
-          </div>
+        </div>
       </div>
     </section>
-    <div class="trending_sec">
+    <section class="trending_sec">
       <div class="container">
         <div class="main-heading mb-3">
           <h2>Top Trending Destinations</h2>
@@ -1545,9 +1563,8 @@
           </div>
         </div>
       </div>
-    </div>
-
-    <section class="tabstypetwo">
+    </section>
+    <section class="tabstypetwo sec_padd">
       <div class="container">
         <div class="main-heading">
           <h2>Packages By Interest</h2>
@@ -1596,7 +1613,7 @@
               aria-controls="pilgrimage-pane"
               aria-selected="true"
             >
-          Pilgrimage
+              Pilgrimage
             </button>
           </li>
           <li class="nav-item" role="presentation">
@@ -1610,7 +1627,7 @@
               aria-controls="heritage-pane"
               aria-selected="true"
             >
-          Heritage
+              Heritage
             </button>
           </li>
           <li class="nav-item" role="presentation">
@@ -1624,7 +1641,7 @@
               aria-controls="beach-pane"
               aria-selected="true"
             >
-          Beach
+              Beach
             </button>
           </li>
           <li class="nav-item" role="presentation">
@@ -1638,7 +1655,7 @@
               aria-controls="Honeymoon-pane"
               aria-selected="true"
             >
-          Honeymoon
+              Honeymoon
             </button>
           </li>
           <li class="nav-item" role="presentation">
@@ -1652,7 +1669,7 @@
               aria-controls="Adventure-pane"
               aria-selected="true"
             >
-          Adventure
+              Adventure
             </button>
           </li>
           <li class="nav-item" role="presentation">
@@ -1666,7 +1683,7 @@
               aria-controls="Trekking-pane"
               aria-selected="true"
             >
-          Trekking
+              Trekking
             </button>
           </li>
         </ul>
@@ -1693,7 +1710,8 @@
                   </div>
                   <div class="package-col">
                     <a href="#" class="common-hover"
-                      >Golden Triangle with Tigers <span>13 Nights - 14 Days</span></a
+                      >Golden Triangle with Tigers
+                      <span>13 Nights - 14 Days</span></a
                     >
                   </div>
                 </div>
@@ -1726,7 +1744,7 @@
             aria-labelledby="hillstation"
             tabindex="0"
           >
-            <div class="row gy-3 gy-md-4 ">
+            <div class="row gy-3 gy-md-4">
               <div class="col-md-4 col-lg-3 col-sm-6">
                 <div class="d-flex gap-3 align-items-center">
                   <div class="img_wraper">
@@ -1774,7 +1792,7 @@
             aria-labelledby="pilgrimage"
             tabindex="0"
           >
-            <div class="row gy-3 gy-md-4 ">
+            <div class="row gy-3 gy-md-4">
               <div class="col-md-4 col-lg-3 col-sm-6">
                 <div class="d-flex gap-3 align-items-center">
                   <div class="img_wraper">
@@ -1822,7 +1840,7 @@
             aria-labelledby="heritage"
             tabindex="0"
           >
-            <div class="row gy-3 gy-md-4 ">
+            <div class="row gy-3 gy-md-4">
               <div class="col-md-4 col-lg-3 col-sm-6">
                 <div class="d-flex gap-3 align-items-center">
                   <div class="img_wraper">
@@ -1927,7 +1945,7 @@
             aria-labelledby="beach"
             tabindex="0"
           >
-            <div class="row gy-3 gy-md-4 ">
+            <div class="row gy-3 gy-md-4">
               <div class="col-md-4 col-lg-3 col-sm-6">
                 <div class="d-flex gap-3 align-items-center">
                   <div class="img_wraper">
@@ -2032,7 +2050,7 @@
             aria-labelledby="Honeymoon"
             tabindex="0"
           >
-            <div class="row gy-3 gy-md-4 ">
+            <div class="row gy-3 gy-md-4">
               <div class="col-md-4 col-lg-3 col-sm-6">
                 <div class="d-flex gap-3 align-items-center">
                   <div class="img_wraper">
@@ -2137,7 +2155,7 @@
             aria-labelledby="Adventure"
             tabindex="0"
           >
-            <div class="row gy-3 gy-md-4 ">
+            <div class="row gy-3 gy-md-4">
               <div class="col-md-4 col-lg-3 col-sm-6">
                 <div class="d-flex gap-3 align-items-center">
                   <div class="img_wraper">
@@ -2242,7 +2260,7 @@
             aria-labelledby="Trekking"
             tabindex="0"
           >
-            <div class="row gy-3 gy-md-4 ">
+            <div class="row gy-3 gy-md-4">
               <div class="col-md-4 col-lg-3 col-sm-6">
                 <div class="d-flex gap-3 align-items-center">
                   <div class="img_wraper">
@@ -2340,7 +2358,6 @@
               </div>
             </div>
           </div>
-         
         </div>
       </div>
     </section>
@@ -2358,9 +2375,9 @@
               <img
                 src="./assets/images/ayurvedatourismsec.webp"
                 class="img-fluid galleySlider_bg"
-                 loading="lazy"
-                      decoding="async"
-                      importance="low"
+                loading="lazy"
+                decoding="async"
+                importance="low"
               />
 
               <div class="luxurytrainsec_content_wraper">
@@ -2379,9 +2396,10 @@
             <div class="swiper-slide">
               <img
                 src="./assets/images/ayurvedatourismsec.webp"
-                class="img-fluid galleySlider_bg" loading="lazy"
-                      decoding="async"
-                      importance="low"
+                class="img-fluid galleySlider_bg"
+                loading="lazy"
+                decoding="async"
+                importance="low"
               />
 
               <div class="luxurytrainsec_content_wraper">
@@ -2400,9 +2418,10 @@
             <div class="swiper-slide">
               <img
                 src="./assets/images/ayurvedatourismsec.webp"
-                class="img-fluid galleySlider_bg" loading="lazy"
-                      decoding="async"
-                      importance="low"
+                class="img-fluid galleySlider_bg"
+                loading="lazy"
+                decoding="async"
+                importance="low"
               />
 
               <div class="luxurytrainsec_content_wraper">
@@ -2435,9 +2454,10 @@
                 <img
                   src="./assets/images/train.png"
                   class="img-fluid"
-                  alt="train" loading="lazy"
-                      decoding="async"
-                      importance="low"
+                  alt="train"
+                  loading="lazy"
+                  decoding="async"
+                  importance="low"
                 />
                 <h6 class="text-center fw-bolder mt-3 text-uppercase">
                   Luxury <br />
@@ -2450,9 +2470,10 @@
                 <img
                   src="./assets/images/train.png"
                   class="img-fluid"
-                  alt="train" loading="lazy"
-                      decoding="async"
-                      importance="low"
+                  alt="train"
+                  loading="lazy"
+                  decoding="async"
+                  importance="low"
                 />
                 <h6 class="text-center fw-bolder mt-3 text-uppercase">
                   Luxury <br />
@@ -2465,9 +2486,10 @@
                 <img
                   src="./assets/images/train.png"
                   class="img-fluid"
-                  alt="train" loading="lazy"
-                      decoding="async"
-                      importance="low"
+                  alt="train"
+                  loading="lazy"
+                  decoding="async"
+                  importance="low"
                 />
                 <h6 class="text-center fw-bolder mt-3 text-uppercase">
                   Luxury <br />
@@ -2479,7 +2501,7 @@
         </div>
       </div>
     </section>
-    <section class="sec_padd">
+    <section class="sec_padd pb-3">
       <div class="container">
         <div class="main-heading mb-3">
           <h2>Holidays by Interest</h2>
@@ -2502,7 +2524,9 @@
                   />
                 </a>
                 <div class="content-wraper">
-                  <a href="" class="fs-4 common-hover text-capitalize"> Beach tour </a>
+                  <a href="" class="fs-4 common-hover text-capitalize">
+                    Beach tour
+                  </a>
                 </div>
               </div>
             </div>
@@ -2519,7 +2543,9 @@
                   />
                 </a>
                 <div class="content-wraper">
-                  <a href="" class="fs-4 common-hover text-capitalize"> Trekking  tour </a>
+                  <a href="" class="fs-4 common-hover text-capitalize">
+                    Trekking tour
+                  </a>
                 </div>
               </div>
             </div>
@@ -2536,7 +2562,9 @@
                   />
                 </a>
                 <div class="content-wraper">
-                  <a href="" class="fs-4 common-hover text-capitalize">Luxury Train  tour </a>
+                  <a href="" class="fs-4 common-hover text-capitalize"
+                    >Luxury Train tour
+                  </a>
                 </div>
               </div>
             </div>
@@ -2553,7 +2581,9 @@
                   />
                 </a>
                 <div class="content-wraper">
-                  <a href="" class="fs-4 common-hover text-capitalize"> Adventure  </a>
+                  <a href="" class="fs-4 common-hover text-capitalize">
+                    Adventure
+                  </a>
                 </div>
               </div>
             </div>
@@ -2570,7 +2600,9 @@
                   />
                 </a>
                 <div class="content-wraper">
-                  <a href="" class="fs-4 common-hover text-capitalize"> Ayurveda  tour </a>
+                  <a href="" class="fs-4 common-hover text-capitalize">
+                    Ayurveda tour
+                  </a>
                 </div>
               </div>
             </div>
@@ -2587,7 +2619,9 @@
                   />
                 </a>
                 <div class="content-wraper">
-                  <a href="" class="fs-4 common-hover text-capitalize"> Special Interest  tour </a>
+                  <a href="" class="fs-4 common-hover text-capitalize">
+                    Special Interest tour
+                  </a>
                 </div>
               </div>
             </div>
@@ -2604,7 +2638,9 @@
                   />
                 </a>
                 <div class="content-wraper">
-                  <a href="" class="fs-4 common-hover text-capitalize"> Beach tour </a>
+                  <a href="" class="fs-4 common-hover text-capitalize">
+                    Beach tour
+                  </a>
                 </div>
               </div>
             </div>
@@ -2621,7 +2657,9 @@
                   />
                 </a>
                 <div class="content-wraper">
-                  <a href="" class="fs-4 common-hover text-capitalize"> Beach tour </a>
+                  <a href="" class="fs-4 common-hover text-capitalize">
+                    Beach tour
+                  </a>
                 </div>
               </div>
             </div>
@@ -2638,7 +2676,9 @@
                   />
                 </a>
                 <div class="content-wraper">
-                  <a href="" class="fs-4 common-hover text-capitalize"> Beach tour </a>
+                  <a href="" class="fs-4 common-hover text-capitalize">
+                    Beach tour
+                  </a>
                 </div>
               </div>
             </div>
@@ -2655,7 +2695,9 @@
                   />
                 </a>
                 <div class="content-wraper">
-                  <a href="" class="fs-4 common-hover text-capitalize"> Beach tour </a>
+                  <a href="" class="fs-4 common-hover text-capitalize">
+                    Beach tour
+                  </a>
                 </div>
               </div>
             </div>
@@ -2672,7 +2714,9 @@
                   />
                 </a>
                 <div class="content-wraper">
-                  <a href="" class="fs-4 common-hover text-capitalize"> Beach tour </a>
+                  <a href="" class="fs-4 common-hover text-capitalize">
+                    Beach tour
+                  </a>
                 </div>
               </div>
             </div>
@@ -2689,7 +2733,9 @@
                   />
                 </a>
                 <div class="content-wraper">
-                  <a href="" class="fs-4 common-hover text-capitalize"> Beach tour </a>
+                  <a href="" class="fs-4 common-hover text-capitalize">
+                    Beach tour
+                  </a>
                 </div>
               </div>
             </div>
@@ -2706,7 +2752,9 @@
                   />
                 </a>
                 <div class="content-wraper">
-                  <a href="" class="fs-4 common-hover text-capitalize"> Beach tour </a>
+                  <a href="" class="fs-4 common-hover text-capitalize">
+                    Beach tour
+                  </a>
                 </div>
               </div>
             </div>
@@ -2722,7 +2770,7 @@
         </div>
       </div>
     </section>
-    <section class="trending_sec">
+    <section class="trending_sec sec_padd">
       <div class="container">
         <div class="main-heading mb-3">
           <h2>Top Weekend Destinations</h2>
@@ -3159,121 +3207,121 @@
             </div>
           </div>
         </div>
-        <div class="trending_sec mt-3 mt-md-5 pt-4">
-          <div class="container">
-            <div class="main-heading mb-3">
-              <h2>Top India Tourism Experiences</h2>
-              <a href="" class="d-block dark_link"
-                >View All Tours
-                <i class="fa fa-angle-right" aria-hidden="true"></i>
-              </a>
+      </div>
+    </section>
+    <section class="trending_sec mt-3 mt-md-5 pt-4">
+      <div class="container">
+        <div class="main-heading mb-3">
+          <h2>Top India Tourism Experiences</h2>
+          <a href="" class="d-block dark_link"
+            >View All Tours
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+          </a>
+        </div>
+        <div class="swiper itemsfourSlider comman_slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="pack-sec">
+                <a href="#" tabindex="0"
+                  ><img
+                    src="./assets/images/wildlifesantury.webp"
+                    alt="uttarakhand image"
+                    class="img-fluid br_5"
+                    loading="lazy"
+                    decoding="async"
+                    importance="low"
+                /></a>
+                <div class="pack-content">
+                  <span>50+ Packages</span>
+                  <h3 class="common-hover">
+                    <a href="#" class="common-hover">Uttarakhand</a>
+                  </h3>
+                </div>
+              </div>
             </div>
-            <div class="swiper itemsfourSlider comman_slider">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="pack-sec">
-                    <a href="#" tabindex="0"
-                      ><img
-                        src="./assets/images/wildlifesantury.webp"
-                        alt="uttarakhand image"
-                        class="img-fluid br_5"
-                        loading="lazy"
-                        decoding="async"
-                        importance="low"
-                    /></a>
-                    <div class="pack-content">
-                      <span>50+ Packages</span>
-                      <h3 class="common-hover">
-                        <a href="#" class="common-hover">Uttarakhand</a>
-                      </h3>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="pack-sec">
-                    <a href="#" tabindex="0"
-                      ><img
-                        src="./assets/images/wildlifesantury.webp"
-                        alt="uttarakhand image"
-                        class="img-fluid br_5"
-                        loading="lazy"
-                        decoding="async"
-                        importance="low"
-                    /></a>
-                    <div class="pack-content">
-                      <span>50+ Packages</span>
-                      <h3 class="common-hover">
-                        <a href="#" class="common-hover">Uttarakhand</a>
-                      </h3>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="pack-sec">
-                    <a href="#" tabindex="0"
-                      ><img
-                        src="./assets/images/wildlifesantury.webp"
-                        alt="uttarakhand image"
-                        class="img-fluid br_5"
-                        loading="lazy"
-                        decoding="async"
-                        importance="low"
-                    /></a>
-                    <div class="pack-content">
-                      <span>50+ Packages</span>
-                      <h3 class="common-hover">
-                        <a href="#" class="common-hover">Uttarakhand</a>
-                      </h3>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="pack-sec">
-                    <a href="#" tabindex="0"
-                      ><img
-                        src="./assets/images/wildlifesantury.webp"
-                        alt="uttarakhand image"
-                        class="img-fluid br_5"
-                        loading="lazy"
-                        decoding="async"
-                        importance="low"
-                    /></a>
-                    <div class="pack-content">
-                      <span>50+ Packages</span>
-                      <h3 class="common-hover">
-                        <a href="#" class="common-hover">Uttarakhand</a>
-                      </h3>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="pack-sec">
-                    <a href="#" tabindex="0"
-                      ><img
-                        src="./assets/images/wildlifesantury.webp"
-                        alt="uttarakhand image"
-                        class="img-fluid br_5"
-                        loading="lazy"
-                        decoding="async"
-                        importance="low"
-                    /></a>
-                    <div class="pack-content">
-                      <span>50+ Packages</span>
-                      <h3 class="common-hover">
-                        <a href="#" class="common-hover">Uttarakhand</a>
-                      </h3>
-                    </div>
-                  </div>
+            <div class="swiper-slide">
+              <div class="pack-sec">
+                <a href="#" tabindex="0"
+                  ><img
+                    src="./assets/images/wildlifesantury.webp"
+                    alt="uttarakhand image"
+                    class="img-fluid br_5"
+                    loading="lazy"
+                    decoding="async"
+                    importance="low"
+                /></a>
+                <div class="pack-content">
+                  <span>50+ Packages</span>
+                  <h3 class="common-hover">
+                    <a href="#" class="common-hover">Uttarakhand</a>
+                  </h3>
                 </div>
               </div>
-              <div class="swiperbtn_wraper">
-                <div class="swiper-button-next">
-                  <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-                </div>
-                <div class="swiper-button-prev">
-                  <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
+            </div>
+            <div class="swiper-slide">
+              <div class="pack-sec">
+                <a href="#" tabindex="0"
+                  ><img
+                    src="./assets/images/wildlifesantury.webp"
+                    alt="uttarakhand image"
+                    class="img-fluid br_5"
+                    loading="lazy"
+                    decoding="async"
+                    importance="low"
+                /></a>
+                <div class="pack-content">
+                  <span>50+ Packages</span>
+                  <h3 class="common-hover">
+                    <a href="#" class="common-hover">Uttarakhand</a>
+                  </h3>
                 </div>
               </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="pack-sec">
+                <a href="#" tabindex="0"
+                  ><img
+                    src="./assets/images/wildlifesantury.webp"
+                    alt="uttarakhand image"
+                    class="img-fluid br_5"
+                    loading="lazy"
+                    decoding="async"
+                    importance="low"
+                /></a>
+                <div class="pack-content">
+                  <span>50+ Packages</span>
+                  <h3 class="common-hover">
+                    <a href="#" class="common-hover">Uttarakhand</a>
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="pack-sec">
+                <a href="#" tabindex="0"
+                  ><img
+                    src="./assets/images/wildlifesantury.webp"
+                    alt="uttarakhand image"
+                    class="img-fluid br_5"
+                    loading="lazy"
+                    decoding="async"
+                    importance="low"
+                /></a>
+                <div class="pack-content">
+                  <span>50+ Packages</span>
+                  <h3 class="common-hover">
+                    <a href="#" class="common-hover">Uttarakhand</a>
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiperbtn_wraper">
+            <div class="swiper-button-next">
+              <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+            </div>
+            <div class="swiper-button-prev">
+              <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
             </div>
           </div>
         </div>
@@ -3380,22 +3428,25 @@
                         src="./assets/images/stars.png "
                         class="img-fluid"
                         alt="review stars"
-                         loading="lazy"
-                      decoding="async"
-                      importance="low"
+                        loading="lazy"
+                        decoding="async"
+                        importance="low"
                       />
                       <span class="d-block">India Tour</span>
                     </div>
                   </div>
-                  <a class="more-reviews mt-3 mt-md-5 d-block position-relative fw-semibold">
+                  <a
+                    class="more-reviews mt-3 mt-md-5 d-block position-relative fw-semibold"
+                  >
                     Explore More
                     <div class="img">
                       <img
                         src="./assets/images/owleye.png"
                         class="img-fluid"
-                        alt="triv advisor" loading="lazy"
-                      decoding="async"
-                      importance="low"
+                        alt="triv advisor"
+                        loading="lazy"
+                        decoding="async"
+                        importance="low"
                       />
                     </div>
                   </a>
@@ -3424,9 +3475,14 @@
           <div class="col-lg-3 col-md-6 acheive-col">
             <div class="acheive-box">
               <div class="text-center box-content">
-                <img src="assets/images/thumb.png" alt=""  loading="lazy"
-                      decoding="async"
-                      importance="low" class="img-fluid" />
+                <img
+                  src="assets/images/thumb.png"
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                  importance="low"
+                  class="img-fluid"
+                />
               </div>
               <div class="acheivement-content">
                 <h3>20+ Year Experience</h3>
@@ -3441,9 +3497,14 @@
           <div class="col-lg-3 col-md-6 acheive-col">
             <div class="acheive-box">
               <div class="text-center box-content">
-                <img src="assets/images/thumb.png" alt="" class="img-fluid"  loading="lazy"
-                      decoding="async"
-                      importance="low" />
+                <img
+                  src="assets/images/thumb.png"
+                  alt=""
+                  class="img-fluid"
+                  loading="lazy"
+                  decoding="async"
+                  importance="low"
+                />
               </div>
               <div class="acheivement-content">
                 <h3>A Team of Experts</h3>
@@ -3459,9 +3520,14 @@
           <div class="col-lg-3 col-md-6 acheive-col">
             <div class="acheive-box">
               <div class="text-center box-content">
-                <img src="assets/images/thumb.png" alt="" class="img-fluid"   loading="lazy"
-                      decoding="async"
-                      importance="low"/>
+                <img
+                  src="assets/images/thumb.png"
+                  alt=""
+                  class="img-fluid"
+                  loading="lazy"
+                  decoding="async"
+                  importance="low"
+                />
               </div>
               <div class="acheivement-content">
                 <h3>Verified Hotels</h3>
@@ -3476,9 +3542,14 @@
           <div class="col-lg-3 col-md-6 acheive-col">
             <div class="acheive-box">
               <div class="text-center box-content">
-                <img src="assets/images/thumb.png" alt="" class="img-fluid"  loading="lazy"
-                      decoding="async"
-                      importance="low"/>
+                <img
+                  src="assets/images/thumb.png"
+                  alt=""
+                  class="img-fluid"
+                  loading="lazy"
+                  decoding="async"
+                  importance="low"
+                />
               </div>
               <div class="acheivement-content">
                 <h3>Value for Money Tours</h3>
@@ -3508,9 +3579,10 @@
                 <img
                   src="assets/images/lessexploredhillstation.jpg"
                   alt=""
-                  class="img-fluid" loading="lazy"
-                      decoding="async"
-                      importance="low"
+                  class="img-fluid"
+                  loading="lazy"
+                  decoding="async"
+                  importance="low"
                 /><span>June 2,2025</span><br />
                 10 Less Explored Hill Stations in Uttarakhand
               </a>
@@ -3520,9 +3592,10 @@
                 <img
                   src="assets/images/BestSummerCamping.jpg"
                   alt=""
-                  class="img-fluid" loading="lazy"
-                      decoding="async"
-                      importance="low"
+                  class="img-fluid"
+                  loading="lazy"
+                  decoding="async"
+                  importance="low"
                 /><span>May 29,2025</span><br />
                 12 Best Summer Camping Options in Uttarakhand
               </a>
@@ -3532,9 +3605,10 @@
                 <img
                   src="assets/images/BestVacation.jpg"
                   alt=""
-                  class="img-fluid" loading="lazy"
-                      decoding="async"
-                      importance="low"
+                  class="img-fluid"
+                  loading="lazy"
+                  decoding="async"
+                  importance="low"
                 /><span>May 27,2025</span><br />
                 Top 18 Family Vacation Ideas for this Summer in India
               </a>
@@ -3592,22 +3666,22 @@
               <img
                 src="assets/images/varanasiindia.webp"
                 alt=""
-                class="img-fluid br_5" loading="lazy"
-                      decoding="async"
-                      importance="low"
+                class="img-fluid br_5"
+                loading="lazy"
+                decoding="async"
+                importance="low"
               />
             </div>
           </div>
         </div>
       </div>
     </section>
-
     <section class="information sec_padd">
       <div class="container">
         <div class="row gy-4">
           <div class="col-lg-6">
             <div class="bg_grey information_box position-relative">
-              <h3 class=" fw-bold text-capitalize">India Climate & Season</h3>
+              <h3 class="fw-bold text-capitalize">India Climate & Season</h3>
               <p>
                 India experiences a diverse climate and weather conditions due
                 to its vast size and geographical features. The country is
@@ -3679,9 +3753,13 @@
                   tabindex="0"
                 >
                   <div class="d-md-flex align-items-start gap-3">
-                    <img src="./assets/images/summer.webp" alt=""  loading="lazy"
+                    <img
+                      src="./assets/images/summer.webp"
+                      alt=""
+                      loading="lazy"
                       decoding="async"
-                      importance="low"/>
+                      importance="low"
+                    />
                     <p>
                       The Winter season in India spans from November to February
                       and varies in climate across regions. In the northern
@@ -3703,10 +3781,14 @@
                   aria-labelledby="info-2"
                   tabindex="0"
                 >
-                 <div class="d-md-flex align-items-start gap-3">
-                    <img src="./assets/images/monsoon.webp" alt=""  loading="lazy"
+                  <div class="d-md-flex align-items-start gap-3">
+                    <img
+                      src="./assets/images/monsoon.webp"
+                      alt=""
+                      loading="lazy"
                       decoding="async"
-                      importance="low"/>
+                      importance="low"
+                    />
                     <p>
                       The Winter season in India spans from November to February
                       and varies in climate across regions. In the northern
@@ -3728,10 +3810,14 @@
                   aria-labelledby="info-3"
                   tabindex="0"
                 >
-                 <div class="d-md-flex align-items-start gap-3">
-                    <img src="./assets/images/winter.webp" alt=""  loading="lazy"
+                  <div class="d-md-flex align-items-start gap-3">
+                    <img
+                      src="./assets/images/winter.webp"
+                      alt=""
+                      loading="lazy"
                       decoding="async"
-                      importance="low"/>
+                      importance="low"
+                    />
                     <p>
                       The Winter season in India spans from November to February
                       and varies in climate across regions. In the northern
@@ -3751,9 +3837,21 @@
           </div>
           <div class="col-lg-6">
             <div class="bg_grey information_box position-relative">
-              <h3 class=" fw-bold text-capitalize">Visa Information</h3>
+              <h3 class="fw-bold text-capitalize">Visa Information</h3>
               <p>
-                Obtaining a visa for India is an essential step for foreign travelers planning to visit the country. India offers various visa categories, including tourist visas, business visas, and e-visas. The tourist visa allows visitors to explore India's rich cultural heritage, historical sites, and natural beauty. The e-visa is a convenient option that allows travelers to apply for their visa online, streamlining the process and reducing the wait time. To apply for an India visa, travelers need to submit necessary documents, such as a valid passport, travel itinerary, and recent photographs. Planning ahead and adhering to the application guidelines ensure a smooth visa process for a memorable trip to India. For the latest information about getting a visa for India, visit the official website at
+                Obtaining a visa for India is an essential step for foreign
+                travelers planning to visit the country. India offers various
+                visa categories, including tourist visas, business visas, and
+                e-visas. The tourist visa allows visitors to explore India's
+                rich cultural heritage, historical sites, and natural beauty.
+                The e-visa is a convenient option that allows travelers to apply
+                for their visa online, streamlining the process and reducing the
+                wait time. To apply for an India visa, travelers need to submit
+                necessary documents, such as a valid passport, travel itinerary,
+                and recent photographs. Planning ahead and adhering to the
+                application guidelines ensure a smooth visa process for a
+                memorable trip to India. For the latest information about
+                getting a visa for India, visit the official website at
                 <a href="">https://indianvisaonline.gov.in/.</a>
               </p>
             </div>
@@ -3761,9 +3859,9 @@
         </div>
       </div>
     </section>
-        <section class="travel_india sec_padd bg_grey">
+    <section class="travel_india sec_padd bg_grey">
       <div class="container">
-        <div class="main-heading">
+        <div class="main-heading mb-4">
           <h2 class="text-capitalize">Discovering India</h2>
         </div>
         <ul
@@ -3848,7 +3946,7 @@
                 </ul>
               </div>
               <div class="col-lg-8 ps-md-4">
-                <div class="tab-content ">
+                <div class="tab-content">
                   <div class="tab-content" id="myTabContent">
                     <div
                       class="tab-pane fade show active"
@@ -3882,7 +3980,10 @@
                               Southern India for hill stations, heritage,
                               spiritual, and beach holidays are-
                             </h4>
-                            <div class="accordion mt-4 orang_arrow" id="accordionExample">
+                            <div
+                              class="accordion mt-4 orang_arrow"
+                              id="accordionExample"
+                            >
                               <div class="accordion-item">
                                 <h2 class="accordion-header">
                                   <button
@@ -3893,18 +3994,30 @@
                                     aria-expanded="true"
                                     aria-controls="innertab-1"
                                   >
-                                  Uttarakhand
+                                    Uttarakhand
                                   </button>
                                 </h2>
                                 <div
                                   id="innertab-1"
-                                  class="accordion-collapse collapse "
+                                  class="accordion-collapse collapse"
                                   data-bs-parent="#accordionExample"
                                 >
                                   <div class="accordion-body">
-                                  Uttarakhand is very famously known as "Devbhumi" or the "Land of the Gods", owing to its status as a popular pilgrimage site for Hinduism and its followers. Uttarakhand Tourism is prominently centered around its religious significance. One of the most sought-after and holy pilgrimages that devotees embark on is the "Char Dham Yatra", which involves visiting the four sacred sites located in the state: Yamunotri, Gangotri, Kedarnath, and Badrinath. These destinations hold immense spiritual importance and attract a multitude of devotees and tourists from far and wide.
-                             <a href=""> links</a>
-
+                                    Uttarakhand is very famously known as
+                                    "Devbhumi" or the "Land of the Gods", owing
+                                    to its status as a popular pilgrimage site
+                                    for Hinduism and its followers. Uttarakhand
+                                    Tourism is prominently centered around its
+                                    religious significance. One of the most
+                                    sought-after and holy pilgrimages that
+                                    devotees embark on is the "Char Dham Yatra",
+                                    which involves visiting the four sacred
+                                    sites located in the state: Yamunotri,
+                                    Gangotri, Kedarnath, and Badrinath. These
+                                    destinations hold immense spiritual
+                                    importance and attract a multitude of
+                                    devotees and tourists from far and wide.
+                                    <a href=""> links</a>
                                   </div>
                                 </div>
                               </div>
@@ -3918,7 +4031,7 @@
                                     aria-expanded="false"
                                     aria-controls="innertab-2"
                                   >
-                                   Jammu & Kashmir (UT)
+                                    Jammu & Kashmir (UT)
                                   </button>
                                 </h2>
                                 <div
@@ -3927,7 +4040,21 @@
                                   data-bs-parent="#accordionExample"
                                 >
                                   <div class="accordion-body">
-                                    Jammu & Kashmir, a union territory in the northern part of India, is a unique destination that attracts tourists from all over the world. Jammu and Kashmir Tourism offers a mesmerizing experience for travelers with its breathtaking landscapes and rich cultural heritage. The region is often referred to as the "Heaven on Earth" due to its stunning beauty and diverse attractions. Whether you visit during the summer or winter months, Jammu & Kashmir will leave you awe-inspired with its majestic mountains, serene lakes, and warm hospitality, making it a must-visit destination in Incredible India.
+                                    Jammu & Kashmir, a union territory in the
+                                    northern part of India, is a unique
+                                    destination that attracts tourists from all
+                                    over the world. Jammu and Kashmir Tourism
+                                    offers a mesmerizing experience for
+                                    travelers with its breathtaking landscapes
+                                    and rich cultural heritage. The region is
+                                    often referred to as the "Heaven on Earth"
+                                    due to its stunning beauty and diverse
+                                    attractions. Whether you visit during the
+                                    summer or winter months, Jammu & Kashmir
+                                    will leave you awe-inspired with its
+                                    majestic mountains, serene lakes, and warm
+                                    hospitality, making it a must-visit
+                                    destination in Incredible India.
                                   </div>
                                 </div>
                               </div>
@@ -3955,7 +4082,7 @@
                       aria-labelledby="tab-2-nthdisinner-2"
                       tabindex="0"
                     >
-                   <div class="row gy-4">
+                      <div class="row gy-4">
                         <div class="col-md-7 common_acc">
                           <div class="travel_india_content orang_arrow">
                             <p>
@@ -3980,30 +4107,81 @@
                               Southern India for hill stations, heritage,
                               spiritual, and beach holidays are-
                             </h4>
-                            <div class="accordion mt-4 orang_arrow" id="accordionExample">
+                            <div
+                              class="accordion mt-4 orang_arrow"
+                              id="accordionExample"
+                            >
                               <div class="accordion-item">
                                 <h2 class="accordion-header">
-                                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#innertab-1" aria-expanded="true" aria-controls="innertab-1">
-                                  Uttarakhand
+                                  <button
+                                    class="accordion-button"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#innertab-1"
+                                    aria-expanded="true"
+                                    aria-controls="innertab-1"
+                                  >
+                                    Uttarakhand
                                   </button>
                                 </h2>
-                                <div id="innertab-1" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                <div
+                                  id="innertab-1"
+                                  class="accordion-collapse collapse show"
+                                  data-bs-parent="#accordionExample"
+                                >
                                   <div class="accordion-body">
-                                  Uttarakhand is very famously known as "Devbhumi" or the "Land of the Gods", owing to its status as a popular pilgrimage site for Hinduism and its followers. Uttarakhand Tourism is prominently centered around its religious significance. One of the most sought-after and holy pilgrimages that devotees embark on is the "Char Dham Yatra", which involves visiting the four sacred sites located in the state: Yamunotri, Gangotri, Kedarnath, and Badrinath. These destinations hold immense spiritual importance and attract a multitude of devotees and tourists from far and wide.
-                             <a href=""> links</a>
-
+                                    Uttarakhand is very famously known as
+                                    "Devbhumi" or the "Land of the Gods", owing
+                                    to its status as a popular pilgrimage site
+                                    for Hinduism and its followers. Uttarakhand
+                                    Tourism is prominently centered around its
+                                    religious significance. One of the most
+                                    sought-after and holy pilgrimages that
+                                    devotees embark on is the "Char Dham Yatra",
+                                    which involves visiting the four sacred
+                                    sites located in the state: Yamunotri,
+                                    Gangotri, Kedarnath, and Badrinath. These
+                                    destinations hold immense spiritual
+                                    importance and attract a multitude of
+                                    devotees and tourists from far and wide.
+                                    <a href=""> links</a>
                                   </div>
                                 </div>
                               </div>
                               <div class="accordion-item">
                                 <h2 class="accordion-header">
-                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#innertab-2" aria-expanded="false" aria-controls="innertab-2">
-                                   Jammu &amp; Kashmir (UT)
+                                  <button
+                                    class="accordion-button collapsed"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#innertab-2"
+                                    aria-expanded="false"
+                                    aria-controls="innertab-2"
+                                  >
+                                    Jammu &amp; Kashmir (UT)
                                   </button>
                                 </h2>
-                                <div id="innertab-2" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div
+                                  id="innertab-2"
+                                  class="accordion-collapse collapse"
+                                  data-bs-parent="#accordionExample"
+                                >
                                   <div class="accordion-body">
-                                    Jammu &amp; Kashmir, a union territory in the northern part of India, is a unique destination that attracts tourists from all over the world. Jammu and Kashmir Tourism offers a mesmerizing experience for travelers with its breathtaking landscapes and rich cultural heritage. The region is often referred to as the "Heaven on Earth" due to its stunning beauty and diverse attractions. Whether you visit during the summer or winter months, Jammu &amp; Kashmir will leave you awe-inspired with its majestic mountains, serene lakes, and warm hospitality, making it a must-visit destination in Incredible India.
+                                    Jammu &amp; Kashmir, a union territory in
+                                    the northern part of India, is a unique
+                                    destination that attracts tourists from all
+                                    over the world. Jammu and Kashmir Tourism
+                                    offers a mesmerizing experience for
+                                    travelers with its breathtaking landscapes
+                                    and rich cultural heritage. The region is
+                                    often referred to as the "Heaven on Earth"
+                                    due to its stunning beauty and diverse
+                                    attractions. Whether you visit during the
+                                    summer or winter months, Jammu &amp; Kashmir
+                                    will leave you awe-inspired with its
+                                    majestic mountains, serene lakes, and warm
+                                    hospitality, making it a must-visit
+                                    destination in Incredible India.
                                   </div>
                                 </div>
                               </div>
@@ -4012,7 +4190,14 @@
                         </div>
                         <div class="col-md-5 text-center text-md-end">
                           <div>
-                            <img src="./assets/images/beach-region.webp" class="img-fluid br_5" decoding="async" importance="low" loading="lazy" alt="beachs">
+                            <img
+                              src="./assets/images/beach-region.webp"
+                              class="img-fluid br_5"
+                              decoding="async"
+                              importance="low"
+                              loading="lazy"
+                              alt="beachs"
+                            />
                           </div>
                         </div>
                       </div>
@@ -4032,7 +4217,7 @@
             <div class="row align-items-start gap-3">
               <div class="col-lg-3">
                 <ul
-                  class="nav nav-tabs side_tabs flex-lg-column border-lg-0 flex-nowrap "
+                  class="nav nav-tabs side_tabs flex-lg-column border-lg-0 flex-nowrap"
                   id="myTab"
                   role="tablist"
                 >
@@ -4069,7 +4254,7 @@
                 </ul>
               </div>
               <div class="col-lg-8 ps-md-4">
-                <div class="tab-content ">
+                <div class="tab-content">
                   <div class="tab-content" id="myTabContent">
                     <div
                       class="tab-pane fade show active"
@@ -4103,7 +4288,10 @@
                               Southern India for hill stations, heritage,
                               spiritual, and beach holidays are-
                             </h4>
-                            <div class="accordion mt-4 orang_arrow" id="accordionExample">
+                            <div
+                              class="accordion mt-4 orang_arrow"
+                              id="accordionExample"
+                            >
                               <div class="accordion-item">
                                 <h2 class="accordion-header">
                                   <button
@@ -4114,18 +4302,30 @@
                                     aria-expanded="true"
                                     aria-controls="innertab-1"
                                   >
-                                  Uttarakhand
+                                    Uttarakhand
                                   </button>
                                 </h2>
                                 <div
                                   id="innertab-1"
-                                  class="accordion-collapse collapse "
+                                  class="accordion-collapse collapse"
                                   data-bs-parent="#accordionExample"
                                 >
                                   <div class="accordion-body">
-                                  Uttarakhand is very famously known as "Devbhumi" or the "Land of the Gods", owing to its status as a popular pilgrimage site for Hinduism and its followers. Uttarakhand Tourism is prominently centered around its religious significance. One of the most sought-after and holy pilgrimages that devotees embark on is the "Char Dham Yatra", which involves visiting the four sacred sites located in the state: Yamunotri, Gangotri, Kedarnath, and Badrinath. These destinations hold immense spiritual importance and attract a multitude of devotees and tourists from far and wide.
-                             <a href=""> links</a>
-
+                                    Uttarakhand is very famously known as
+                                    "Devbhumi" or the "Land of the Gods", owing
+                                    to its status as a popular pilgrimage site
+                                    for Hinduism and its followers. Uttarakhand
+                                    Tourism is prominently centered around its
+                                    religious significance. One of the most
+                                    sought-after and holy pilgrimages that
+                                    devotees embark on is the "Char Dham Yatra",
+                                    which involves visiting the four sacred
+                                    sites located in the state: Yamunotri,
+                                    Gangotri, Kedarnath, and Badrinath. These
+                                    destinations hold immense spiritual
+                                    importance and attract a multitude of
+                                    devotees and tourists from far and wide.
+                                    <a href=""> links</a>
                                   </div>
                                 </div>
                               </div>
@@ -4139,7 +4339,7 @@
                                     aria-expanded="false"
                                     aria-controls="innertab-2"
                                   >
-                                   Jammu & Kashmir (UT)
+                                    Jammu & Kashmir (UT)
                                   </button>
                                 </h2>
                                 <div
@@ -4148,7 +4348,21 @@
                                   data-bs-parent="#accordionExample"
                                 >
                                   <div class="accordion-body">
-                                    Jammu & Kashmir, a union territory in the northern part of India, is a unique destination that attracts tourists from all over the world. Jammu and Kashmir Tourism offers a mesmerizing experience for travelers with its breathtaking landscapes and rich cultural heritage. The region is often referred to as the "Heaven on Earth" due to its stunning beauty and diverse attractions. Whether you visit during the summer or winter months, Jammu & Kashmir will leave you awe-inspired with its majestic mountains, serene lakes, and warm hospitality, making it a must-visit destination in Incredible India.
+                                    Jammu & Kashmir, a union territory in the
+                                    northern part of India, is a unique
+                                    destination that attracts tourists from all
+                                    over the world. Jammu and Kashmir Tourism
+                                    offers a mesmerizing experience for
+                                    travelers with its breathtaking landscapes
+                                    and rich cultural heritage. The region is
+                                    often referred to as the "Heaven on Earth"
+                                    due to its stunning beauty and diverse
+                                    attractions. Whether you visit during the
+                                    summer or winter months, Jammu & Kashmir
+                                    will leave you awe-inspired with its
+                                    majestic mountains, serene lakes, and warm
+                                    hospitality, making it a must-visit
+                                    destination in Incredible India.
                                   </div>
                                 </div>
                               </div>
@@ -4176,7 +4390,7 @@
                       aria-labelledby="topthings-2"
                       tabindex="0"
                     >
-                     <div class="row gy-4">
+                      <div class="row gy-4">
                         <div class="col-md-7 common_acc">
                           <div class="travel_india_content orang_arrow">
                             <p>
@@ -4201,30 +4415,81 @@
                               Southern India for hill stations, heritage,
                               spiritual, and beach holidays are-
                             </h4>
-                            <div class="accordion mt-4 orang_arrow" id="accordionExample">
+                            <div
+                              class="accordion mt-4 orang_arrow"
+                              id="accordionExample"
+                            >
                               <div class="accordion-item">
                                 <h2 class="accordion-header">
-                                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#innertab-1" aria-expanded="true" aria-controls="innertab-1">
-                                  Uttarakhand
+                                  <button
+                                    class="accordion-button"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#innertab-1"
+                                    aria-expanded="true"
+                                    aria-controls="innertab-1"
+                                  >
+                                    Uttarakhand
                                   </button>
                                 </h2>
-                                <div id="innertab-1" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
+                                <div
+                                  id="innertab-1"
+                                  class="accordion-collapse collapse"
+                                  data-bs-parent="#accordionExample"
+                                >
                                   <div class="accordion-body">
-                                  Uttarakhand is very famously known as "Devbhumi" or the "Land of the Gods", owing to its status as a popular pilgrimage site for Hinduism and its followers. Uttarakhand Tourism is prominently centered around its religious significance. One of the most sought-after and holy pilgrimages that devotees embark on is the "Char Dham Yatra", which involves visiting the four sacred sites located in the state: Yamunotri, Gangotri, Kedarnath, and Badrinath. These destinations hold immense spiritual importance and attract a multitude of devotees and tourists from far and wide.
-                             <a href=""> links</a>
-
+                                    Uttarakhand is very famously known as
+                                    "Devbhumi" or the "Land of the Gods", owing
+                                    to its status as a popular pilgrimage site
+                                    for Hinduism and its followers. Uttarakhand
+                                    Tourism is prominently centered around its
+                                    religious significance. One of the most
+                                    sought-after and holy pilgrimages that
+                                    devotees embark on is the "Char Dham Yatra",
+                                    which involves visiting the four sacred
+                                    sites located in the state: Yamunotri,
+                                    Gangotri, Kedarnath, and Badrinath. These
+                                    destinations hold immense spiritual
+                                    importance and attract a multitude of
+                                    devotees and tourists from far and wide.
+                                    <a href=""> links</a>
                                   </div>
                                 </div>
                               </div>
                               <div class="accordion-item">
                                 <h2 class="accordion-header">
-                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#innertab-2" aria-expanded="false" aria-controls="innertab-2">
-                                   Jammu &amp; Kashmir (UT)
+                                  <button
+                                    class="accordion-button collapsed"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#innertab-2"
+                                    aria-expanded="false"
+                                    aria-controls="innertab-2"
+                                  >
+                                    Jammu &amp; Kashmir (UT)
                                   </button>
                                 </h2>
-                                <div id="innertab-2" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div
+                                  id="innertab-2"
+                                  class="accordion-collapse collapse"
+                                  data-bs-parent="#accordionExample"
+                                >
                                   <div class="accordion-body">
-                                    Jammu &amp; Kashmir, a union territory in the northern part of India, is a unique destination that attracts tourists from all over the world. Jammu and Kashmir Tourism offers a mesmerizing experience for travelers with its breathtaking landscapes and rich cultural heritage. The region is often referred to as the "Heaven on Earth" due to its stunning beauty and diverse attractions. Whether you visit during the summer or winter months, Jammu &amp; Kashmir will leave you awe-inspired with its majestic mountains, serene lakes, and warm hospitality, making it a must-visit destination in Incredible India.
+                                    Jammu &amp; Kashmir, a union territory in
+                                    the northern part of India, is a unique
+                                    destination that attracts tourists from all
+                                    over the world. Jammu and Kashmir Tourism
+                                    offers a mesmerizing experience for
+                                    travelers with its breathtaking landscapes
+                                    and rich cultural heritage. The region is
+                                    often referred to as the "Heaven on Earth"
+                                    due to its stunning beauty and diverse
+                                    attractions. Whether you visit during the
+                                    summer or winter months, Jammu &amp; Kashmir
+                                    will leave you awe-inspired with its
+                                    majestic mountains, serene lakes, and warm
+                                    hospitality, making it a must-visit
+                                    destination in Incredible India.
                                   </div>
                                 </div>
                               </div>
@@ -4233,7 +4498,14 @@
                         </div>
                         <div class="col-md-5 text-center text-md-end">
                           <div>
-                            <img src="./assets/images/beach-region.webp" class="img-fluid br_5" decoding="async" importance="low" loading="lazy" alt="beachs">
+                            <img
+                              src="./assets/images/beach-region.webp"
+                              class="img-fluid br_5"
+                              decoding="async"
+                              importance="low"
+                              loading="lazy"
+                              alt="beachs"
+                            />
                           </div>
                         </div>
                       </div>
@@ -4246,7 +4518,7 @@
         </div>
       </div>
     </section>
-    <section class="discover-india">
+    <section class="discover-india sec_padd pb-0">
       <div class="container">
         <div class="main-heading">
           <h2>Travel Information</h2>
@@ -4258,9 +4530,10 @@
                 <img
                   src="assets/images/visitingindia.webp"
                   alt=""
-                  class="img-fluid" loading="lazy"
-                      decoding="async"
-                      importance="low"
+                  class="img-fluid"
+                  loading="lazy"
+                  decoding="async"
+                  importance="low"
                 />
               </a>
             </div>
@@ -4292,9 +4565,10 @@
                   <img
                     src="assets/images/travelbus.webp"
                     alt=""
-                    class="img-fluid" loading="lazy"
-                      decoding="async"
-                      importance="low"
+                    class="img-fluid"
+                    loading="lazy"
+                    decoding="async"
+                    importance="low"
                   />
                 </a>
               </div>
@@ -4369,9 +4643,10 @@
                   <img
                     src="assets/images/traveltips.webp"
                     alt=""
-                    class="img-fluid" loading="lazy"
-                      decoding="async"
-                      importance="low"
+                    class="img-fluid"
+                    loading="lazy"
+                    decoding="async"
+                    importance="low"
                   />
                 </a>
               </div>
@@ -4495,8 +4770,6 @@
         </div>
       </div>
     </section>
-
-
     <section class="faq common_acc">
       <div class="container">
         <div class="main-heading">
@@ -4622,514 +4895,41 @@
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-
-            <div class="collapse" id="collapsefaq">
-              <div class="accordion accordion-flush" id="accordionFlushExample">
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#innerone"
-                      aria-expanded="false"
-                      aria-controls="innerone"
-                    >
-                      What currency should I carry while traveling in India?
-                    </button>
-                  </h2>
+                <div class="collapse" id="collapsefaq">
                   <div
-                    id="innerone"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#accordionFlushExample"
+                    class="accordion accordion-flush"
+                    id="accordionFlushExample"
                   >
-                    <div class="accordion-body">
-                      ndia's currency is Indian Rupees; it is advisable to
-                      exchange your currency at the airport or any foreign
-                      currency exchange before travelling to India.
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion accordion-flush" id="accordionFlushExample">
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#innerone"
-                      aria-expanded="false"
-                      aria-controls="innerone"
-                    >
-                      What currency should I carry while traveling in India?
-                    </button>
-                  </h2>
-                  <div
-                    id="innerone"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#accordionFlushExample"
-                  >
-                    <div class="accordion-body">
-                      India's currency is Indian Rupees; it is advisable to
-                      exchange your currency at the airport or any foreign
-                      currency exchange before travelling to India
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion accordion-flush" id="accordionFlushExample">
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#innerone"
-                      aria-expanded="false"
-                      aria-controls="innerone"
-                    >
-                      I don't know English, how to deal with it while traveling
-                      to India?
-                    </button>
-                  </h2>
-                  <div
-                    id="innerone"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#accordionFlushExample"
-                  >
-                    <div class="accordion-body">
-                      While English is spoken and understood by a large number
-                      of people in India, it isn’t an absolute necessity.
-                      Instead, focus on learning some Hindi words that come in
-                      use in daily lives. You can also book a tour with Tour My
-                      India that offers tour guides who are proficient in
-                      different languages and can be mediators between you and
-                      other people you encounter in the country
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#innerone"
-                      aria-expanded="false"
-                      aria-controls="innerone"
-                    >
-                      Is the Internet easily available in India?
-                    </button>
-                  </h2>
-                  <div
-                    id="innerone"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#accordionFlushExample"
-                  >
-                    <div class="accordion-body">
-                      Yes, the internet is easily available in India. All the
-                      major cities and towns, hotels, restaurants, and cafes in
-                      the popular destinations in India offer free Wi-Fi to
-                      their guests
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#innerone"
-                      aria-expanded="false"
-                      aria-controls="innerone"
-                    >
-                      Do I need to take any medical precautions before going on
-                      a tour to India?
-                    </button>
-                  </h2>
-                  <div
-                    id="innerone"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#accordionFlushExample"
-                  >
-                    <div class="accordion-body">
-                      The CDC and WHO recommend the following vaccinations for
-                      India: Hepatitis A, hepatitis B, typhoid, cholera, yellow
-                      fever, Japanese encephalitis, rabies, meningitis, polio,
-                      measles, mumps and rubella (MMR), Tdap (tetanus,
-                      diphtheria and pertussis), chickenpox, shingles, pneumonia
-                      and influenza.
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#innerone"
-                      aria-expanded="false"
-                      aria-controls="innerone"
-                    >
-                      Do I need a Visa to go to India?
-                    </button>
-                  </h2>
-                  <div
-                    id="innerone"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#accordionFlushExample"
-                  >
-                    <div class="accordion-body">
-                      All nationals, except nationals from Bhutan, Nepal and
-                      Maldives need a valid visa to enter in India. Maldives
-                      National need an Indian visa only when stay in India is
-                      longer than 90 days and Nepali nationals only require it,
-                      if they are entering India from china.
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#innerone"
-                      aria-expanded="false"
-                      aria-controls="innerone"
-                    >
-                      Can I get an Indian Visa on arrival?
-                    </button>
-                  </h2>
-                  <div
-                    id="innerone"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#accordionFlushExample"
-                  >
-                    <div class="accordion-body">
-                      The Visa on Arrival facility is only for the nationals of
-                      Japan, South Korea and UAE (only for such UAE nationals
-                      who had earlier obtained e-Visa or regular/paper visa for
-                      India).
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#innerone"
-                      aria-expanded="false"
-                      aria-controls="innerone"
-                    >
-                      How can get Indian Visa?
-                    </button>
-                  </h2>
-                  <div
-                    id="innerone"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#accordionFlushExample"
-                  >
-                    <div class="accordion-body">
-                      You can either apply for E-visa or you need to apply for
-                      it through the nearest Indian consulate/embassy in your
-                      country.
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#innerone"
-                      aria-expanded="false"
-                      aria-controls="innerone"
-                    >
-                      Who is eligible for E-Visa?
-                    </button>
-                  </h2>
-                  <div
-                    id="innerone"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#accordionFlushExample"
-                  >
-                    <div class="accordion-body">
-                      <p>
-                        The following are the eligibility conditions for
-                        availing e-Visa services:
-                      </p>
-                      <p class="pd">
-                        <strong>I. </strong>Nationals of countries listed on the
-                        e-Visa website https://indianvisaonline.gov.in/evisa/
-                        are eligible to apply for e-Visa Services.
-                      </p>
-                      <p class="pd">
-                        <strong>II. </strong>Foreigners whose sole objective for
-                        visiting India is:
-                      </p>
-                      <ul class="pd1">
-                        <li>Recreation and sightseeing</li>
-                        <li>Casual visit to meet friends and relatives</li>
-                        <li>
-                          Attending short term yoga programme or short term
-                          courses on local languages, music, dance, arts &amp;
-                          crafts, cooking, medicine etc. which should not be a
-                          formal or structured course/programme (courses not
-                          exceeding 6 months duration and not issuing a
-                          qualifying certificate/diploma etc. to the
-                          participants)
-                        </li>
-                        <li>
-                          Voluntary work of short duration (for a maximum period
-                          of one month, which do not involve any monetary
-                          payment or consideration of any kind in return)
-                        </li>
-                        <li>
-                          Medical treatment, including treatment under Indian
-                          systems of medicine
-                        </li>
-                        <li>As attendant to e-Medical visa holder</li>
-                        <li>Business purpose</li>
-                        <li>Attending a conference/ seminar/ workshop.</li>
-                      </ul>
-                      <p class="pd">
-                        <strong>III. </strong>Passport should have at least six
-                        months validity at the time of making application for
-                        grant of e-Visa and a re-entry permit, if that is
-                        required under the law of the country of nationality of
-                        the applicant.
-                      </p>
-                      <p class="pd">
-                        The passport should have at least two blank pages for
-                        stamping by the Immigration Officer.
-                      </p>
-                      <p class="pd">
-                        <strong>IV. </strong>The foreigner should have return
-                        ticket or onward journey ticket, with sufficient money
-                        to spend during his/her stay in India.
-                      </p>
-                      <p class="pd">
-                        <strong>V. </strong>Foreigners of Pakistani origin or
-                        having Pakistani Passport are not eligible for e-Visa.
-                        Foreigners who are not Pakistani nationals, but whose
-                        parents or grandparents (either paternal or maternal)
-                        was born in, or was permanently resident in Pakistan,
-                        are also not eligible for e-Visa. They may apply for
-                        regular Visa at Indian Mission.
-                      </p>
-                      <p class="pd">
-                        <strong>VI. </strong>Not available to
-                        Diplomatic/Official Passport Holders or Laissez-passer/
-                        international travel document holders.
-                      </p>
-                      <p class="pd">
-                        <strong>VII. </strong>Not available to individuals
-                        endorsed on Parent's/Spouse's Passport i.e. each
-                        individual should have a separate passport.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#innerone"
-                      aria-expanded="false"
-                      aria-controls="innerone"
-                    >
-                      How can I apply for Indian E-visa?
-                    </button>
-                  </h2>
-                  <div
-                    id="innerone"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#accordionFlushExample"
-                  >
-                    <div class="accordion-body">
-                      <p>
-                        For details regarding procedure for applying, please
-                        visit our website:
-                        <a href="https://indianvisaonline.gov.in/evisa/"
-                          >https://indianvisaonline.gov.in/evisa/</a
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#innerone"
+                          aria-expanded="false"
+                          aria-controls="innerone"
                         >
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#innerone"
-                      aria-expanded="false"
-                      aria-controls="innerone"
-                    >
-                      When should I apply for E-visa?
-                    </button>
-                  </h2>
-                  <div
-                    id="innerone"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#accordionFlushExample"
-                  >
-                    <div class="accordion-body">
-                      <p class="pd">
-                        <strong>I. </strong> For e-Tourist Visa (01 year / 05
-                        years), e-Business Visa, e-Medical, e-Medical Attendant
-                        and e-Conference visa, applicants of the eligible
-                        countries/territories may apply online minimum 4 days in
-                        advance of the date of arrival. Such application can be
-                        made 120 days in advance from proposed date of travel.
-                      </p>
-                      <p class="pd">
-                        <strong>II. </strong> For e-Tourist Visa (30 days),
-                        applicants of the eligible countries/territories may
-                        apply online minimum 4 days in advance of the date of
-                        arrival. Such application can be made 30 days in advance
-                        from proposed date of travel.
-                      </p>
-                      <p class="pd">
-                        For updated information please visit
-                        <a href="https://indianvisaonline.gov.in/evisa/"
-                          >https://indianvisaonline.gov.in/evisa/</a
-                        >
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#innerone"
-                      aria-expanded="false"
-                      aria-controls="innerone"
-                    >
-                      Do Infants need E-visa?
-                    </button>
-                  </h2>
-                  <div
-                    id="innerone"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#accordionFlushExample"
-                  >
-                    <div class="accordion-body">
-                      >Yes, all the children need E-visa and a separate
-                      application must be filled for each passport. Please
-                      ensure that your child?s passport is valid at-least for
-                      next 06 (six) months from the date of arrival in India.
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#innerone"
-                      aria-expanded="false"
-                      aria-controls="innerone"
-                    >
-                      If I have valid Indian E-visa, Can I enter India from any
-                      of the entry point?
-                    </button>
-                  </h2>
-                  <div
-                    id="innerone"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#accordionFlushExample"
-                  >
-                    <div class="accordion-body">
-                      <p>
-                        No, you can enter in India through below airports and
-                        sea ports:
-                      </p>
-                      <p>
-                        28 designated Airports i.e. Ahmedabad, Amritsar,
-                        Bagdogra, Bengaluru, Bhubaneshwar, Calicut, Chennai,
-                        Chandigarh, Cochin, Coimbatore, Delhi, Gaya, Goa,
-                        Guwahati, Hyderabad, Jaipur,Kolkata, Lucknow, Madurai,
-                        Mangalore, Mumbai, Nagpur, Port Blair, Pune,
-                        Tiruchirapalli, Trivandrum, Varanasi &amp;
-                        Visakhapatnam, 05 designated seaports (i.e. Cochin, Goa,
-                        Mangalore, Chennai and Mumbai seaports). You may depart
-                        from any of the Indian Immigration Check Posts (ICPs).
-                      </p>
-                      <p>
-                        For updated list please visit
-                        <a href="https://indianvisaonline.gov.in/evisa/"
-                          >https://indianvisaonline.gov.in/evisa/</a
-                        >
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#innerone"
-                      aria-expanded="false"
-                      aria-controls="innerone"
-                    >
-                      What is the validity of Indian E-visa?
-                    </button>
-                  </h2>
-                  <div
-                    id="innerone"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#accordionFlushExample"
-                  >
-                    <div class="accordion-body">
-                      <p>
-                        The validity of e-Visa would be according to the e-Visa
-                        service you have requested in the application form as -
-                      </p>
-                      <p>
-                        For e-Tourist Visa (01 year / 05 years), the validity
-                        would be 365 days / 05 years from the date of grant of
-                        ETA with Multiple entries and continuous stay during
-                        each visit which shall not exceed 90 days except
-                        nationals of USA, UK, Canada and Japan. In case of
-                        nationals of USA, UK, Canada and Japan, continuous stay
-                        during each visit shall not exceed 180 days.
-                      </p>
-                      <p>
-                        For e-Tourist Visa (30 days), the validity would be 30
-                        days from the date of your first arrival in India.
-                        Double entries will be granted within the e-Visa
-                        validity period stamped on your Passport. Your first
-                        arrival must be between the date of issue and expiry of
-                        ETA.
-                      </p>
-                      <p>
-                        For updated list please visit
-                        <a href="#">https://indianvisaonline.gov.in/evisa/</a>
-                      </p>
+                          What currency should I carry while traveling in India?
+                        </button>
+                      </h2>
+                      <div
+                        id="innerone"
+                        class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample"
+                      >
+                        <div class="accordion-body">
+                          ndia's currency is Indian Rupees; it is advisable to
+                          exchange your currency at the airport or any foreign
+                          currency exchange before travelling to India.
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+
             <button
               class="readmore_btn fw-bold collapsed"
               type="button"
@@ -5470,7 +5270,7 @@
         </div>
       </div>
     </section>
-    <div class="quick_links sec_padd">
+    <section class="quick_links sec_padd">
       <div class="container">
         <h4 class="fw-bold mb-0">Quick Links</h4>
         <p class="">These Popular Destinations Have A Lot To Offer</p>
@@ -5581,7 +5381,7 @@
             aria-labelledby="quick-2"
             tabindex="0"
           >
-         <div class="row">
+            <div class="row">
               <div class="col-md-3 col-sm-6 col-6">
                 <ul class="list-unstyled ps-0">
                   <li>
@@ -5641,8 +5441,7 @@
           </div>
         </div>
       </div>
-    </div>
-
+    </section>
     <footer class="">
       <div class="container position-relative">
         <div class="footer_top_contnt position-absolute">
@@ -5818,51 +5617,65 @@
         </p>
       </div>
     </footer>
-
-    <section id="sticky-box" class="sticky-box 
-    ">
+    <section
+      id="sticky-box"
+      class="sticky-box position-fixed bottom-0 bg-white w-100"
+    >
       <div class="container">
-        <ul>
-          <li>
+        <ul
+          class="w-100 text-center d-flex justify-content-center list-unstyled mb-0"
+        >
+          <li class="text-center">
             <a href="#">
-              <img src="./assets/images/india-tour.svg" alt="india tour"   loading="lazy"
-                      decoding="async"
-                      importance="low"/>
+              <img
+                src="./assets/images/india-tour.svg"
+                alt="india tour"
+                loading="lazy"
+                decoding="async"
+                importance="low"
+              />
               <h3>India Tours</h3>
             </a>
           </li>
-          <li>
+          <li class="text-center">
             <a href="#">
               <img
                 src="./assets/images/international-tour.svg"
-                alt="international-tour" loading="lazy"
-                      decoding="async"
-                      importance="low"
+                alt="international-tour"
+                loading="lazy"
+                decoding="async"
+                importance="low"
               />
               <h3>International Tours</h3>
             </a>
           </li>
-          <li>
+          <li class="text-center">
             <a href="#">
               <img
                 src="/assets/images/destinaton-wedding.svg"
-                alt="destinaton-wedding" loading="lazy"
-                      decoding="async"
-                      importance="low"
+                alt="destinaton-wedding"
+                loading="lazy"
+                decoding="async"
+                importance="low"
               />
               <h3>Destination Wedding</h3>
             </a>
           </li>
 
-          <li class="enquire">
-            <a class="cont" href="tel:+91-9212777225">
-             <img
-                  src="./assets/images/phone.png"
-                  alt="phone" loading="lazy"
-                      decoding="async"
-                      importance="low"
-                /> <span class="d-none d-md-inline"
-                > +91-9212777225</span
+          <li class="enquire position-absolute">
+            <a
+              class="cont bg-white d-flex justify-content-center align-items-center d-md-inline-block"
+              href="tel:+91-9212777225"
+            >
+              <img
+                src="./assets/images/phone.png"
+                alt="phone"
+                loading="lazy"
+                decoding="async"
+                importance="low"
+              />
+              <span class="d-none d-md-inline fw-medium">
+                +91-9212777225</span
               ></a
             >
             <a
@@ -5871,12 +5684,15 @@
               data-id="popup_default"
               tabindex="0"
             >
-              <span class="loc">
+              <span
+                class="loc text-center text-white text-capitalize d-block d-md-inline-block"
+              >
                 <img
                   src="./assets/images/plan-location.png"
-                  alt="plan-location" loading="lazy"
-                      decoding="async"
-                      importance="low"
+                  alt="plan-location"
+                  loading="lazy"
+                  decoding="async"
+                  importance="low"
                 />Plan Your trip
               </span>
             </a>
