@@ -1,0 +1,29 @@
+/* .wildlifepackagebanner */
+    .wildlifepackagebanner .wildlifepackagebanner-content p {
+        font-size: 15px;
+    }
+    .wildlifepackagebanner .wildlifepackagebanner-content h2 {
+        font-size: 18px;
+        /* font-size: 65px; */
+    }
+    @media screen and (min-width: 600px) {
+        .wildlifepackagebanner .wildlifepackagebanner-content p {
+            font-size: 22px;
+        }
+        .wildlifepackagebanner .wildlifepackagebanner-content h2 {
+            font-size: 38px;
+        }
+        
+    }
+    @media screen and (min-width: 1200px) {
+        .wildlifepackagebanner .wildlifepackagebanner-content p {
+            font-size: 32px;
+        }
+        .wildlifepackagebanner .wildlifepackagebanner-content h2 {
+            font-size: 65px;
+        }
+        
+    }
+    
+    /* .wildlifepackagebanner  */
+

@@ -20,17 +20,18 @@
     <link href="./assets/css/swiper.min.css" rel="stylesheet" />
     <link href="./assets/css/bootsrap.css" rel="stylesheet" />
 
+    <link rel="stylesheet" href="./assets/css/wildlife.css" />
     <link rel="stylesheet" href="./assets/css/base.css" />
   </head>
   <body>
-    <header class="header-main" >
+    <header class="header-main bg-white position-fixed w-100">
       <div class="d-lg-flex d-none d-flex justify-content-between">
         <div>
-          <a href="/" class="logo">
+          <a href="/" class="logo position-absolute">
             <img src="./assets/images/inner_logo.png" alt="logo" />
           </a>
           <nav class="navigation">
-            <ul class="list-unstyled">
+            <ul class="list-unstyled d-flex align-items-center">
               <li class="dropdown">
                 <a href="#" class="fw-semibold">Destinations</a>
                 <ul class="drop-menu destinations-menu">
@@ -40,33 +41,35 @@
                         <div class="col-md-9">
                           <ul class="list-unstyled p-0">
                             <li>
-                              <h2>North India</h2>
+                              <h2 class="fw-semibold">North India</h2>
                               <ul class="list-unstyled p-0">
                                 <li>
-                                  <a href="#">Rajasthan</a>
+                                  <a href="#" class="p-0">Rajasthan</a>
                                 </li>
                                 <li>
-                                  <a href="#">Rajasthan</a>
+                                  <a href="#" class="p-0">Rajasthan</a>
                                 </li>
                                 <li>
-                                  <a href="#">Rajasthan</a>
+                                  <a href="#" class="p-0">Rajasthan</a>
                                 </li>
                                 <li>
-                                  <a href="#">Rajasthan</a>
+                                  <a href="#" class="p-0">Rajasthan</a>
                                 </li>
                                 <li>
-                                  <a href="#">Rajasthan</a>
+                                  <a href="#" class="p-0">Rajasthan</a>
                                 </li>
 
                                 <li class="more">
-                                  <a href="#"><span>More...</span></a>
+                                  <a href="#" class="p-0"
+                                    ><span>More...</span></a
+                                  >
                                 </li>
                               </ul>
                             </li>
                           </ul>
                         </div>
                         <div class="col-md-3">
-                          <ul>
+                          <ul class="list-unstyled p-0">
                             <li>
                               <a
                                 href="https://www.tourmyindia.com/packages-tour-india/uttarakhand/"
@@ -83,25 +86,34 @@
                   </div>
                 </ul>
               </li>
+             
             </ul>
           </nav>
         </div>
+
         <div class="nav-right">
           <ul class="d-flex list-unstyled gap-3 mb-0">
             <li>
-              <a href="https://www.tourmyindia.com/wedding/"
+              <button class="btn py-0 searchbtn" >
+                <i class="fa-solid fa-magnifying-glass fa-rotate-90"></i>
+              </button>
+            </li>
+            <li>
+              <a href="https://www.tourmyindia.com/wedding/" class="fw-semibold"
                 ><img
                   src="https://www.tourmyindia.com/imgnew/destinaton-wedding.svg"
                   alt="image"
+                  class="img-fluid pe-2"
                 />
                 Destination Weddings</a
               >
             </li>
             <li>
-              <a href="https://www.tourmyindia.com/mice/"
+              <a href="https://www.tourmyindia.com/mice/" class="fw-semibold"
                 ><img
                   src="https://www.tourmyindia.com/imgnew/mics.svg"
                   alt="image"
+                  class="img-fluid pe-2"
                 />MICE</a
               >
             </li>
@@ -109,9 +121,12 @@
         </div>
       </div>
       <div class="d-flex d-lg-none justify-content-end">
-        <a href="#" class="logo">
+        <a href="https://www.tourmyindia.com/" class="logo position-absolute">
           <img src="./assets/images/inner_logo.png" alt="logo" />
         </a>
+         <button class="btn py-0 searchbtn" >
+                <i class="fa-solid fa-magnifying-glass fa-rotate-90"></i>
+              </button>
         <button
           class="navbar-toggler p-0 border-0 collapsed"
           type="button"
@@ -142,9 +157,7 @@
       aria-labelledby="offcanvasWithBothOptionsLabel"
     >
       <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
-          Backdrop with scrolling
-        </h5>
+        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Menu</h5>
         <button
           type="button"
           class="btn-close"
@@ -157,7 +170,7 @@
           <div class="accordion-item">
             <h2 class="accordion-header">
               <button
-                class="accordion-button"
+                class="accordion-button collapsed"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#panelsStayOpen-collapseOne"
@@ -169,25 +182,25 @@
             </h2>
             <div
               id="panelsStayOpen-collapseOne"
-              class="accordion-collapse collapse show"
+              class="accordion-collapse collapse"
             >
               <div class="accordion-body py-0 px-0">
                 <div class="accordion-item">
                   <h2 class="accordion-header">
                     <button
-                      class="accordion-button"
+                      class="accordion-button collapsed"
                       type="button"
                       data-bs-toggle="collapse"
-                      data-bs-target="#inner-collapseOne"
+                      data-bs-target="#inner-collapse-1"
                       aria-expanded="true"
-                      aria-controls="inner-collapseOne"
+                      aria-controls="inner-collapse-1"
                     >
                       Destinations
                     </button>
                   </h2>
                   <div
-                    id="inner-collapseOne"
-                    class="accordion-collapse collapse show"
+                    id="inner-collapse-1"
+                    class="accordion-collapse collapse"
                   >
                     <div class="accordion-body">
                       <ul class="list-unstyled p-0">
@@ -220,100 +233,34 @@
           <div class="accordion-item">
             <h2 class="accordion-header">
               <button
-                class="accordion-button"
+                class="accordion-button collapsed"
                 type="button"
                 data-bs-toggle="collapse"
-                data-bs-target="#panelsStayOpen-collapseOne"
+                data-bs-target="#navacc-2"
                 aria-expanded="true"
-                aria-controls="panelsStayOpen-collapseOne"
+                aria-controls="navacc-2"
               >
                 Destinations
               </button>
             </h2>
-            <div
-              id="panelsStayOpen-collapseOne"
-              class="accordion-collapse collapse show"
-            >
+            <div id="navacc-2" class="accordion-collapse collapse">
               <div class="accordion-body py-0 px-0">
                 <div class="accordion-item">
                   <h2 class="accordion-header">
                     <button
-                      class="accordion-button"
+                      class="accordion-button collapsed"
                       type="button"
                       data-bs-toggle="collapse"
-                      data-bs-target="#inner-collapseOne"
+                      data-bs-target="#inner-collapse-2"
                       aria-expanded="true"
-                      aria-controls="inner-collapseOne"
+                      aria-controls="inner-collapse-2"
                     >
                       Destinations
                     </button>
                   </h2>
                   <div
-                    id="inner-collapseOne"
-                    class="accordion-collapse collapse show"
-                  >
-                    <div class="accordion-body">
-                      <ul class="list-unstyled p-0">
-                        <li>
-                          <a href="#">Rajasthan</a>
-                        </li>
-                        <li>
-                          <a href="#">Rajasthan</a>
-                        </li>
-                        <li>
-                          <a href="#">Rajasthan</a>
-                        </li>
-                        <li>
-                          <a href="#">Rajasthan</a>
-                        </li>
-                        <li>
-                          <a href="#">Rajasthan</a>
-                        </li>
-
-                        <li class="more">
-                          <a href="#"><span>More...</span></a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#panelsStayOpen-collapseOne"
-                aria-expanded="true"
-                aria-controls="panelsStayOpen-collapseOne"
-              >
-                Destinations
-              </button>
-            </h2>
-            <div
-              id="panelsStayOpen-collapseOne"
-              class="accordion-collapse collapse show"
-            >
-              <div class="accordion-body py-0 px-0">
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button
-                      class="accordion-button"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#inner-collapseOne"
-                      aria-expanded="true"
-                      aria-controls="inner-collapseOne"
-                    >
-                      Destinations
-                    </button>
-                  </h2>
-                  <div
-                    id="inner-collapseOne"
-                    class="accordion-collapse collapse show"
+                    id="inner-collapse-2"
+                    class="accordion-collapse collapse"
                   >
                     <div class="accordion-body">
                       <ul class="list-unstyled p-0">
@@ -346,43 +293,60 @@
         </div>
       </div>
     </div>
-    <section
-      class="hero d-flex align-items-end pb-5"
-      style="background-image: url(./assets/images/wildlifebanner.webp)"
-    >
-      <div class="container">
-        <div class="row justify-content-lg-center">
-          <div class="col-md-7">
-            <div class="home-page">
-              <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                  <li class="breadcrumb-item"><a href="#">Home</a></li>
-                  <li
-                    class="breadcrumb-item active text-white"
-                    aria-current="page"
-                  >
-                    Wildlife Sanctuaries in India
-                  </li>
-                </ol>
-              </nav>
-              <h1 class="text-white fw-semibold">
-                Wildlife Sanctuaries in India
-              </h1>
+
+    <section class="destinaton_herosec position-relative padding_top">
+      <div div class="container-fluid p-0">
+        <div>
+          <img
+            src="./assets/images/wildlifebanner.webp"
+            alt="wildlifebanner"
+            class="w-100 flt-br8 destinaton_herosec_img object-fit-cover"
+          />
+        </div>
+      </div>
+      <div
+        class="position-absolute top-50 start-50 translate-middle home-page_wraper"
+      >
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="home-page">
+                <nav
+                  style="--bs-breadcrumb-divider: '>'"
+                  aria-label="breadcrumb"
+                >
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li
+                      class="breadcrumb-item active text-white"
+                      aria-current="page"
+                    >
+                      Wildlife Sanctuaries in India
+                    </li>
+                  </ol>
+                </nav>
+                <h1 class="text-white fw-semibold">
+                  Wildlife Sanctuaries in India
+                </h1>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="parks">
+
+    <section class="parks sec_padd">
       <div class="container">
-        <div class="row justify-content-between border-bottom pb-5">
-          <div class="col-lg-5 col-md-12 col-12">
+        <div class="row justify-content-between border-bottom pb-5 gy-4">
+          <div class="col-lg-6">
             <div class="park-page">
-              <h3>Wildlife Sanctuaries & National Parks in India</h3>
+              <h3 class="fw-semibold">
+                Wildlife Sanctuaries & National Parks in India
+              </h3>
               <a href="" class="readbtn">Read more</a>
             </div>
           </div>
-          <div class="col-lg-6 col-md-12 col-12">
+          <div class="col-lg-6">
             <p class="">
               The wildlife of India is diverse and its national parks and
               biosphere reserves are home to many endangered wildlife species
@@ -416,35 +380,150 @@
     <section class="popular">
       <div class="container">
         <div class="main-heading">
-          
           <h2>Popular National Parks in India</h2>
         </div>
-        <a href="" class="readbtn">views more</a>
-        <div class="swiper mySwiper popularSlider">
+        <a href="" class="readbtn mt-4"> view more </a>
+
+        <div class="swiper mySwiper itemsfiveSlider topbtn_slider">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <img src="./assets/images/luxurytrainsec.webp" alt="lion" class="img-fluid" />
-              <div>
+              <div class="">
+                <a href="">
+                  <img
+                    src="./assets/images/ranthamborenp.webp"
+                    alt="lion"
+                    class="img-fluid flt-br8 br_5"
+                    loading="lazy"
+                    decoding="async"
+                    importance="low"
+                  />
+                </a>
                 <h5>
-                  Panna National<br />
-                  Park
+                  <a href="" class="common-hover">Ranthambore National Park</a>
                 </h5>
               </div>
             </div>
             <div class="swiper-slide">
-              <img
-                src="./assets/images/rajasthanpackage.webp"
-                alt="lion"
-                class="img-fluid"
-              />
-              <div>
+              <div class="">
+                <a href="">
+                  <img
+                    src="./assets/images/ranthamborenp.webp"
+                    alt="lion"
+                    class="img-fluid flt-br8 br_5"
+                    loading="lazy"
+                    decoding="async"
+                    importance="low"
+                  />
+                </a>
                 <h5>
-                  Panna National<br />
-                  Park
+                  <a href="" class="common-hover">Ranthambore National Park</a>
                 </h5>
               </div>
             </div>
-          
+            <div class="swiper-slide">
+              <div class="">
+                <a href="">
+                  <img
+                    src="./assets/images/ranthamborenp.webp"
+                    alt="lion"
+                    class="img-fluid flt-br8 br_5"
+                    loading="lazy"
+                    decoding="async"
+                    importance="low"
+                  />
+                </a>
+                <h5>
+                  <a href="" class="common-hover">Jim Corbett National Park</a>
+                </h5>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="">
+                <a href="">
+                  <img
+                    src="./assets/images/corbettnp.webp"
+                    alt="lion"
+                    class="img-fluid flt-br8 br_5"
+                    loading="lazy"
+                    decoding="async"
+                    importance="low"
+                  />
+                </a>
+                <h5>
+                  <a href="" class="common-hover">Bandhavgarh National Park</a>
+                </h5>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="">
+                <a href="">
+                  <img
+                    src="./assets/images/kanhanp.webp"
+                    alt="lion"
+                    class="img-fluid flt-br8 br_5"
+                    loading="lazy"
+                    decoding="async"
+                    importance="low"
+                  />
+                </a>
+                <h5><a href="" class="common-hover">Kanha National Park</a></h5>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="">
+                <a href="">
+                  <img
+                    src="./assets/images/pannanp.webp"
+                    alt="lion"
+                    class="img-fluid flt-br8 br_5"
+                    loading="lazy"
+                    decoding="async"
+                    importance="low"
+                  />
+                </a>
+                <h5>
+                  <a href="" class="common-hover">Ranthambore National Park</a>
+                </h5>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="">
+                <a href="">
+                  <img
+                    src="./assets/images/penchnp.webp"
+                    alt="lion"
+                    class="img-fluid flt-br8 br_5"
+                    loading="lazy"
+                    decoding="async"
+                    importance="low"
+                  />
+                </a>
+                <h5>
+                  <a href="" class="common-hover"
+                    >Panna National<br />
+                    Park</a
+                  >
+                </h5>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <a href="">
+                <img
+                  src="./assets/images/corbettnp.webp"
+                  alt="lion"
+                  class="img-fluid flt-br8 br_5"
+                  loading="lazy"
+                  decoding="async"
+                  importance="low"
+                />
+              </a>
+
+              <div>
+                <h5>
+                  <a href="" class="common-hover">Jim Corbett National Park</a>
+                </h5>
+              </div>
+            </div>
           </div>
           <div class="swiper-button-next">
             <i class="fas fa-long-arrow-alt-right"></i>
@@ -456,20 +535,26 @@
       </div>
     </section>
 
-    <section class="state">
+    <section class="state sec_padd">
       <div class="container">
-        <h2>Popular National Parks in India</h2>
+        <div class="main-heading">
+          <h2>Popular National Parks in India</h2>
+        </div>
         <div class="">
-          <ul class="nav nav-tabs custom_tabs" id="myTab" role="tablist">
+          <ul
+            class="nav nav-tabs custom_tabs flex-nowrap overflow-x-auto overflow-y-hidden"
+            id="myTab"
+            role="tablist"
+          >
             <li class="nav-item" role="presentation">
               <button
                 class="nav-link active"
-                id="home-tab"
+                id="india-1"
                 data-bs-toggle="tab"
-                data-bs-target="#home-tab-pane"
+                data-bs-target="#india-1-pane"
                 type="button"
                 role="tab"
-                aria-controls="home-tab-pane"
+                aria-controls="india-1-pane"
                 aria-selected="true"
               >
                 North India
@@ -478,12 +563,12 @@
             <li class="nav-item" role="presentation">
               <button
                 class="nav-link"
-                id="profile-tab"
+                id="india-2"
                 data-bs-toggle="tab"
-                data-bs-target="#profile-tab-pane"
+                data-bs-target="#india-2-pane"
                 type="button"
                 role="tab"
-                aria-controls="profile-tab-pane"
+                aria-controls="india-2-pane"
                 aria-selected="false"
               >
                 South India
@@ -492,12 +577,12 @@
             <li class="nav-item" role="presentation">
               <button
                 class="nav-link"
-                id="contact-tab"
+                id="india-3"
                 data-bs-toggle="tab"
-                data-bs-target="#contact-tab-pane"
+                data-bs-target="#india-3-pane"
                 type="button"
                 role="tab"
-                aria-controls="contact-tab-pane"
+                aria-controls="india-3-pane"
                 aria-selected="false"
               >
                 East India
@@ -506,12 +591,12 @@
             <li class="nav-item" role="presentation">
               <button
                 class="nav-link"
-                id="contact-tab"
+                id="india-4"
                 data-bs-toggle="tab"
-                data-bs-target="#contact-tab-pane"
+                data-bs-target="#india-4-pane"
                 type="button"
                 role="tab"
-                aria-controls="contact-tab-pane"
+                aria-controls="india-4-pane"
                 aria-selected="false"
               >
                 West India
@@ -520,30 +605,32 @@
             <li class="nav-item" role="presentation">
               <button
                 class="nav-link"
-                id="contact-tab"
+                id="india-5"
                 data-bs-toggle="tab"
-                data-bs-target="#contact-tab-pane"
+                data-bs-target="#india-5-pane"
                 type="button"
                 role="tab"
-                aria-controls="contact-tab-pane"
+                aria-controls="india-5-pane"
                 aria-selected="false"
               >
-                East India
+                central India
               </button>
             </li>
           </ul>
           <div class="tab-content" id="myTabContent">
             <div
               class="tab-pane fade show active"
-              id="home-tab-pane"
+              id="india-1-pane"
               role="tabpanel"
-              aria-labelledby="home-tab"
+              aria-labelledby="india-1"
               tabindex="0"
             >
               <div class="state-page">
-                <div class="row">
+                <div class="row gy-4">
                   <div class="col-md-5">
-                    <h4>Wildlife Reserves in North India</h4>
+                    <h4 class="fw-semibold">
+                      Wildlife Reserves in North India
+                    </h4>
                     <p>
                       Blessed with rich biodiversity, the region boasts renowned
                       wildlife havens like Jim Corbett, Rajaji National Park,
@@ -556,63 +643,145 @@
                       wildlife roam freely in their natural habitat in Northern
                       India's wildlife reserves.
                     </p>
+                    <a href="" class="readbtn"> view more</a>
                   </div>
                   <div class="col-md-7">
-                    <div class="row">
+                    <div class="row gx-md-5 gy-4">
                       <div class="col-md-4">
-                        <a href="">
+                        <div class="float-content-wraper">
                           <img
-                            src="assets/images/ranthambore.webp"
-                            alt=""
-                            class="img-fluid"
+                            src="./assets/images/corbettnorth.webp"
+                            alt="luxurytrainsec"
+                            class="img-fluid br_5"
+                            loading="lazy"
+                            decoding="async"
+                            importance="low"
+                            loading="lazy"
+                            decoding="async"
+                            importance="low"
                           />
-                        </a>
-                      </div>
-                      <div class="col-md-4">
-                        <a href="">
-                          <img
-                            src="assets/images/sariskanorth.webp"
-                            alt=""
-                            class="img-fluid"
-                          />
-                        </a>
-                      </div>
-                      <div class="col-md-4">
-                        <a href="">
-                          <img
-                            src="assets/images/jim.webp"
-                            alt=""
-                            class="img-fluid"
-                          />
-                        </a>
+
+                          <div class="content-wraper">
+                            <a href="" class="common-hover">
+                              Jim Corbett National Park
+                            </a>
+                            <p class="text-white">Uttarakhand</p>
+                          </div>
+                        </div>
                       </div>
 
                       <div class="col-md-4">
-                        <a href="">
+                        <div class="float-content-wraper">
                           <img
-                            src="assets/images/keoladeonorth.webp"
-                            alt=""
-                            class="img-fluid"
+                            src="./assets/images/ranthamborenorth.webp"
+                            alt="luxurytrainsec"
+                            class="img-fluid br_5"
+                            loading="lazy"
+                            decoding="async"
+                            importance="low"
+                            loading="lazy"
+                            decoding="async"
+                            importance="low"
                           />
-                        </a>
+
+                          <div class="content-wraper">
+                            <a href="" class="common-hover">
+                              Ranthambore National Park
+                            </a>
+                            <p class="text-white">Rajasthan</p>
+                          </div>
+                        </div>
                       </div>
                       <div class="col-md-4">
-                        <a href="">
+                        <div class="float-content-wraper">
                           <img
-                            src="assets/images/dudhwanorth.webp"
-                            alt=""
-                            class="img-fluid"
+                            src="./assets/images/sariskanorth.webp"
+                            alt="luxurytrainsec"
+                            class="img-fluid br_5"
+                            loading="lazy"
+                            decoding="async"
+                            importance="low"
+                            loading="lazy"
+                            decoding="async"
+                            importance="low"
                           />
-                        </a>
+
+                          <div class="content-wraper">
+                            <a href="" class="common-hover">
+                              Sariska <br />National Park
+                            </a>
+                            <p class="text-white">Rajasthan</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row gx-md-5 gy-4 mt-3">
+                      <div class="col-md-4">
+                        <div class="float-content-wraper">
+                          <img
+                            src="./assets/images/keoladeonorth.webp"
+                            alt="luxurytrainsec"
+                            class="img-fluid br_5"
+                            loading="lazy"
+                            decoding="async"
+                            importance="low"
+                            loading="lazy"
+                            decoding="async"
+                            importance="low"
+                          />
+
+                          <div class="content-wraper">
+                            <a href="" class="common-hover">
+                              Keoladeo <br />National Park
+                            </a>
+                            <p class="text-white">Rajasthan</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <div class="float-content-wraper">
+                          <img
+                            src="./assets/images/dudhwanorth.webp"
+                            alt="luxurytrainsec"
+                            class="img-fluid br_5"
+                            loading="lazy"
+                            decoding="async"
+                            importance="low"
+                            loading="lazy"
+                            decoding="async"
+                            importance="low"
+                          />
+
+                          <div class="content-wraper">
+                            <a href="" class="common-hover">
+                              Dudhwa <br />National Park
+                            </a>
+                            <p class="text-white">Uttar Pradesh</p>
+                          </div>
+                        </div>
                       </div>
                       <div class="col-md-4">
-                        <a href="">
+                        <div class="float-content-wraper">
                           <img
-                            src="assets/images/rajajinorth.webp"
-                            alt=""
-                            class="img-fluid"
+                            src="./assets/images/rajajinorth.webp"
+                            alt="luxurytrainsec"
+                            class="img-fluid br_5"
+                            loading="lazy"
+                            decoding="async"
+                            importance="low"
+                            loading="lazy"
+                            decoding="async"
+                            importance="low"
                           />
-                        </a>
+
+                          <div class="content-wraper">
+                            <a href="" class="common-hover">
+                              Rajaji <br />National Park
+                            </a>
+                            <p class="text-white">Uttarakhand</p>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -621,64 +790,3750 @@
             </div>
             <div
               class="tab-pane"
-              id="profile-tab-pane"
+              id="india-2-pane"
               role="tabpanel"
-              aria-labelledby="profile-tab"
+              aria-labelledby="india-2"
               tabindex="0"
             >
-              ...
+              <div class="state-page">
+                <div class="row">
+                  <div class="col-md-5">
+                    <h4 class="fw-semibold">
+                      Wildlife Reserves in South India
+                    </h4>
+                    <p>
+                      From the dense forests of Bandipur and Nagarhole to the
+                      picturesque landscapes of Periyar and Madumalai, Southern
+                      India's wildlife sanctuaries offer an incredible wildlife
+                      jungle safari experience amidst diverse flora and fauna.
+                      Dandeli, with its riverine habitats, adds a unique
+                      dimension to the adventure. Eravikulam, adorned with
+                      rolling hills, unveils the charm of the Nilgiri Tahr.
+                      Southern India's wildlife is a haven for nature
+                      enthusiasts, where every reserve narrates a story of
+                      conservation.
+                    </p>
+                    <a href="" class="readbtn"> view more</a>
+                  </div>
+                  <div class="col-md-7">
+                    <div class="row gx-md-5 gy-4">
+                      <div class="col-md-4">
+                        <div class="float-content-wraper">
+                          <img
+                            src="./assets/images/bandipursouth.webp"
+                            alt="luxurytrainsec"
+                            class="img-fluid br_5"
+                            loading="lazy"
+                            decoding="async"
+                            importance="low"
+                            loading="lazy"
+                            decoding="async"
+                            importance="low"
+                          />
+
+                          <div class="content-wraper">
+                            <a href="" class="common-hover">
+                              Bandipur<br />
+                              National Park
+                            </a>
+                            <p class="text-white">Karnataka</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <div class="float-content-wraper">
+                          <img
+                            src="./assets/images/nagarholesouth.webp"
+                            alt="luxurytrainsec"
+                            class="img-fluid br_5"
+                            loading="lazy"
+                            decoding="async"
+                            importance="low"
+                            loading="lazy"
+                            decoding="async"
+                            importance="low"
+                          />
+
+                          <div class="content-wraper">
+                            <a href="" class="common-hover">
+                              Nagarhole <br />National Park
+                            </a>
+                            <p class="text-white">Karnataka</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="float-content-wraper">
+                          <img
+                            src="./assets/images/periyarsouth.webp"
+                            alt="luxurytrainsec"
+                            class="img-fluid br_5"
+                            loading="lazy"
+                            decoding="async"
+                            importance="low"
+                            loading="lazy"
+                            decoding="async"
+                            importance="low"
+                          />
+
+                          <div class="content-wraper">
+                            <a href="" class="common-hover">
+                              Periyar <br />National Park
+                            </a>
+                            <p class="text-white">Kerela</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row gx-md-5 gy-4 mt-3">
+                      <div class="col-md-4">
+                        <div class="float-content-wraper">
+                          <img
+                            src="./assets/images/mudumalaisouth.webp"
+                            alt="luxurytrainsec"
+                            class="img-fluid br_5"
+                            loading="lazy"
+                            decoding="async"
+                            importance="low"
+                            loading="lazy"
+                            decoding="async"
+                            importance="low"
+                          />
+
+                          <div class="content-wraper">
+                            <a href="" class="common-hover">
+                              Mudumalai <br />National Park
+                            </a>
+                            <p class="text-white">Tamil Nadu</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <div class="float-content-wraper">
+                          <img
+                            src="./assets/images/eravikulamsouth.webp"
+                            alt="luxurytrainsec"
+                            class="img-fluid br_5"
+                            loading="lazy"
+                            decoding="async"
+                            importance="low"
+                            loading="lazy"
+                            decoding="async"
+                            importance="low"
+                          />
+
+                          <div class="content-wraper">
+                            <a href="" class="common-hover">
+                              Eravikulam<br />
+                              National Park
+                            </a>
+                            <p class="text-white">Kerela</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="float-content-wraper">
+                          <img
+                            src="./assets/images/dandelisouth.webp"
+                            alt="luxurytrainsec"
+                            class="img-fluid br_5"
+                            loading="lazy"
+                            decoding="async"
+                            importance="low"
+                            loading="lazy"
+                            decoding="async"
+                            importance="low"
+                          />
+
+                          <div class="content-wraper">
+                            <a href="" class="common-hover">
+                              Dandeli <br />National Park
+                            </a>
+                            <p class="text-white">Karnataka</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
             <div
               class="tab-pane"
-              id="contact-tab-pane"
+              id="india-3-pane"
               role="tabpanel"
-              aria-labelledby="contact-tab"
+              aria-labelledby="india-3"
               tabindex="0"
             >
-              ...
+              <div class="state-page">
+                <div class="row">
+                  <div class="col-md-5">
+                    <h4 class="fw-semibold">Wildlife Reserves in East India</h4>
+                    <p>
+                      The eastern part of India is an enchanting wildlife
+                      exploration destination and is home to a biodiversity-rich
+                      haven fostering conservation efforts and diverse
+                      ecosystems. Home to popular national parks and wildlife
+                      sanctuaries, East India boasts treasures like Kaziranga,
+                      renowned for rhino conservation, and Sunderbans National
+                      Park in West Bengal, where the mangrove expanse teems with
+                      life. Assam's Orang and Manas add to the region's allure,
+                      sheltering elephants and a myriad of flora and fauna. East
+                      India's wildlife narrative unfolds amidst lush landscapes,
+                      echoing with the trumpets of elephants and the majestic
+                      presence of rhinos.
+                    </p>
+                    <a href="" class="readbtn"> view more</a>
+                  </div>
+                  <div class="col-md-7">
+                    <div class="row gx-md-5 gy-4">
+                      <div class="col-md-4">
+                        <div class="float-content-wraper">
+                          <img
+                            src="./assets/images/kazirangaeast.webp"
+                            alt="luxurytrainsec"
+                            class="img-fluid br_5"
+                            loading="lazy"
+                            decoding="async"
+                            importance="low"
+                            loading="lazy"
+                            decoding="async"
+                            importance="low"
+                          />
+
+                          <div class="content-wraper">
+                            <a href="" class="common-hover">
+                              Kaziranga<br />
+                              National Park
+                            </a>
+                            <p class="text-white">Assam</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <div class="float-content-wraper">
+                          <img
+                            src="./assets/images/manaseast.webp"
+                            alt="luxurytrainsec"
+                            class="img-fluid br_5"
+                            loading="lazy"
+                            decoding="async"
+                            importance="low"
+                            loading="lazy"
+                            decoding="async"
+                            importance="low"
+                          />
+
+                          <div class="content-wraper">
+                            <a href="" class="common-hover">
+                              Manas <br />National Park
+                            </a>
+                            <p class="text-white">Assam</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="float-content-wraper">
+                          <img
+                            src="./assets/images/sundarbaneast.webp"
+                            alt="luxurytrainsec"
+                            class="img-fluid br_5"
+                            loading="lazy"
+                            decoding="async"
+                            importance="low"
+                            loading="lazy"
+                            decoding="async"
+                            importance="low"
+                          />
+
+                          <div class="content-wraper">
+                            <a href="" class="common-hover">
+                              Sundarban <br />National Park
+                            </a>
+                            <p class="text-white">West Bengal</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row gx-md-5 gy-4 mt-3">
+                      <div class="col-md-4">
+                        <div class="float-content-wraper">
+                          <img
+                            src="./assets/images/orangeast.webp"
+                            alt="luxurytrainsec"
+                            class="img-fluid br_5"
+                            loading="lazy"
+                            decoding="async"
+                            importance="low"
+                            loading="lazy"
+                            decoding="async"
+                            importance="low"
+                          />
+
+                          <div class="content-wraper">
+                            <a href="" class="common-hover">
+                              Orang <br />National Park
+                            </a>
+                            <p class="text-white">Assam</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <div class="float-content-wraper">
+                          <img
+                            src="./assets/images/namdaphaeast.webp"
+                            alt="luxurytrainsec"
+                            class="img-fluid br_5"
+                            loading="lazy"
+                            decoding="async"
+                            importance="low"
+                            loading="lazy"
+                            decoding="async"
+                            importance="low"
+                          />
+
+                          <div class="content-wraper">
+                            <a href="" class="common-hover">
+                              Namdapha<br />
+                              National Park
+                            </a>
+                            <p class="text-white">Assam</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="float-content-wraper">
+                          <img
+                            src="./assets/images/namerieast.webp"
+                            alt="luxurytrainsec"
+                            class="img-fluid br_5"
+                            loading="lazy"
+                            decoding="async"
+                            importance="low"
+                            loading="lazy"
+                            decoding="async"
+                            importance="low"
+                          />
+
+                          <div class="content-wraper">
+                            <a href="" class="common-hover">
+                              Nameri<br />
+                              National Park
+                            </a>
+                            <p class="text-white">Karnataka</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane"
+              id="india-4-pane"
+              role="tabpanel"
+              aria-labelledby="india-4"
+              tabindex="0"
+            >
+              <div class="state-page">
+                <div class="row">
+                  <div class="col-md-5">
+                    <h4 class="fw-semibold">Wildlife Reserves in West India</h4>
+                    <p>
+                      The diverse and vibrant wildlife is found in the wildlife
+                      reserves of Western India. Maharashtra boasts the thriving
+                      Tadoba, a jewel in West India's wildlife crown, while
+                      Gujarat hosts the iconic Gir National Park, home to the
+                      majestic Asiatic lions. The enchanting Nagzira Wildlife
+                      Sanctuary in Maharashtra and the Pench Tiger Reserve offer
+                      glimpses into the rich flora and fauna of Western India.
+                      From the royal lions of Gir to the elusive tigers of
+                      Tadoba, West India's wildlife beckons, inviting
+                      enthusiasts to explore its unique landscapes and
+                      contribute to the conservation of these precious
+                      ecosystems.
+                    </p>
+                    <a href="" class="readbtn"> view more</a>
+                  </div>
+                  <div class="col-md-7">
+                    <div class="row gx-md-5 gy-4">
+                      <div class="col-md-4">
+                        <div class="float-content-wraper">
+                          <img
+                            src="./assets/images/corbettnorth.webp"
+                            alt="luxurytrainsec"
+                            class="img-fluid br_5"
+                            loading="lazy"
+                            decoding="async"
+                            importance="low"
+                            loading="lazy"
+                            decoding="async"
+                            importance="low"
+                          />
+
+                          <div class="content-wraper">
+                            <a href="" class="common-hover">
+                              Jim Corbett National Park
+                            </a>
+                            <p class="text-white">Uttarakhand</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <div class="float-content-wraper">
+                          <img
+                            src="./assets/images/ranthamborenorth.webp"
+                            alt="luxurytrainsec"
+                            class="img-fluid br_5"
+                            loading="lazy"
+                            decoding="async"
+                            importance="low"
+                            loading="lazy"
+                            decoding="async"
+                            importance="low"
+                          />
+
+                          <div class="content-wraper">
+                            <a href="" class="common-hover">
+                              Ranthambore National Park
+                            </a>
+                            <p class="text-white">Rajasthan</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="float-content-wraper">
+                          <img
+                            src="./assets/images/sariskanorth.webp"
+                            alt="luxurytrainsec"
+                            class="img-fluid br_5"
+                            loading="lazy"
+                            decoding="async"
+                            importance="low"
+                            loading="lazy"
+                            decoding="async"
+                            importance="low"
+                          />
+
+                          <div class="content-wraper">
+                            <a href="" class="common-hover">
+                              Sariska<br />
+                              National Park
+                            </a>
+                            <p class="text-white">Rajasthan</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row gx-md-5 gy-4 mt-3">
+                      <div class="col-md-4">
+                        <div class="float-content-wraper">
+                          <img
+                            src="./assets/images/keoladeonorth.webp"
+                            alt="luxurytrainsec"
+                            class="img-fluid br_5"
+                            loading="lazy"
+                            decoding="async"
+                            importance="low"
+                            loading="lazy"
+                            decoding="async"
+                            importance="low"
+                          />
+
+                          <div class="content-wraper">
+                            <a href="" class="common-hover">
+                              Keoladeo<br />
+                              National Park
+                            </a>
+                            <p class="text-white">Rajasthan</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <div class="float-content-wraper">
+                          <img
+                            src="./assets/images/dudhwanorth.webp"
+                            alt="luxurytrainsec"
+                            class="img-fluid br_5"
+                            loading="lazy"
+                            decoding="async"
+                            importance="low"
+                            loading="lazy"
+                            decoding="async"
+                            importance="low"
+                          />
+
+                          <div class="content-wraper">
+                            <a href="" class="common-hover">
+                              Dudhwa <br />National Park
+                            </a>
+                            <p class="text-white">Uttar Pradesh</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="float-content-wraper">
+                          <img
+                            src="./assets/images/rajajinorth.webp"
+                            alt="luxurytrainsec"
+                            class="img-fluid br_5"
+                            loading="lazy"
+                            decoding="async"
+                            importance="low"
+                            loading="lazy"
+                            decoding="async"
+                            importance="low"
+                          />
+
+                          <div class="content-wraper">
+                            <a href="" class="common-hover">
+                              Rajaji <br />National Park
+                            </a>
+                            <p class="text-white">Uttarakhand</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane"
+              id="india-5-pane"
+              role="tabpanel"
+              aria-labelledby="india-5"
+              tabindex="0"
+            >
+              <div class="state-page">
+                <div class="row">
+                  <div class="col-md-5">
+                    <h4 class="fw-semibold">
+                      Wildlife Reserves in Central India
+                    </h4>
+                    <p>
+                      Internationally renowned as the 'Heart of Incredible
+                      India,' the central region, primarily Madhya Pradesh,
+                      stands as the most popular wildlife treasure getaway.
+                      Recognized as the 'tiger state,' Central India boasts
+                      incredible flora and fauna diversity, with its crown
+                      jewels being Kanha, Panna, Pench, and Bandhavgarh,
+                      renowned for their thriving tiger populations. Recently,
+                      cheetahs were relocated from Namibia and South Africa to
+                      Kuno National Park, making it the best place for cheetah
+                      sightings in India. Madhya Pradesh's central landscapes
+                      offer a unique blend of biodiversity, making it a prime
+                      destination for wildlife enthusiasts seeking a mesmerizing
+                      experience with nature's majestic creatures amid pristine
+                      forests and rolling hills.
+                    </p>
+                    <a href="" class="readbtn"> view more</a>
+                  </div>
+                  <div class="col-md-7">
+                    <div class="row gx-md-5 gy-4">
+                      <div class="col-md-4">
+                        <div class="float-content-wraper">
+                          <img
+                            src="./assets/images/kazirangaeast.webp"
+                            alt="luxurytrainsec"
+                            class="img-fluid br_5"
+                            loading="lazy"
+                            decoding="async"
+                            importance="low"
+                            loading="lazy"
+                            decoding="async"
+                            importance="low"
+                          />
+
+                          <div class="content-wraper">
+                            <a href="" class="common-hover">
+                              Kaziranga <br />National Park
+                            </a>
+                            <p class="text-white">Assam</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <div class="float-content-wraper">
+                          <img
+                            src="./assets/images/manaseast.webp"
+                            alt="luxurytrainsec"
+                            class="img-fluid br_5"
+                            loading="lazy"
+                            decoding="async"
+                            importance="low"
+                            loading="lazy"
+                            decoding="async"
+                            importance="low"
+                          />
+
+                          <div class="content-wraper">
+                            <a href="" class="common-hover">
+                              Manas <br />National Park
+                            </a>
+                            <p class="text-white">Assam</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="float-content-wraper">
+                          <img
+                            src="./assets/images/sundarbaneast.webp"
+                            alt="luxurytrainsec"
+                            class="img-fluid br_5"
+                            loading="lazy"
+                            decoding="async"
+                            importance="low"
+                            loading="lazy"
+                            decoding="async"
+                            importance="low"
+                          />
+
+                          <div class="content-wraper">
+                            <a href="" class="common-hover">
+                              Sundarban<br />
+                              National Park
+                            </a>
+                            <p class="text-white">West Bengal</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row gx-md-5 gy-4 mt-3">
+                      <div class="col-md-4">
+                        <div class="float-content-wraper">
+                          <img
+                            src="./assets/images/orangeast.webp"
+                            alt="luxurytrainsec"
+                            class="img-fluid br_5"
+                            loading="lazy"
+                            decoding="async"
+                            importance="low"
+                            loading="lazy"
+                            decoding="async"
+                            importance="low"
+                          />
+
+                          <div class="content-wraper">
+                            <a href="" class="common-hover">
+                              Orang<br />
+                              National Park
+                            </a>
+                            <p class="text-white">Assam</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <div class="float-content-wraper">
+                          <img
+                            src="./assets/images/namdaphaeast.webp"
+                            alt="luxurytrainsec"
+                            class="img-fluid br_5"
+                            loading="lazy"
+                            decoding="async"
+                            importance="low"
+                            loading="lazy"
+                            decoding="async"
+                            importance="low"
+                          />
+
+                          <div class="content-wraper">
+                            <a href="" class="common-hover">
+                              Namdapha <br />National Park
+                            </a>
+                            <p class="text-white">Assam</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="float-content-wraper">
+                          <img
+                            src="./assets/images/namerieast.webp"
+                            alt="luxurytrainsec"
+                            class="img-fluid br_5"
+                            loading="lazy"
+                            decoding="async"
+                            importance="low"
+                            loading="lazy"
+                            decoding="async"
+                            importance="low"
+                          />
+
+                          <div class="content-wraper">
+                            <a href="" class="common-hover">
+                              Nameri <br />National Park
+                            </a>
+                            <p class="text-white">Karnataka</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section id="sticky-box" class="sticky-box d-none">
+    <section class="package sec_padd bg_lightpink">
       <div class="container">
-        <ul>
-          <li>
-            <a href="https://www.tourmyindia.com/packagetours.html">
+        <div class="main-heading">
+          <h2>Popular Wildlife Tour Packages</h2>
+        </div>
+        <a href="" class="readbtn mt-4"> view more </a>
+        <div class="package_content">
+          <div class="swiper mySwiper itemsfiveSlider topbtn_slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href=""
+                  ><img
+                    src="./assets/images/indiatiger1.webp"
+                    alt="lion"
+                    class="img-fluid"
+                    loading="lazy"
+                    decoding="async"
+                    importance="low"
+                /></a>
+
+                <div class="pt-3">
+                  <span>13 Nights - 14 Days</span>
+                  <h5><a href="" class="common-hover">India Tiger Tour</a></h5>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <a href="">
+                  <img
+                    src="./assets/images/goldentiger1.webp"
+                    alt="lion"
+                    class="img-fluid"
+                    loading="lazy"
+                    decoding="async"
+                    importance="low"
+                /></a>
+
+                <div class="pt-3">
+                  <span>13 Nights - 14 Days</span>
+                  <h5>
+                    <a href="" class="common-hover"
+                      >Golden Triangle with Tigers</a
+                    >
+                  </h5>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <a href="">
+                  <img
+                    src="./assets/images/rhinotiger.webp"
+                    alt="lion"
+                    class="img-fluid"
+                    loading="lazy"
+                    decoding="async"
+                    importance="low"
+                  />
+                </a>
+
+                <div class="pt-3">
+                  <span>13 Nights - 14 Days</span>
+                  <h5 class="fw-semibold">
+                    <a href="" class="common-hover">Rhino & Tigers Tour</a>
+                  </h5>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <a href="">
+                  <img
+                    src="./assets/images/tigersafari1.webp"
+                    alt="lion"
+                    class="img-fluid"
+                    loading="lazy"
+                    decoding="async"
+                    importance="low"
+                  />
+                </a>
+
+                <div class="pt-3">
+                  <span>13 Nights - 14 Days</span>
+                  <h5>
+                    <a href="" class="common-hover">Tiger Safari Expedition</a>
+                  </h5>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <a href="">
+                  <img
+                    src="./assets/images/corbettsafari.webp"
+                    alt="lion"
+                    class="img-fluid"
+                    loading="lazy"
+                    decoding="async"
+                    importance="low"
+                  />
+                </a>
+
+                <div class="pt-3">
+                  <span>13 Nights - 14 Days</span>
+                  <h5><a href="" class="common-hover">Corbett Safari</a></h5>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <a href="">
+                  <img
+                    src="./assets/images/corbettsafari.webp"
+                    alt="lion"
+                    class="img-fluid"
+                    loading="lazy"
+                    decoding="async"
+                    importance="low"
+                  />
+                </a>
+
+                <div class="pt-3">
+                  <span>13 Nights - 14 Days</span>
+                  <h5><a href="" class="common-hover">Corbett Safari</a></h5>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <a href="">
+                  <img
+                    src="./assets/images/corbettsafari.webp"
+                    alt="lion"
+                    class="img-fluid"
+                    loading="lazy"
+                    decoding="async"
+                    importance="low"
+                  />
+                </a>
+
+                <div class="pt-3">
+                  <span>13 Nights - 14 Days</span>
+                  <h5><a href="" class="common-hover">Corbett Safari</a></h5>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next">
+              <i class="fas fa-long-arrow-alt-right"></i>
+            </div>
+            <div class="swiper-button-prev">
+              <i class="fas fa-long-arrow-alt-left"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="tour_package bg_grey sec_padd">
+      <div class="container">
+        <div class="main-heading">
+          <h2>India National Parks Tiger Reserve & Wildlife Guide</h2>
+        </div>
+        <p>
+          There are around 104 national parks in India spread across the
+          country's length and breadth. These wildlife parks are home to a
+          variety of animals and birds, and some of them are the safe shelters
+          for unique and threatened animals like one-horned rhinos and Royal
+          Bengal Tiger.
+        </p>
+        <h5>List of Popular Tiger Reserve in India</h5>
+
+        <div class="tables-scroll">
+          <div class="table_content table-responsive">
+            <table class="table">
+              <tbody>
+                <tr>
+                  <td width="160"><strong>State/Union Territory</strong></td>
+                  <td width="94">
+                    <strong>Total&nbsp;National Parks</strong>
+                  </td>
+                  <td width="151"><strong>National Park Name</strong></td>
+                  <td width="370"><strong>Establishment Year</strong></td>
+                </tr>
+                <tr>
+                  <td rowspan="9" width="160">Andaman &amp; Nicobar Islands</td>
+                  <td rowspan="9" width="94">9</td>
+                  <td width="151">Campbell Bay National Park</td>
+                  <td width="370">1992</td>
+                </tr>
+                <tr>
+                  <td width="151">Galathea Bay National Park</td>
+                  <td width="370">1992</td>
+                </tr>
+                <tr>
+                  <td width="151">
+                    Mahatama Gandhi Marine (Wandoor) National Park
+                  </td>
+                  <td width="370">1982</td>
+                </tr>
+                <tr>
+                  <td width="151">Middle Button Island National Park</td>
+                  <td width="370">1987</td>
+                </tr>
+                <tr>
+                  <td width="151">Mount Harriett National Park</td>
+                  <td width="370">1987</td>
+                </tr>
+                <tr>
+                  <td width="151">North Button Island National Park</td>
+                  <td width="370">1987</td>
+                </tr>
+                <tr>
+                  <td width="151">Rani Jhansi Marine National Park</td>
+                  <td width="370">1996</td>
+                </tr>
+                <tr>
+                  <td width="151">Saddle Peak National Park</td>
+                  <td width="370">1987</td>
+                </tr>
+                <tr>
+                  <td width="151">South Button Island National Park</td>
+                  <td width="370">1987</td>
+                </tr>
+                <tr>
+                  <td rowspan="3" width="160">Andhra Pradesh</td>
+                  <td rowspan="3" width="94">3</td>
+                  <td width="151">Papikonda National Park</td>
+                  <td width="370">2008</td>
+                </tr>
+                <tr>
+                  <td width="151">Rajiv Gandhi (Rameswaram) National Park</td>
+                  <td width="370">2005</td>
+                </tr>
+                <tr>
+                  <td width="151">Sri Venkateswara National Park</td>
+                  <td width="370">1989</td>
+                </tr>
+                <tr>
+                  <td rowspan="2" width="160">Arunachal Pradesh</td>
+                  <td rowspan="2" width="94">2</td>
+                  <td width="151">Mouling National Park</td>
+                  <td width="370">1986</td>
+                </tr>
+                <tr>
+                  <td width="151">Namdapha National Park</td>
+                  <td width="370">1983</td>
+                </tr>
+                <tr>
+                  <td rowspan="5" width="160">Assam</td>
+                  <td rowspan="5" width="94">5</td>
+                  <td width="151">Dibru-Saikhowa National Park</td>
+                  <td width="370">1999</td>
+                </tr>
+                <tr>
+                  <td width="151">Kaziranga National Park</td>
+                  <td width="370">1974</td>
+                </tr>
+                <tr>
+                  <td width="151">Manas National Park</td>
+                  <td width="370">1990</td>
+                </tr>
+                <tr>
+                  <td width="151">Nameri National Park</td>
+                  <td width="370">1998</td>
+                </tr>
+                <tr>
+                  <td width="151">Rajiv Gandhi Orang National Park</td>
+                  <td width="370">1999</td>
+                </tr>
+                <tr>
+                  <td width="160">Bihar</td>
+                  <td width="94">1</td>
+                  <td width="151">Valmiki National Park</td>
+                  <td width="370">1989</td>
+                </tr>
+                <tr>
+                  <td rowspan="3" width="160">Chhattisgarh</td>
+                  <td rowspan="3" width="94">3</td>
+                  <td width="151">Guru Ghasidas (Sanjay) National Park</td>
+                  <td width="370">1981</td>
+                </tr>
+                <tr>
+                  <td width="151">Indravati (Kutru) National Park</td>
+                  <td width="370">1982</td>
+                </tr>
+                <tr>
+                  <td width="151">Kanger Valley National Park</td>
+                  <td width="370">1982</td>
+                </tr>
+                <tr>
+                  <td width="160">Goa</td>
+                  <td width="94">1</td>
+                  <td width="151">Mollem National Park</td>
+                  <td width="370">1992</td>
+                </tr>
+                <tr>
+                  <td rowspan="4" width="160">Gujarat</td>
+                  <td rowspan="4" width="94">4</td>
+                  <td width="151">Vansda National Park</td>
+                  <td width="370">1979</td>
+                </tr>
+                <tr>
+                  <td width="151">Blackbuck (Velavadar) National Park</td>
+                  <td width="370">1976</td>
+                </tr>
+                <tr>
+                  <td width="151">Gir National Park</td>
+                  <td width="370">1975</td>
+                </tr>
+                <tr>
+                  <td width="151">Marine (Gulf of Kachchh) National Park</td>
+                  <td width="370">1982</td>
+                </tr>
+                <tr>
+                  <td rowspan="2" width="160">Haryana</td>
+                  <td rowspan="2" width="94">2</td>
+                  <td width="151">Kalesar National Park</td>
+                  <td width="370">2003</td>
+                </tr>
+                <tr>
+                  <td width="151">SultaNational Parkur National Park</td>
+                  <td width="370">1989</td>
+                </tr>
+                <tr>
+                  <td rowspan="5" width="160">Himachal Pradesh</td>
+                  <td rowspan="5" width="94">5</td>
+                  <td width="151">Great Himalayan National Park</td>
+                  <td width="370">1984</td>
+                </tr>
+                <tr>
+                  <td width="151">Inderkilla National Park</td>
+                  <td width="370">2010</td>
+                </tr>
+                <tr>
+                  <td width="151">Khirganga National Park</td>
+                  <td width="370">2010</td>
+                </tr>
+                <tr>
+                  <td width="151">Pin Valley National Park</td>
+                  <td width="370">1987</td>
+                </tr>
+                <tr>
+                  <td width="151">Simbalbara National Park</td>
+                  <td width="370">2010</td>
+                </tr>
+                <tr>
+                  <td rowspan="3" width="160">Jammu and Kashmir</td>
+                  <td rowspan="3" width="94">4</td>
+                  <td width="151">City Forest (Salim Ali) National Park</td>
+                  <td width="370">1992</td>
+                </tr>
+                <tr>
+                  <td width="151">Dachigam National Park</td>
+                  <td width="370">1981</td>
+                </tr>
+                <tr>
+                  <td width="151">Kishtwar National Park</td>
+                  <td width="370">1981</td>
+                </tr>
+                <tr>
+                  <td width="160">Jharkhand</td>
+                  <td width="94">1</td>
+                  <td width="151">Betla National Park</td>
+                  <td width="370">1986</td>
+                </tr>
+                <tr>
+                  <td rowspan="5" width="160">Karnataka</td>
+                  <td rowspan="5" width="94">5</td>
+                  <td width="151">Anshi National Park</td>
+                  <td width="370">1987</td>
+                </tr>
+                <tr>
+                  <td width="151">Bandipur National Park</td>
+                  <td width="370">1974</td>
+                </tr>
+                <tr>
+                  <td width="151">Bannerghatta National Park</td>
+                  <td width="370">1974</td>
+                </tr>
+                <tr>
+                  <td width="151">Kudremukh National Park</td>
+                  <td width="370">1987</td>
+                </tr>
+                <tr>
+                  <td width="151">Nagarahole (Rajiv Gandhi) National Park</td>
+                  <td width="370">1988</td>
+                </tr>
+                <tr>
+                  <td rowspan="6" width="160">Kerala</td>
+                  <td rowspan="6" width="94">6</td>
+                  <td width="151">Anamudi Shola National Park</td>
+                  <td width="370">2003</td>
+                </tr>
+                <tr>
+                  <td width="151">Eravikulam National Park</td>
+                  <td width="370">1978</td>
+                </tr>
+                <tr>
+                  <td width="151">Mathikettan Shola National Park</td>
+                  <td width="370">2003</td>
+                </tr>
+                <tr>
+                  <td width="151">Pambadum Shola National Park</td>
+                  <td width="370">2003</td>
+                </tr>
+                <tr>
+                  <td width="151">Periyar National Park</td>
+                  <td width="370">1982</td>
+                </tr>
+                <tr>
+                  <td width="151">Silent Valley National Park</td>
+                  <td width="370">1984</td>
+                </tr>
+                <tr>
+                  <td rowspan="9" width="160">Madhya Pradesh</td>
+                  <td rowspan="9" width="94">9</td>
+                  <td width="151">Bandhavgarh National Park</td>
+                  <td width="370">1968</td>
+                </tr>
+                <tr>
+                  <td width="151">Fossil National Park</td>
+                  <td width="370">1983</td>
+                </tr>
+                <tr>
+                  <td width="151">Indira Priyadarshini Pench National Park</td>
+                  <td width="370">1975</td>
+                </tr>
+                <tr>
+                  <td width="151">Kanha National Park</td>
+                  <td width="370">1955</td>
+                </tr>
+                <tr>
+                  <td width="151">Madhav National Park</td>
+                  <td width="370">1959</td>
+                </tr>
+                <tr>
+                  <td width="151">Panna National Park</td>
+                  <td width="370">1981</td>
+                </tr>
+                <tr>
+                  <td width="151">Sanjay National Park</td>
+                  <td width="370">1981</td>
+                </tr>
+                <tr>
+                  <td width="151">Satpura National Park</td>
+                  <td width="370">1981</td>
+                </tr>
+                <tr>
+                  <td width="151">Van Vihar National Park</td>
+                  <td width="370">1979</td>
+                </tr>
+                <tr>
+                  <td rowspan="6" width="160">Maharashtra</td>
+                  <td rowspan="6" width="94">6</td>
+                  <td width="151">Chandoli National Park</td>
+                  <td width="370">2004</td>
+                </tr>
+                <tr>
+                  <td width="151">Gugamal National Park</td>
+                  <td width="370">1975</td>
+                </tr>
+                <tr>
+                  <td width="151">Nawegaon National Park</td>
+                  <td width="370">1975</td>
+                </tr>
+                <tr>
+                  <td width="151">Pench (Jawaharlal Nehru) National Park</td>
+                  <td width="370">1975</td>
+                </tr>
+                <tr>
+                  <td width="151">Sanjay Gandhi (Borivali) National Park</td>
+                  <td width="370">1983</td>
+                </tr>
+                <tr>
+                  <td width="151">Tadoba National Park</td>
+                  <td width="370">1955</td>
+                </tr>
+                <tr>
+                  <td width="160">Manipur</td>
+                  <td width="94">1</td>
+                  <td width="151">Keibul-Lamjao National Park</td>
+                  <td width="370">1977</td>
+                </tr>
+                <tr>
+                  <td rowspan="2" width="160">Meghalaya</td>
+                  <td rowspan="2" width="94">2</td>
+                  <td width="151">Balphakram National Park</td>
+                  <td width="370">1985</td>
+                </tr>
+                <tr>
+                  <td width="151">Nokrek Ridge National Park</td>
+                  <td width="370">1986</td>
+                </tr>
+                <tr>
+                  <td rowspan="2" width="160">Mizoram</td>
+                  <td rowspan="2" width="94">2</td>
+                  <td width="151">Murlen National Park</td>
+                  <td width="370">1991</td>
+                </tr>
+                <tr>
+                  <td width="151">Phawngpui Blue Mountain National Park</td>
+                  <td width="370">1992</td>
+                </tr>
+                <tr>
+                  <td width="160">Nagaland</td>
+                  <td width="94">1</td>
+                  <td width="151">Intanki National Park</td>
+                  <td width="370">1993</td>
+                </tr>
+                <tr>
+                  <td rowspan="2" width="160">Odisha</td>
+                  <td rowspan="2" width="94">2</td>
+                  <td width="151">Bhitarkanika National Park</td>
+                  <td width="370">1988</td>
+                </tr>
+                <tr>
+                  <td width="151">Simlipal National Park</td>
+                  <td width="370">1980</td>
+                </tr>
+                <tr>
+                  <td rowspan="5" width="160">Rajasthan</td>
+                  <td rowspan="5" width="94">5</td>
+                  <td width="151">Mukundra Hills National Park</td>
+                  <td width="370">2006</td>
+                </tr>
+                <tr>
+                  <td width="151">Desert National Park</td>
+                  <td width="370">1992</td>
+                </tr>
+                <tr>
+                  <td width="151">Keoladeo Ghana National Park</td>
+                  <td width="370">1981</td>
+                </tr>
+                <tr>
+                  <td width="151">Ranthambhore National Park</td>
+                  <td width="370">1980</td>
+                </tr>
+                <tr>
+                  <td width="151">Sariska National Park</td>
+                  <td width="370">1992</td>
+                </tr>
+                <tr>
+                  <td width="160">Sikkim</td>
+                  <td width="94">1</td>
+                  <td width="151">Khangchendzonga National Park</td>
+                  <td width="370">1977</td>
+                </tr>
+                <tr>
+                  <td rowspan="5" width="160">Tamil Nadu</td>
+                  <td rowspan="5" width="94">5</td>
+                  <td width="151">Guindy National Park</td>
+                  <td width="370">1976</td>
+                </tr>
+                <tr>
+                  <td width="151">Gulf of Mannar Marine National Park</td>
+                  <td width="370">1980</td>
+                </tr>
+                <tr>
+                  <td width="151">Indira Gandhi (Annamalai) National Park</td>
+                  <td width="370">1989</td>
+                </tr>
+                <tr>
+                  <td width="151">Mudumalai National Park</td>
+                  <td width="370">1990</td>
+                </tr>
+                <tr>
+                  <td width="151">Mukurthi National Park</td>
+                  <td width="370">1990</td>
+                </tr>
+                <tr>
+                  <td width="160">Ladakh</td>
+                  <td width="94">1</td>
+                  <td width="151">Hemis National Park</td>
+                  <td width="370">1981</td>
+                </tr>
+                <tr>
+                  <td rowspan="3" width="160">Telangana</td>
+                  <td rowspan="3" width="94">3</td>
+                  <td width="151">Kasu Brahmananda Reddy National Park</td>
+                  <td width="370">1994</td>
+                </tr>
+                <tr>
+                  <td width="151">Mahaveer Harina Vanasthali National Park</td>
+                  <td width="370">1994</td>
+                </tr>
+                <tr>
+                  <td width="151">Mrugavani National Park</td>
+                  <td width="370">1994</td>
+                </tr>
+                <tr>
+                  <td rowspan="2" width="160">Tripura</td>
+                  <td rowspan="2" width="94">2</td>
+                  <td width="151">Clouded Leopard National Park</td>
+                  <td width="370">2007</td>
+                </tr>
+                <tr>
+                  <td width="151">Bison (Rajbari) National Park</td>
+                  <td width="370">2007</td>
+                </tr>
+                <tr>
+                  <td width="160">Uttar Pradesh</td>
+                  <td width="94">1</td>
+                  <td width="151">Dudhwa National Park</td>
+                  <td width="370">1977</td>
+                </tr>
+                <tr>
+                  <td rowspan="6" width="160">Uttarakhand</td>
+                  <td rowspan="6" width="94">6</td>
+                  <td width="151">Corbett National Park</td>
+                  <td width="370">1936</td>
+                </tr>
+                <tr>
+                  <td width="151">Gangotri National Park</td>
+                  <td width="370">1989</td>
+                </tr>
+                <tr>
+                  <td width="151">Govind National Park</td>
+                  <td width="370">1990</td>
+                </tr>
+                <tr>
+                  <td width="151">Nanda Devi National Park</td>
+                  <td width="370">1982</td>
+                </tr>
+                <tr>
+                  <td width="151">Rajaji National Park</td>
+                  <td width="370">1983</td>
+                </tr>
+                <tr>
+                  <td width="151">Valley of Flowers National Park</td>
+                  <td width="370">1982</td>
+                </tr>
+                <tr>
+                  <td rowspan="6" width="160">West Bengal</td>
+                  <td rowspan="6" width="94">6</td>
+                  <td width="151">Buxa National Park</td>
+                  <td width="370">1992</td>
+                </tr>
+                <tr>
+                  <td width="151">Gorumara National Park</td>
+                  <td width="370">1992</td>
+                </tr>
+                <tr>
+                  <td width="151">Jaldapara National Park</td>
+                  <td width="370">2014</td>
+                </tr>
+                <tr>
+                  <td width="151">Neora Valley National Park</td>
+                  <td width="370">1986</td>
+                </tr>
+                <tr>
+                  <td width="151">Singalila National Park</td>
+                  <td width="370">1986</td>
+                </tr>
+                <tr>
+                  <td width="151">Sunderban National Park</td>
+                  <td width="370">1984</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <h5>List of Popular Tiger Reserve in India</h5>
+        <p>
+          Launched by the Government of India in 1973, Project Tiger aimed to
+          safeguard the endangered species of tigers in the country. Notable
+          Tiger Reserves in India include:
+        </p>
+      </div>
+    </section>
+    <section class="visitbyseason sec_padd">
+      <div class="container">
+        <div class="main-heading">
+          <h2>Best Wildlife Sanctuaries to Visit by Season</h2>
+        </div>
+        <a href="" class="readbtn mt-5">views more</a>
+        <ul
+          class="nav nav-tabs custom_tabs mt-4 mt-md-5 flex-nowrap overflow-x-auto overflow-y-hidden"
+          id="myTab"
+          role="tablist"
+        >
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active"
+              id="san-1"
+              data-bs-toggle="tab"
+              data-bs-target="#san-1-pane"
+              type="button"
+              role="tab"
+              aria-controls="san-1-pane"
+              aria-selected="true"
+            >
+              Summer
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="san-2"
+              data-bs-toggle="tab"
+              data-bs-target="#san-2-pane"
+              type="button"
+              role="tab"
+              aria-controls="san-2-pane"
+              aria-selected="false"
+            >
+              Monsoon
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="san-3"
+              data-bs-toggle="tab"
+              data-bs-target="#san-3-pane"
+              type="button"
+              role="tab"
+              aria-controls="san-3-pane"
+              aria-selected="false"
+            >
+              Winter
+            </button>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div
+            class="tab-pane fade show active"
+            id="san-1-pane"
+            role="tabpanel"
+            aria-labelledby="san-1"
+            tabindex="0"
+          >
+            <div class="row d-flex justify-content-between">
+              <div class="col-md-3 lg-12">
+                <h3 class="fw-semibold">
+                  Top National Parks to Visit in Summer
+                </h3>
+              </div>
+              <div class="col-md-8">
+                <p>
+                  Summer (April - May) is the best time to visit the Indian
+                  national parks and tiger reserves for an exhilarating wildlife
+                  photography experience. In destinations like Corbett,
+                  Ranthambore, Bandhavgarh, Kanha, and Panna, the summer
+                  temperature and climate create the perfect conditions for
+                  wildlife sightings, especially tiger photography. These
+                  renowned national parks in India not only offer respite from
+                  the scorching heat but also provide a unique opportunity to
+                  witness diverse flora and fauna.
+                </p>
+              </div>
+            </div>
+            <div class="season-visit mt-5">
+              <div class="row gx-md-5 gy-4">
+                <div
+                  class="col-md-4 d-flex flex-column justify-content-between gap-3"
+                >
+                  <div class="float-content-wraper">
+                    <img
+                      src="./assets/images/jimcorbettsummer.webp"
+                      alt="luxurytrainsec"
+                      class="img-fluid br_5"
+                      loading="lazy"
+                      decoding="async"
+                      importance="low"
+                      loading="lazy"
+                      decoding="async"
+                      importance="low"
+                    />
+
+                    <div class="content-wraper">
+                      <a href="" class="common-hover">
+                        Jim Corbett National Park
+                      </a>
+                      <i
+                        class="fa fa-long-arrow-right content-wraper-icon text-white"
+                        aria-hidden="true"
+                      ></i>
+                    </div>
+                  </div>
+                  <div class="float-content-wraper with-arrow">
+                    <img
+                      src="./assets/images/ranthamboresummer.webp"
+                      alt="luxurytrainsec"
+                      class="img-fluid br_5"
+                      loading="lazy"
+                      decoding="async"
+                      importance="low"
+                      loading="lazy"
+                      decoding="async"
+                      importance="low"
+                    />
+
+                    <div class="content-wraper">
+                      <a href="" class="common-hover"> Kanha National Park </a>
+                      <i
+                        class="fa fa-long-arrow-right content-wraper-icon text-white"
+                        aria-hidden="true"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="float-content-wraper">
+                    <img
+                      src="./assets/images/kanhasummer.webp"
+                      alt="luxuryt gyrainsec"
+                      class="img-fluid br_5"
+                      loading="lazy"
+                      decoding="async"
+                      importance="low"
+                      loading="lazy"
+                      decoding="async"
+                      importance="low"
+                    />
+
+                    <div class="content-wraper">
+                      <a href="" class="common-hover">
+                        Jim Corbett National Park
+                      </a>
+                      <i
+                        class="fa fa-long-arrow-right content-wraper-icon text-white"
+                        aria-hidden="true"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-md-4 d-flex flex-column justify-content-between gap-3"
+                >
+                  <div class="float-content-wraper">
+                    <img
+                      src="./assets/images/bandhavgarhsummer.webp"
+                      alt="luxurytrainsec"
+                      class="img-fluid br_5"
+                      loading="lazy"
+                      decoding="async"
+                      importance="low"
+                      loading="lazy"
+                      decoding="async"
+                      importance="low"
+                    />
+
+                    <div class="content-wraper">
+                      <a href="" class="common-hover">
+                        Bandhavgarh National Park
+                      </a>
+                      <i
+                        class="fa fa-long-arrow-right content-wraper-icon text-white"
+                        aria-hidden="true"
+                      ></i>
+                    </div>
+                  </div>
+                  <div class="float-content-wraper">
+                    <img
+                      src="./assets/images/pannasummer.webp"
+                      alt="luxurytrainsec"
+                      class="img-fluid br_5"
+                      loading="lazy"
+                      decoding="async"
+                      importance="low"
+                      loading="lazy"
+                      decoding="async"
+                      importance="low"
+                    />
+
+                    <div class="content-wraper">
+                      <a href="" class="common-hover"> Panna National Park </a>
+                      <i
+                        class="fa fa-long-arrow-right content-wraper-icon text-white"
+                        aria-hidden="true"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="san-2-pane"
+            role="tabpanel"
+            aria-labelledby="san-2"
+            tabindex="0"
+          >
+            <div class="row d-flex justify-content-between">
+              <div class="col-md-3">
+                <h3 class="fw-semibold">
+                  Top National Parks to Visit in Monsoon
+                </h3>
+              </div>
+              <div class="col-md-8">
+                <p>
+                  While many national parks close during the monsoon season
+                  (July to September) for safety reasons, some, like Corbett and
+                  Ranthambore, partially open their gates for safari. Periyar in
+                  Kerala, Valley of National Parks in Uttarakhand, and Hemis
+                  National Park in Ladakh, offer a unique monsoon experience,
+                  with lush greenery, cascading waterfalls, and vibrant
+                  wildlife. Witness the magic of nature as it comes alive during
+                  the rains, making these destinations ideal for an offbeat
+                  monsoon adventure. Embrace the tranquility and verdant
+                  landscapes while exploring the distinct beauty of these
+                  selected national parks that welcome visitors even when the
+                  heavens open.
+                </p>
+              </div>
+            </div>
+            <div class="season-visit mt-5">
+              <div class="row gx-md-5 gy-4">
+                <div
+                  class="col-md-4 d-flex flex-column justify-content-between gap-3"
+                >
+                  <div class="float-content-wraper">
+                    <img
+                      src="./assets/images/hemismonsoon.webp"
+                      alt="luxurytrainsec"
+                      class="img-fluid br_5"
+                      loading="lazy"
+                      decoding="async"
+                      importance="low"
+                      loading="lazy"
+                      decoding="async"
+                      importance="low"
+                    />
+
+                    <div class="content-wraper">
+                      <a href="" class="common-hover">
+                        Jim Corbett National Park
+                      </a>
+                      <i
+                        class="fa fa-long-arrow-right content-wraper-icon text-white"
+                        aria-hidden="true"
+                      ></i>
+                    </div>
+                  </div>
+                  <div class="float-content-wraper">
+                    <img
+                      src="./assets/images/flowermonsoon.webp"
+                      alt="luxurytrainsec"
+                      class="img-fluid br_5"
+                      loading="lazy"
+                      decoding="async"
+                      importance="low"
+                      loading="lazy"
+                      decoding="async"
+                      importance="low"
+                    />
+
+                    <div class="content-wraper">
+                      <a href="" class="common-hover"> Kanha National Park </a>
+                      <i
+                        class="fa fa-long-arrow-right content-wraper-icon text-white"
+                        aria-hidden="true"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="float-content-wraper">
+                    <img
+                      src="./assets/images/periyarmonsoon.webp"
+                      alt="luxurytrainsec"
+                      class="img-fluid br_5"
+                      loading="lazy"
+                      decoding="async"
+                      importance="low"
+                      loading="lazy"
+                      decoding="async"
+                      importance="low"
+                    />
+
+                    <div class="content-wraper">
+                      <a href="" class="common-hover">
+                        Periyar National Park
+                      </a>
+                      <i
+                        class="fa fa-long-arrow-right content-wraper-icon text-white"
+                        aria-hidden="true"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-md-4 d-flex flex-column justify-content-between gap-3"
+                >
+                  <div class="float-content-wraper">
+                    <img
+                      src="./assets/images/ranthamborewinter.webp"
+                      alt="luxurytrainsec"
+                      class="img-fluid br_5"
+                      loading="lazy"
+                      decoding="async"
+                      importance="low"
+                      loading="lazy"
+                      decoding="async"
+                      importance="low"
+                    />
+
+                    <div class="content-wraper">
+                      <a href="" class="common-hover">
+                        Bandhavgarh National Park
+                      </a>
+                      <i
+                        class="fa fa-long-arrow-right content-wraper-icon text-white"
+                        aria-hidden="true"
+                      ></i>
+                    </div>
+                  </div>
+                  <div class="float-content-wraper">
+                    <img
+                      src="./assets/images/corbettsummer.webp"
+                      alt="luxurytrainsec"
+                      class="img-fluid br_5"
+                      loading="lazy"
+                      decoding="async"
+                      importance="low"
+                      loading="lazy"
+                      decoding="async"
+                      importance="low"
+                    />
+
+                    <div class="content-wraper">
+                      <a href="" class="common-hover"> Panna National Park </a>
+                      <i
+                        class="fa fa-long-arrow-right content-wraper-icon text-white"
+                        aria-hidden="true"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="san-3-pane"
+            role="tabpanel"
+            aria-labelledby="san-3"
+            tabindex="0"
+          >
+            <div class="row d-flex justify-content-between">
+              <div class="col-md-3 lg-12">
+                <h3>Top National Parks to Visit in Winter</h3>
+              </div>
+              <div class="col-md-8">
+                <p>
+                  The winter season (October to March) marks the peak of
+                  wildlife tourism as all national parks and tiger reserves open
+                  their gates. This period is ideal for jungle safaris, offering
+                  the best chance to witness diverse fauna in their natural
+                  habitats. Coveted parks like Corbett, Ranthambore, Kanha,
+                  Bandhavgarh, Kaziranga, Gir Forest, and Tadoba become havens
+                  for wildlife enthusiasts. Embrace the crisp air and the thrill
+                  of spotting majestic creatures against the winter landscapes,
+                  making it the perfect time to embark on an unforgettable
+                  wildlife adventure in some of the most visited and cherished
+                  national parks across India.
+                </p>
+              </div>
+            </div>
+            <div class="season-visit mt-5">
+              <div class="row gx-md-5 gy-4">
+                <div
+                  class="col-md-4 d-flex flex-column justify-content-between gap-3"
+                >
+                  <div class="float-content-wraper">
+                    <img
+                      src="./assets/images/ranthamborewinter.webp"
+                      alt="luxurytrainsec"
+                      class="img-fluid br_5"
+                      loading="lazy"
+                      decoding="async"
+                      importance="low"
+                      loading="lazy"
+                      decoding="async"
+                      importance="low"
+                    />
+
+                    <div class="content-wraper">
+                      <a href="" class="common-hover">
+                        Jim Corbett National Park
+                      </a>
+                      <i
+                        class="fa fa-long-arrow-right content-wraper-icon text-white"
+                        aria-hidden="true"
+                      ></i>
+                    </div>
+                  </div>
+                  <div class="float-content-wraper">
+                    <img
+                      src="./assets/images/corbettsummer.webp"
+                      alt="luxurytrainsec"
+                      class="img-fluid br_5"
+                      loading="lazy"
+                      decoding="async"
+                      importance="low"
+                      loading="lazy"
+                      decoding="async"
+                      importance="low"
+                    />
+
+                    <div class="content-wraper">
+                      <a href="" class="common-hover"> Kanha National Park </a>
+                      <i
+                        class="fa fa-long-arrow-right content-wraper-icon text-white"
+                        aria-hidden="true"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="float-content-wraper">
+                    <img
+                      src="./assets/images/kazirangawinter.webp"
+                      alt="luxuryt gyrainsec"
+                      class="img-fluid br_5"
+                      loading="lazy"
+                      decoding="async"
+                      importance="low"
+                      loading="lazy"
+                      decoding="async"
+                      importance="low"
+                    />
+
+                    <div class="content-wraper">
+                      <a href="" class="common-hover">
+                        Jim Corbett National Park
+                      </a>
+                      <i
+                        class="fa fa-long-arrow-right content-wraper-icon text-white"
+                        aria-hidden="true"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-md-4 d-flex flex-column justify-content-between gap-3"
+                >
+                  <div class="float-content-wraper">
+                    <img
+                      src="./assets/images/girwinter.webp"
+                      alt="luxurytrainsec"
+                      class="img-fluid br_5"
+                      loading="lazy"
+                      decoding="async"
+                      importance="low"
+                      loading="lazy"
+                      decoding="async"
+                      importance="low"
+                    />
+
+                    <div class="content-wraper">
+                      <a href="" class="common-hover">
+                        Bandhavgarh National Park
+                      </a>
+                      <i
+                        class="fa fa-long-arrow-right content-wraper-icon text-white"
+                        aria-hidden="true"
+                      ></i>
+                    </div>
+                  </div>
+                  <div class="float-content-wraper">
+                    <img
+                      src="./assets/images/kanhawinter.webp"
+                      alt="luxurytrainsec"
+                      class="img-fluid br_5"
+                      loading="lazy"
+                      decoding="async"
+                      importance="low"
+                      loading="lazy"
+                      decoding="async"
+                      importance="low"
+                    />
+
+                    <div class="content-wraper">
+                      <a href="" class="common-hover"> Panna National Park </a>
+                      <i
+                        class="fa fa-long-arrow-right content-wraper-icon text-white"
+                        aria-hidden="true"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="visit-hills sec_padd">
+      <div class="container">
+        <div class="row gx-md-5 gy-4">
+          <div class="col-md-6 col-lg-3 text-center order-2 order-lg-1">
+            <img
+              src="assets/images/visitwildlife.webp"
+              alt=""
+              class="img-fluid br_5"
+              loading="lazy"
+              decoding="async"
+              importance="low"
+            />
+            <img
+              src="assets/images/bestvisitwildlife.webp"
+              alt=""
+              class="img-fluid mt-3 br_5"
+              loading="lazy"
+              decoding="async"
+              importance="low"
+            />
+          </div>
+          <div class="col-md-6 col-lg-3 text-center order-3 order-lg-2">
+            <img
+              src="assets/images/bestwildlife.webp"
+              alt=""
+              class="img-fluid br_5"
+              loading="lazy"
+              decoding="async"
+              importance="low"
+            />
+          </div>
+          <div class="col-lg-6 order-1 order-lg-3">
+            <div class="main-heading">
+              <h2 class="fw-semibold">
+                Best Time to Visit Indian National Parks
+              </h2>
+            </div>
+            <p class="mt-4">
+              Most of the national parks and wildlife sanctuaries in India are
+              open between October and June. In the monsoon season, most of the
+              wildlife reserves close down between July and September. The best
+              time to visit the national parks in India are between October and
+              March, when the weather is pleasant in most parts of the country.
+              The average winter temperature in India ranges between 0℃ - 20℃ in
+              North, Northwest, Northeast, and Central India, and 18℃ - 25℃ in
+              South India. There are some national parks in India that remain
+              open/partially open in the monsoon season.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="visit-by-month bg_lightpink sec_padd">
+      <div class="container">
+        <div class="main-heading">
+          <h2>Explore National Parks by States</h2>
+        </div>
+
+        <ul
+          class="nav nav-tabs flex-nowrap custom_tabs overflow-x-auto overflow-y-hidden gap-4"
+          id="myTab"
+          role="tablist"
+        >
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active text-nowrap"
+              id="visit-1-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#visit-1"
+              type="button"
+              role="tab"
+              aria-controls="visit-1"
+              aria-selected="true"
+            >
+              Madhya Pradesh
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="visit-2-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#visit-2-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="visit-2-tab-pane"
+              aria-selected="false"
+            >
+              Uttarakhand
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="visit-3-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#visit-3-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="visit-3-tab-pane"
+              aria-selected="false"
+            >
+              Rajasthan
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="visit-4-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#visit-4-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="visit-4-tab-pane"
+              aria-selected="false"
+            >
+              Karnataka
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="visit-5-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#visit-5-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="visit-5-tab-pane"
+              aria-selected="false"
+            >
+              Assam
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="visit-6-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#visit-6-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="visit-6-tab-pane"
+              aria-selected="false"
+            >
+              Maharashtra
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="visit-7-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#visit-7-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="visit-7-tab-pane"
+              aria-selected="false"
+            >
+              Kerala
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="visit-8-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#visit-8-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="visit-8-tab-pane"
+              aria-selected="false"
+            >
+              Gujarat
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="visit-9-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#visit-9-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="visit-9-tab-pane"
+              aria-selected="false"
+            >
+              Others
+            </button>
+          </li>
+        </ul>
+
+        <div class="tab-content" id="myTabContent">
+          <div
+            class="tab-pane fade show active"
+            id="visit-1"
+            role="tabpanel"
+            aria-labelledby="visit-1-tab"
+            tabindex="0"
+          >
+            <div class="month-dest">
+              <div class="row gx-md-5 gy-4">
+                <div class="col-md-4">
+                  <div
+                    class="month-dest-content bg-white p-3 d-flex align-items-center"
+                  >
+                    <a href="">
+                      <img
+                        src="assets/images/bandhavgarhexplore.webp"
+                        alt=""
+                        class="img-fluid"
+                        loading="lazy"
+                        decoding="async"
+                        importance="low"
+                      />
+                    </a>
+                    <a href="" class="fw-semibold">
+                      Bandhavgarh<br />
+                      National Park
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div
+                    class="month-dest-content bg-white p-3 d-flex align-items-center"
+                  >
+                    <a href="">
+                      <img
+                        src="assets/images/kanhaexplore.webp"
+                        alt=""
+                        class="img-fluid"
+                        loading="lazy"
+                        decoding="async"
+                        importance="low"
+                      />
+                    </a>
+                    <a href="" class="fw-semibold">
+                      Kanha<br />
+                      National Park
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div
+                    class="month-dest-content bg-white p-3 d-flex align-items-center"
+                  >
+                    <a href="">
+                      <img
+                        src="assets/images/pannaexplore.webp"
+                        alt=""
+                        class="img-fluid"
+                        loading="lazy"
+                        decoding="async"
+                        importance="low"
+                      />
+                    </a>
+                    <a href="" class="fw-semibold">
+                      Panna<br />
+                      National Park
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="row gx-md-5 gy-4 mt-2">
+                <div class="col-md-4">
+                  <div
+                    class="month-dest-content bg-white p-3 d-flex align-items-center"
+                  >
+                    <a href="">
+                      <img
+                        src="assets/images/penchexplore.webp"
+                        alt=""
+                        class="img-fluid"
+                        loading="lazy"
+                        decoding="async"
+                        importance="low"
+                      />
+                    </a>
+                    <a href="" class="fw-semibold">
+                      Pench<br />
+                      National Park
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div
+                    class="month-dest-content bg-white p-3 d-flex align-items-center"
+                  >
+                    <a href="">
+                      <img
+                        src="assets/images/madhavexplore.webp"
+                        alt=""
+                        class="img-fluid"
+                        loading="lazy"
+                        decoding="async"
+                        importance="low"
+                      />
+                    </a>
+                    <a href="" class="fw-semibold">
+                      Madhav<br />
+                      National Park
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div
+                    class="month-dest-content bg-white p-3 d-flex align-items-center"
+                  >
+                    <a href="">
+                      <img
+                        src="assets/images/satpuraexplore.webp"
+                        alt=""
+                        class="img-fluid"
+                        loading="lazy"
+                        decoding="async"
+                        importance="low"
+                      />
+                    </a>
+                    <a href="" class="fw-semibold">
+                      Satpura<br />
+                      National Park
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="visit-2-tab-pane"
+            role="tabpanel"
+            aria-labelledby="visit-2-tab"
+            tabindex="0"
+          >
+            <div class="month-dest">
+              <div class="row gx-md-5 gy-4">
+                <div class="col-md-4">
+                  <div
+                    class="month-dest-content bg-white p-3 d-flex align-items-center"
+                  >
+                    <a href="">
+                      <img
+                        src="assets/images/corbettexplore.webp"
+                        alt=""
+                        class="img-fluid"
+                        loading="lazy"
+                        decoding="async"
+                        importance="low"
+                      />
+                    </a>
+                    <a href="" class="fw-semibold">
+                      Corbett<br />
+                      National Park
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div
+                    class="month-dest-content bg-white p-3 d-flex align-items-center"
+                  >
+                    <a href="">
+                      <img
+                        src="assets/images/rajajiexplore.webp"
+                        alt=""
+                        class="img-fluid"
+                        loading="lazy"
+                        decoding="async"
+                        importance="low"
+                      />
+                    </a>
+                    <a href="" class="fw-semibold">
+                      Rajaji<br />
+                      National Park
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div
+                    class="month-dest-content bg-white p-3 d-flex align-items-center"
+                  >
+                    <a href="">
+                      <img
+                        src="assets/images/nandadeviexplore.webp"
+                        alt=""
+                        class="img-fluid"
+                        loading="lazy"
+                        decoding="async"
+                        importance="low"
+                      />
+                    </a>
+                    <a href="" class="fw-semibold">
+                      Nanda Devi<br />
+                      National Park
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="row gx-md-5 gy-4 mt-2">
+                <div class="col-md-4">
+                  <div
+                    class="month-dest-content bg-white p-3 d-flex align-items-center"
+                  >
+                    <a href="">
+                      <img
+                        src="assets/images/flowersvalleyexplore.webp"
+                        alt=""
+                        class="img-fluid"
+                        loading="lazy"
+                        decoding="async"
+                        importance="low"
+                      />
+                    </a>
+                    <a href="" class="fw-semibold">
+                      Valleyt<br />
+                      of Flowers
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div
+                    class="month-dest-content bg-white p-3 d-flex align-items-center"
+                  >
+                    <a href="">
+                      <img
+                        src="assets/images/gangotriexplore.webp"
+                        alt=""
+                        class="img-fluid"
+                        loading="lazy"
+                        decoding="async"
+                        importance="low"
+                      />
+                    </a>
+                    <a href="" class="fw-semibold">
+                      Gangotri<br />
+                      National Park
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="visit-3-tab-pane"
+            role="tabpanel"
+            aria-labelledby="visit-3-tab"
+            tabindex="0"
+          >
+            <div class="month-dest">
+              <div class="row gx-md-5 gy-4">
+                <div class="col-md-4">
+                  <div
+                    class="month-dest-content bg-white p-3 d-flex align-items-center"
+                  >
+                    <a href="">
+                      <img
+                        src="assets/images/keoladeoexplore.webp"
+                        alt=""
+                        class="img-fluid"
+                        loading="lazy"
+                        decoding="async"
+                        importance="low"
+                      />
+                    </a>
+                    <a href="" class="fw-semibold">
+                      Keoladeo<br />
+                      National Park
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div
+                    class="month-dest-content bg-white p-3 d-flex align-items-center"
+                  >
+                    <a href="">
+                      <img
+                        src="assets/images/ranthamboreexplore.webp"
+                        alt=""
+                        class="img-fluid"
+                        loading="lazy"
+                        decoding="async"
+                        importance="low"
+                      />
+                    </a>
+                    <a href="" class="fw-semibold">
+                      Ranthambore<br />
+                      National Park
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div
+                    class="month-dest-content bg-white p-3 d-flex align-items-center"
+                  >
+                    <a href="">
+                      <img
+                        src="assets/images/sariskaexplore.webp"
+                        alt=""
+                        class="img-fluid"
+                        loading="lazy"
+                        decoding="async"
+                        importance="low"
+                      />
+                    </a>
+                    <a href="" class="fw-semibold">
+                      Sariska<br />
+                      National Park
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="visit-4-tab-pane"
+            role="tabpanel"
+            aria-labelledby="visit-4-tab"
+            tabindex="0"
+          >
+            <div class="month-dest">
+              <div class="row gx-md-5 gy-4">
+                <div class="col-md-4">
+                  <div
+                    class="month-dest-content bg-white p-3 d-flex align-items-center"
+                  >
+                    <a href="">
+                      <img
+                        src="assets/images/bandipurexplore.webp"
+                        alt=""
+                        class="img-fluid"
+                        loading="lazy"
+                        decoding="async"
+                        importance="low"
+                      />
+                    </a>
+                    <a href="" class="fw-semibold">
+                      Bandipur<br />
+                      National Park
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div
+                    class="month-dest-content bg-white p-3 d-flex align-items-center"
+                  >
+                    <a href="">
+                      <img
+                        src="assets/images/nagarholeexplore.webp"
+                        alt=""
+                        class="img-fluid"
+                        loading="lazy"
+                        decoding="async"
+                        importance="low"
+                      />
+                    </a>
+                    <a href="" class="fw-semibold">
+                      Nagarhole<br />
+                      National Park
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div
+                    class="month-dest-content bg-white p-3 d-flex align-items-center"
+                  >
+                    <a href="">
+                      <img
+                        src="assets/images/mudumalaiexplore.webp"
+                        alt=""
+                        class="img-fluid"
+                        loading="lazy"
+                        decoding="async"
+                        importance="low"
+                      />
+                    </a>
+                    <a href="" class="fw-semibold">
+                      Mudumalai<br />
+                      National Park
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="row gx-md-5 gy-4 mt-2">
+                <div class="col-md-4">
+                  <div
+                    class="month-dest-content bg-white p-3 d-flex align-items-center"
+                  >
+                    <a href="">
+                      <img
+                        src="assets/images/dandeliexplore.webp"
+                        alt=""
+                        class="img-fluid"
+                        loading="lazy"
+                        decoding="async"
+                        importance="low"
+                      />
+                    </a>
+                    <a href="" class="fw-semibold">
+                      Dandeli Wildlife<br />
+                      Sanctuary
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="visit-5-tab-pane"
+            role="tabpanel"
+            aria-labelledby="visit-5-tab"
+            tabindex="0"
+          >
+            <div class="month-dest">
+              <div class="row gx-md-5 gy-4">
+                <div class="col-md-4">
+                  <div
+                    class="month-dest-content bg-white p-3 d-flex align-items-center"
+                  >
+                    <a href="">
+                      <img
+                        src="assets/images/kazirangaexplore.webp"
+                        alt=""
+                        class="img-fluid"
+                        loading="lazy"
+                        decoding="async"
+                        importance="low"
+                      />
+                    </a>
+                    <a href="" class="fw-semibold">
+                      Kaziranga<br />
+                      National Park
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div
+                    class="month-dest-content bg-white p-3 d-flex align-items-center"
+                  >
+                    <a href="">
+                      <img
+                        src="assets/images/manaexplore.webp"
+                        alt=""
+                        class="img-fluid"
+                        loading="lazy"
+                        decoding="async"
+                        importance="low"
+                      />
+                    </a>
+                    <a href="" class="fw-semibold">
+                      Manas <br />
+                      National Park
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div
+                    class="month-dest-content bg-white p-3 d-flex align-items-center"
+                  >
+                    <a href="">
+                      <img
+                        src="assets/images/orangexplore.webp"
+                        alt=""
+                        class="img-fluid"
+                        loading="lazy"
+                        decoding="async"
+                        importance="low"
+                      />
+                    </a>
+                    <a href="" class="fw-semibold">
+                      Orang<br />
+                      National Park
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="row gx-md-5 gy-4 mt-2">
+                <div class="col-md-4">
+                  <div
+                    class="month-dest-content bg-white p-3 d-flex align-items-center"
+                  >
+                    <a href="">
+                      <img
+                        src="assets/images/nameriexplore.webp"
+                        alt=""
+                        class="img-fluid"
+                        loading="lazy"
+                        decoding="async"
+                        importance="low"
+                      />
+                    </a>
+                    <a href="" class="fw-semibold">
+                      Nameri<br />
+                      National Park
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div
+                    class="month-dest-content bg-white p-3 d-flex align-items-center"
+                  >
+                    <a href="">
+                      <img
+                        src="assets/images/pobitoraexplore.webp"
+                        alt=""
+                        class="img-fluid"
+                        loading="lazy"
+                        decoding="async"
+                        importance="low"
+                      />
+                    </a>
+                    <a href="" class="fw-semibold">
+                      Pobitora<br />
+                      National Park
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="visit-6-tab-pane"
+            role="tabpanel"
+            aria-labelledby="visit-6-tab"
+            tabindex="0"
+          >
+            <div class="month-dest">
+              <div class="row gx-md-5 gy-4">
+                <div class="col-md-4">
+                  <div
+                    class="month-dest-content bg-white p-3 d-flex align-items-center"
+                  >
+                    <a href="">
+                      <img
+                        src="assets/images/tadobaexplore.webp"
+                        alt=""
+                        class="img-fluid"
+                        loading="lazy"
+                        decoding="async"
+                        importance="low"
+                      />
+                    </a>
+                    <a href="" class="fw-semibold">
+                      Tadoba<br />
+                      National Park
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div
+                    class="month-dest-content bg-white p-3 d-flex align-items-center"
+                  >
+                    <a href="">
+                      <img
+                        src="assets/images/navegaonexplore.webp"
+                        alt=""
+                        class="img-fluid"
+                        loading="lazy"
+                        decoding="async"
+                        importance="low"
+                      />
+                    </a>
+                    <a href="" class="fw-semibold">
+                      Navegaon<br />
+                      National Park
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="visit-7-tab-pane"
+            role="tabpanel"
+            aria-labelledby="visit-7-tab"
+            tabindex="0"
+          >
+            <div class="month-dest">
+              <div class="row gx-md-5 gy-4">
+                <div class="col-md-4">
+                  <div
+                    class="month-dest-content bg-white p-3 d-flex align-items-center"
+                  >
+                    <a href="">
+                      <img
+                        src="assets/images/periyarexplore.webp"
+                        alt=""
+                        class="img-fluid"
+                        loading="lazy"
+                        decoding="async"
+                        importance="low"
+                      />
+                    </a>
+                    <a href="" class="fw-semibold">
+                      Periyar<br />
+                      Wildlife Sanctuary
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div
+                    class="month-dest-content bg-white p-3 d-flex align-items-center"
+                  >
+                    <a href="">
+                      <img
+                        src="assets/images/eravikulamexplore.webp"
+                        alt=""
+                        class="img-fluid"
+                        loading="lazy"
+                        decoding="async"
+                        importance="low"
+                      />
+                    </a>
+                    <a href="" class="fw-semibold">
+                      Eravikulam<br />
+                      National Park
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div
+                    class="month-dest-content bg-white p-3 d-flex align-items-center"
+                  >
+                    <a href="">
+                      <img
+                        src="assets/images/Thattekadexplore.webp"
+                        alt=""
+                        class="img-fluid"
+                        loading="lazy"
+                        decoding="async"
+                        importance="low"
+                      />
+                    </a>
+                    <a href="" class="fw-semibold">
+                      Thattekad<br />
+                      Bird Sanctuary
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="row gx-md-5 gy-4 mt-2">
+                <div class="col-md-4">
+                  <div
+                    class="month-dest-content bg-white p-3 d-flex align-items-center"
+                  >
+                    <a href="">
+                      <img
+                        src="assets/images/silentexplore.webp"
+                        alt=""
+                        class="img-fluid"
+                        loading="lazy"
+                        decoding="async"
+                        importance="low"
+                      />
+                    </a>
+                    <a href="" class="fw-semibold">
+                      Silent Valley<br />
+                      National Park
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div
+                    class="month-dest-content bg-white p-3 d-flex align-items-center"
+                  >
+                    <a href="">
+                      <img
+                        src="assets/images/peechiexplore.webp"
+                        alt=""
+                        class="img-fluid"
+                        loading="lazy"
+                        decoding="async"
+                        importance="low"
+                      />
+                    </a>
+                    <a href="" class="fw-semibold">
+                      Peechi-Vazhani<br />
+                      Sanctuary
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div
+                    class="month-dest-content bg-white p-3 d-flex align-items-center"
+                  >
+                    <a href="">
+                      <img
+                        src="assets/images/shendurneyexplore.webp"
+                        alt=""
+                        class="img-fluid"
+                        loading="lazy"
+                        decoding="async"
+                        importance="low"
+                      />
+                    </a>
+                    <a href="" class="fw-semibold">
+                      Shendurney<br />
+                      Sanctuary
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="visit-8-tab-pane"
+            role="tabpanel"
+            aria-labelledby="visit-8-tab"
+            tabindex="0"
+          >
+            <div class="month-dest">
+              <div class="row gx-md-5 gy-4">
+                <div class="col-md-4">
+                  <div
+                    class="month-dest-content bg-white p-3 d-flex align-items-center"
+                  >
+                    <a href="">
+                      <img
+                        src="assets/images/girexplore.webp"
+                        alt=""
+                        class="img-fluid"
+                        loading="lazy"
+                        decoding="async"
+                        importance="low"
+                      />
+                    </a>
+                    <a href="" class="fw-semibold">
+                      Gir<br />
+                      National Park
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div
+                    class="month-dest-content bg-white p-3 d-flex align-items-center"
+                  >
+                    <a href="">
+                      <img
+                        src="assets/images/marineexplore.webp"
+                        alt=""
+                        class="img-fluid"
+                        loading="lazy"
+                        decoding="async"
+                        importance="low"
+                      />
+                    </a>
+                    <a href="" class="fw-semibold">
+                      Marine<br />
+                      National Park
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="visit-9-tab-pane"
+            role="tabpanel"
+            aria-labelledby="visit-9-tab"
+            tabindex="0"
+          >
+            <div class="month-dest">
+              <div class="row gx-md-5 gy-4">
+                <div class="col-md-4">
+                  <div
+                    class="month-dest-content bg-white p-3 d-flex align-items-center"
+                  >
+                    <a href="">
+                      <img
+                        src="assets/images/palamauexplore.webp"
+                        alt=""
+                        class="img-fluid"
+                        loading="lazy"
+                        decoding="async"
+                        importance="low"
+                      />
+                    </a>
+                    <a href="" class="fw-semibold">
+                      The Palamau<br />
+                      Tiger Reserve
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div
+                    class="month-dest-content bg-white p-3 d-flex align-items-center"
+                  >
+                    <a href="">
+                      <img
+                        src="assets/images/nandankananexplore.webp"
+                        alt=""
+                        class="img-fluid"
+                        loading="lazy"
+                        decoding="async"
+                        importance="low"
+                      />
+                    </a>
+                    <a href="" class="fw-semibold">
+                      Nandankanan<br />
+                      Zoological Park
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div
+                    class="month-dest-content bg-white p-3 d-flex align-items-center"
+                  >
+                    <a href="">
+                      <img
+                        src="assets/images/chilkaexplore.webp "
+                        alt=""
+                        class="img-fluid"
+                        loading="lazy"
+                        decoding="async"
+                        importance="low"
+                      />
+                    </a>
+                    <a href="" class="fw-semibold">
+                      Chilka Wildlife<br />
+                      Sanctuaries
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="row gx-md-5 gy-4 mt-2">
+                <div class="col-md-4">
+                  <div
+                    class="month-dest-content bg-white p-3 d-flex align-items-center"
+                  >
+                    <a href="">
+                      <img
+                        src="assets/images/simlipalexplore.webp"
+                        alt=""
+                        class="img-fluid"
+                        loading="lazy"
+                        decoding="async"
+                        importance="low"
+                      />
+                    </a>
+                    <a href="" class="fw-semibold">
+                      Simlipal<br />
+                      National Park
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div
+                    class="month-dest-content bg-white p-3 d-flex align-items-center"
+                  >
+                    <a href="">
+                      <img
+                        src="assets/images/sundarbanexplore.webp"
+                        alt=""
+                        class="img-fluid"
+                        loading="lazy"
+                        decoding="async"
+                        importance="low"
+                      />
+                    </a>
+                    <a href="" class="fw-semibold">
+                      Sunderbans<br />
+                      National Park
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div
+                    class="month-dest-content bg-white p-3 d-flex align-items-center"
+                  >
+                    <a href="">
+                      <img
+                        src="assets/images/dudhwaexplore.webp"
+                        alt=""
+                        class="img-fluid"
+                        loading="lazy"
+                        decoding="async"
+                        importance="low"
+                      />
+                    </a>
+                    <a href="" class="fw-semibold">
+                      Dudhwa<br />
+                      National Park
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="row gx-md-5 gy-4 mt-2">
+                <div class="col-md-4">
+                  <div
+                    class="month-dest-content bg-white p-3 d-flex align-items-center"
+                  >
+                    <a href="">
+                      <img
+                        src="assets/images/pinvalleyexplore.webp"
+                        alt=""
+                        class="img-fluid"
+                        loading="lazy"
+                        decoding="async"
+                        importance="low"
+                      />
+                    </a>
+                    <a href="" class="fw-semibold">
+                      Pin Valley<br />
+                      National Park
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div
+                    class="month-dest-content bg-white p-3 d-flex align-items-center"
+                  >
+                    <a href="">
+                      <img
+                        src="assets/images/greathimalayanexplore.webp"
+                        alt=""
+                        class="img-fluid"
+                        loading="lazy"
+                        decoding="async"
+                        importance="low"
+                      />
+                    </a>
+                    <a href="" class="fw-semibold">
+                      Great Himalayan<br />
+                      National Park
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div
+                    class="month-dest-content bg-white p-3 d-flex align-items-center"
+                  >
+                    <a href="">
+                      <img
+                        src="assets/images/pakkeexplore.webp"
+                        alt=""
+                        class="img-fluid"
+                        loading="lazy"
+                        decoding="async"
+                        importance="low"
+                      />
+                    </a>
+                    <a href="" class="fw-semibold">
+                      Pakke Tiger<br />
+                      Reserve
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="row gx-md-5 gy-4 mt-2">
+                <div class="col-md-4">
+                  <div
+                    class="month-dest-content bg-white p-3 d-flex align-items-center"
+                  >
+                    <a href="">
+                      <img
+                        src="assets/images/maulingexplore.webp"
+                        alt=""
+                        class="img-fluid"
+                        loading="lazy"
+                        decoding="async"
+                        importance="low"
+                      />
+                    </a>
+                    <a href="" class="fw-semibold">
+                      Mouling<br />
+                      National Park
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div
+                    class="month-dest-content bg-white p-3 d-flex align-items-center"
+                  >
+                    <a href="">
+                      <img
+                        src="assets/images/namdaphaexplore.webp "
+                        alt=""
+                        class="img-fluid"
+                        loading="lazy"
+                        decoding="async"
+                        importance="low"
+                      />
+                    </a>
+                    <a href="" class="fw-semibold">
+                      Namdapha<br />
+                      National Park
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div
+                    class="month-dest-content bg-white p-3 d-flex align-items-center"
+                  >
+                    <a href="">
+                      <img
+                        src="assets/images/mudumalaiexplore.webp"
+                        alt=""
+                        class="img-fluid"
+                        loading="lazy"
+                        decoding="async"
+                        importance="low"
+                      />
+                    </a>
+                    <a href="" class="fw-semibold">
+                      Mudumalai<br />
+                      Sanctuary
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="row gx-md-5 gy-4 mt-2">
+                <div class="col-md-4">
+                  <div
+                    class="month-dest-content bg-white p-3 d-flex align-items-center"
+                  >
+                    <a href="">
+                      <img
+                        src="assets/images/mukurthyexplore.webp"
+                        alt=""
+                        class="img-fluid"
+                        loading="lazy"
+                        decoding="async"
+                        importance="low"
+                      />
+                    </a>
+                    <a href="" class="fw-semibold">
+                      Mukurthi<br />
+                      National Park
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div
+                    class="month-dest-content bg-white p-3 d-flex align-items-center"
+                  >
+                    <a href="">
+                      <img
+                        src="assets/images/anamalaiexplore.webp"
+                        alt=""
+                        class="img-fluid"
+                        loading="lazy"
+                        decoding="async"
+                        importance="low"
+                      />
+                    </a>
+                    <a href="" class="fw-semibold">
+                      Anamalai<br />Tiger Reserve
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div
+                    class="month-dest-content bg-white p-3 d-flex align-items-center"
+                  >
+                    <a href="">
+                      <img
+                        src="assets/images/guindyexplore.webp"
+                        alt=""
+                        class="img-fluid"
+                        loading="lazy"
+                        decoding="async"
+                        importance="low"
+                      />
+                    </a>
+                    <a href="" class="fw-semibold">
+                      Guindy<br />
+                      National Park
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="row gx-md-5 gy-4 mt-2">
+                <div class="col-md-4">
+                  <div
+                    class="month-dest-content bg-white p-3 d-flex align-items-center"
+                  >
+                    <a href="">
+                      <img
+                        src="assets/images/gulfexplore.webp"
+                        alt=""
+                        class="img-fluid"
+                        loading="lazy"
+                        decoding="async"
+                        importance="low"
+                      />
+                    </a>
+                    <a href="" class="fw-semibold">
+                      Gulf Of Mannar<br />
+                      Marine National Park
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div
+                    class="month-dest-content bg-white p-3 d-flex align-items-center"
+                  >
+                    <a href="">
+                      <img
+                        src="assets/images/gandhiexplore.webp"
+                        alt=""
+                        class="img-fluid"
+                        loading="lazy"
+                        decoding="async"
+                        importance="low"
+                      />
+                    </a>
+                    <a href="" class="fw-semibold">
+                      Mahatma Gandhi<br />
+                      Marine National Park
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="visit-by-state sec_padd">
+      <div class="container">
+        <div class="main-heading">
+          <h2>Explore Wildlife Tours by National Park</h2>
+          <a href="" class="readbtn mt-5">views more</a>
+        </div>
+        <div class="swiper mySwiper stateSlider itemsfiveSlider topbtn_slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="">
+                <img
+                  src="./assets/images/kanhatour.webp"
+                  alt="lion"
+                  class="img-fluid br_5 flt-br8"
+                  loading="lazy"
+                  decoding="async"
+                  importance="low"
+                />
+              </a>
+
+              <div class="">
+                <h5>
+                  <a href="" class="common-hover">Kanha Wildlife Tours</a>
+                </h5>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <a href="">
+                <img
+                  src="./assets/images/pannanp.webp"
+                  alt="lion"
+                  class="img-fluid br_5 flt-br8"
+                  loading="lazy"
+                  decoding="async"
+                  importance="low"
+                />
+              </a>
+
+              <div class="">
+                <h5>
+                  <a href="" class="common-hover">Panna Wildlife Tours</a>
+                </h5>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <a href="">
+                <img
+                  src="./assets/images/penchtour.webp"
+                  alt="lion"
+                  class="img-fluid br_5 flt-br8"
+                  loading="lazy"
+                  decoding="async"
+                  importance="low"
+              /></a>
+
+              <div class="">
+                <h5>
+                  <a href="" class="common-hover">Pench Wildlife Tours</a>
+                </h5>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <a href=""
+                ><img
+                  src="./assets/images/tadobanp.webp"
+                  alt="lion"
+                  class="img-fluid br_5 flt-br8"
+                  loading="lazy"
+                  decoding="async"
+                  importance="low"
+              /></a>
+
+              <div class="">
+                <h5>
+                  <a href="" class="common-hover">Tadoba Wildlife Tours</a>
+                </h5>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <a href="">
+                <img
+                  src="./assets/images/sunderbantour.webp"
+                  alt="lion"
+                  class="img-fluid br_5 flt-br8"
+                  loading="lazy"
+                  decoding="async"
+                  importance="low"
+                />
+              </a>
+
+              <div class="">
+                <h5>
+                  <a href="" class="common-hover">Sunderban Wildlife Tours</a>
+                </h5>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <a href="" class="common-hover">
+                <img
+                  src="./assets/images/bandhavgarhtour.webp"
+                  alt="lion"
+                  class="img-fluid br_5 flt-br8"
+                  loading="lazy"
+                  decoding="async"
+                  importance="low"
+              /></a>
+
+              <div class="">
+                <h5>
+                  <a href="" class="common-hover">Bandhavgarh Wildlife Tours</a>
+                </h5>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <a href="">
+                <img
+                  src="./assets/images/bandipurtour.webp"
+                  alt="lion"
+                  class="img-fluid br_5 flt-br8"
+                  loading="lazy"
+                  decoding="async"
+                  importance="low"
+              /></a>
+
+              <div class="">
+                <h5>
+                  <a href="" class="common-hover">Bandipur Wildlife Tours</a>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next">
+            <i class="fas fa-long-arrow-alt-right"></i>
+          </div>
+          <div class="swiper-button-prev">
+            <i class="fas fa-long-arrow-alt-left"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="quick_links sec_padd">
+      <div class="container">
+        <h4 class="fw-bold mb-0">Quick Links</h4>
+        <p class="">These Popular Destinations Have A Lot To Offer</p>
+        <ul
+          class="nav nav-tabs custom_tabs flex-nowrap overflow-x-auto overflow-y-hidden gap-3 gap-md-4"
+          id="myTab"
+          role="tablist"
+        >
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active text-uppercase"
+              id="quick-1"
+              data-bs-toggle="tab"
+              data-bs-target="#quick-1-pane"
+              type="button"
+              role="tab"
+              aria-controls="quick-1-pane"
+              aria-selected="true"
+            >
+              Top Destination
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link text-uppercase"
+              id="quick-2"
+              data-bs-toggle="tab"
+              data-bs-target="#quick-2-pane"
+              type="button"
+              role="tab"
+              aria-controls="quick-2-pane"
+              aria-selected="false"
+            >
+              Beach Vacation
+            </button>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div
+            class="tab-pane fade show active"
+            id="quick-1-pane"
+            role="tabpanel"
+            aria-labelledby="quick-1"
+            tabindex="0"
+          >
+            <div class="row">
+              <div class="col-md-3 col-sm-6 col-6">
+                <ul class="list-unstyled ps-0">
+                  <li>
+                    <a href="#">Taj Mahal</a>
+                  </li>
+                  <li>
+                    <a href="#">Taj Mahal</a>
+                  </li>
+                  <li>
+                    <a href="#">Taj Mahal</a>
+                  </li>
+                  <li>
+                    <a href="#">Taj Mahal</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-3 col-sm-6 col-6">
+                <ul class="list-unstyled ps-0">
+                  <li>
+                    <a href="#">Mussoorie</a>
+                  </li>
+                  <li>
+                    <a href="#">Mussoorie</a>
+                  </li>
+                  <li>
+                    <a href="#">Mussoorie</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-3 col-sm-6 col-6">
+                <ul class="list-unstyled ps-0">
+                  <li>
+                    <a href="#">Bandhavgarh</a>
+                  </li>
+                  <li>
+                    <a href="#">Bandhavgarh</a>
+                  </li>
+                  <li>
+                    <a href="#">Bandhavgarh</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-3 col-sm-6 col-6">
+                <ul class="list-unstyled ps-0">
+                  <li>
+                    <a href="#">Ooty</a>
+                  </li>
+                  <li>
+                    <a href="#">Ooty</a>
+                  </li>
+                  <li>
+                    <a href="#">Ooty</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="quick-2-pane"
+            role="tabpanel"
+            aria-labelledby="quick-2"
+            tabindex="0"
+          >
+            <div class="row">
+              <div class="col-md-3 col-sm-6 col-6">
+                <ul class="list-unstyled ps-0">
+                  <li>
+                    <a href="#">Taj Mahal</a>
+                  </li>
+                  <li>
+                    <a href="#">Taj Mahal</a>
+                  </li>
+                  <li>
+                    <a href="#">Taj Mahal</a>
+                  </li>
+                  <li>
+                    <a href="#">Taj Mahal</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-3 col-sm-6 col-6">
+                <ul class="list-unstyled ps-0">
+                  <li>
+                    <a href="#">Mussoorie</a>
+                  </li>
+                  <li>
+                    <a href="#">Mussoorie</a>
+                  </li>
+                  <li>
+                    <a href="#">Mussoorie</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-3 col-sm-6 col-6">
+                <ul class="list-unstyled ps-0">
+                  <li>
+                    <a href="#">Bandhavgarh</a>
+                  </li>
+                  <li>
+                    <a href="#">Bandhavgarh</a>
+                  </li>
+                  <li>
+                    <a href="#">Bandhavgarh</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-3 col-sm-6 col-6">
+                <ul class="list-unstyled ps-0">
+                  <li>
+                    <a href="#">Ooty</a>
+                  </li>
+                  <li>
+                    <a href="#">Ooty</a>
+                  </li>
+                  <li>
+                    <a href="#">Ooty</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="">
+      <div class="container position-relative">
+        <div class="footer_top_contnt position-absolute">
+          <div class="footer_top_contnt_inner_top">
+            <div class="row align-items-center gy-4">
+              <div class="col-6 d-flex align-items-center">
+                <div class="border-end border-1 pe-3">
+                  <img
+                    src="./assets/images/tmi-logo.png"
+                    alt=""
+                    class="img-fluid"
+                    loading="lazy"
+                    importance="low"
+                    decoding="async"
+                  />
+                </div>
+                <div>
+                  <p class="mb-0 ps-md-3 d-md-inline d-none">
+                    It's time for new Experiences
+                  </p>
+                </div>
+              </div>
+              <div class="col-6">
+                <div
+                  class="footer_top_contnt_right d-flex align-items-center justify-content-end"
+                >
+                  <p class="d-lg-inline d-none mb-0 pe-3">
+                    Find The Perfect Escape
+                  </p>
+                  <a href="#">Book Your Trip</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer_top_contnt_inner_bottom">
+            <div class="row gy-4 gy-lg-0">
+              <div class="col-lg-3 col-6">
+                <h5 class="mb-0">Company</h5>
+                <ul class="list-unstyled mb-0 p-0">
+                  <li>
+                    <a href="">About Us</a>
+                  </li>
+                  <li>
+                    <a href="">About Us</a>
+                  </li>
+                  <li>
+                    <a href="">About Us</a>
+                  </li>
+                  <li>
+                    <a href="">About Us</a>
+                  </li>
+                  <li>
+                    <a href="">About Us</a>
+                  </li>
+                  <li>
+                    <a href="">About Us</a>
+                  </li>
+                  <li>
+                    <a href="">About Us</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-3 col-6">
+                <h5 class="mb-0">Company</h5>
+                <ul class="list-unstyled mb-0 p-0">
+                  <li>
+                    <a href="">About Us</a>
+                  </li>
+                  <li>
+                    <a href="">About Us</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-3 col-6">
+                <h5 class="mb-0">Company</h5>
+                <ul class="list-unstyled mb-0 p-0">
+                  <li>
+                    <a href="">About Us</a>
+                  </li>
+                  <li>
+                    <a href="">About Us</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer_partners">
+          <div
+            class="d-flex align-items-center justify-content-center flex-wrap gap-3"
+          >
+            <img
+              src="./assets/images/incridble.webp"
+              alt="inner-collapseOne"
+              importance="low"
+              loading="lazy"
+              decoding="async"
+              class="img-fluid"
+            />
+            <img
+              src="./assets/images/tigers.webp"
+              alt="inner-collapseOne"
+              importance="low"
+              loading="lazy"
+              decoding="async"
+              class="img-fluid"
+            />
+            <img
+              src="./assets/images/incridble.webp"
+              alt="inner-collapseOne"
+              importance="low"
+              loading="lazy"
+              decoding="async"
+              class="img-fluid"
+            />
+            <img
+              src="./assets/images/triangle.webp"
+              alt="inner-collapseOne"
+              importance="low"
+              loading="lazy"
+              decoding="async"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+        <div class="footer-info-content position-relative">
+          <ul
+            class="footer-info d-flex align-items-center justify-content-center flex-wrap"
+          >
+            <li>
+              <i class="fa-solid fa-location-dot"></i>C - 81C, Sector - 8, Noida
+              - 201301
+            </li>
+            <li>
+              <i class="fa fa-phone" aria-hidden="true"></i>+91-120-4052615 - 99
+              (85 hunting lines are available)
+            </li>
+            <li><i class="fa fa-fax" aria-hidden="true"></i>+91-120-4052699</li>
+            <li>
+              <i class="fa fa-mobile" aria-hidden="true"></i>+91-9212777223/24
+            </li>
+            <li>
+              <i class="fa fa-envelope-o" aria-hidden="true"></i
+              >info@tourmyindia.com
+            </li>
+            <li>
+              <i class="fa-brands fa-whatsapp"></i>+91-9212777225 (Only for
+              Whatsapp)
+            </li>
+            <li><i class="fa-brands fa-skype"></i>tourmyindiadelhi</li>
+          </ul>
+          <div
+            class="social-icons d-flex position-absolute start-50 translate-middle"
+          >
+            <a href="https://twitter.com/tourmyindiaa" target="_blank"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+            <a href="https://www.facebook.com/tourmyindia" target="_blank"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/company/tour-my-india--india-tours-&amp;-travel-agency"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+            <a href="https://www.youtube.com/tourmyindia" target="_blank"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+          </div>
+        </div>
+        <p class="text-center text-white mb-0 pt-4 footer_bottom">
+          Copyright©2025, Tour My India Pvt. Ltd
+        </p>
+      </div>
+    </footer>
+    <section
+      id="sticky-box"
+      class="sticky-box position-fixed bottom-0 bg-white w-100"
+    >
+      <div class="container">
+        <ul
+          class="w-100 text-center d-flex justify-content-center list-unstyled mb-0"
+        >
+          <li class="text-center">
+            <a href="#">
               <img
-                src="https://www.tourmyindia.com/imgnew/india-tour.svg"
+                src="./assets/images/india-tour.svg"
                 alt="india tour"
+                loading="lazy"
+                decoding="async"
+                importance="low"
               />
               <h3>India Tours</h3>
             </a>
           </li>
-          <li>
-            <a href="https://www.tourmyindia.com/international/packages/">
+          <li class="text-center">
+            <a href="#">
               <img
-                src="https://www.tourmyindia.com/imgnew/international-tour.svg"
+                src="./assets/images/international-tour.svg"
                 alt="international-tour"
+                loading="lazy"
+                decoding="async"
+                importance="low"
               />
               <h3>International Tours</h3>
             </a>
           </li>
-          <li>
-            <a href="https://www.tourmyindia.com/wedding/">
+          <li class="text-center">
+            <a href="#">
               <img
-                src="https://www.tourmyindia.com/imgnew/destinaton-wedding.svg"
+                src="/assets/images/destinaton-wedding.svg"
                 alt="destinaton-wedding"
+                loading="lazy"
+                decoding="async"
+                importance="low"
               />
               <h3>Destination Wedding</h3>
             </a>
           </li>
 
-          <li class="enquire">
-            <a class="cont" href="tel:+91-9212777225">
-              <span
-                ><img
-                  src="https://www.tourmyindia.com/imgnew/phone.png"
-                  alt="phone"
-                />+91-9212777225</span
+          <li class="enquire position-absolute">
+            <a
+              class="cont bg-white d-flex justify-content-center align-items-center d-md-inline-block"
+              href="tel:+91-9212777225"
+            >
+              <img
+                src="./assets/images/phone.png"
+                alt="phone"
+                loading="lazy"
+                decoding="async"
+                importance="low"
+              />
+              <span class="d-none d-md-inline fw-medium">
+                +91-9212777225</span
               ></a
             >
             <a
@@ -687,15 +4542,50 @@
               data-id="popup_default"
               tabindex="0"
             >
-              <h3>
+              <span
+                class="loc text-center text-white text-capitalize d-block d-md-inline-block"
+              >
                 <img
-                  src="https://www.tourmyindia.com/imgnew/plan-location.png"
+                  src="./assets/images/plan-location.png"
                   alt="plan-location"
+                  loading="lazy"
+                  decoding="async"
+                  importance="low"
                 />Plan Your trip
-              </h3>
+              </span>
             </a>
           </li>
         </ul>
+      </div>
+    </section>
+
+    <section class="innerpagesearch_sec">
+      <div class="container">
+        <button class="btn position-absolute end-0 z-1" id="closeBtn"><i class="fa-solid fa-x fa-beat"></i></button>
+        <div class="row gy-3 justify-content-center align-items-center">
+          <div class="col-md-7 pe-4 pe-sm-0">
+            <div class="">
+              <div class="input-group mb-0 align-items-center homepage-search">
+                <select class="form-select shadow-none" id="inputGroupSelect01">
+                  <option selected>Choose...</option>
+                  <option value="1">One One efvfv wfweRFerrfE E FRERE</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+                <input
+                  type="text"
+                  placeholder="search by destination, holiday idea, package, etc."
+                  class="form-control border-0 shadow-none ms-0"
+                  aria-label="Text input with dropdown button"
+                />
+
+                <button class="btn search_btn ms-1">
+                  <i class="fa-solid fa-magnifying-glass fa-rotate-90"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </body>

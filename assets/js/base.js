@@ -108,14 +108,13 @@ var swiper = new Swiper(".homebanner-slider", {
   },
 });
 
-
- var swiper = new Swiper(".galleySliderthumb", {
-      loop: true,
-      spaceBetween: 10,
-      slidesPerView: 1  ,
-      freeMode: true,
-      watchSlidesProgress: true,
-       breakpoints: {
+var swiper = new Swiper(".galleySliderthumb", {
+  loop: true,
+  spaceBetween: 10,
+  slidesPerView: 1,
+  freeMode: true,
+  watchSlidesProgress: true,
+  breakpoints: {
     458: {
       slidesPerView: 1,
     },
@@ -136,32 +135,50 @@ var swiper = new Swiper(".homebanner-slider", {
       spaceBetween: 30,
     },
   },
+});
+var swiper2 = new Swiper(".galleySliderbg", {
+  loop: true,
+  spaceBetween: 10,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  thumbs: {
+    swiper: swiper,
+  },
+});
 
-    });
-    var swiper2 = new Swiper(".galleySliderbg", {
-      loop: true,
-      spaceBetween: 10,
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      thumbs: {
-        swiper: swiper,
-      },
-    });
-
-
-    // btntoggler
-document.querySelectorAll('#toggleButton').forEach(function (btn) {
-  btn.addEventListener('click', function () {
+// btntoggler
+document.querySelectorAll("#toggleButton").forEach(function (btn) {
+  btn.addEventListener("click", function () {
     const clickedBtn = this;
     setTimeout(() => {
-      if (clickedBtn.classList.contains('collapsed')) {
-        clickedBtn.innerHTML = 'Read More<i class="fa fa-angle-right ps-2" aria-hidden="true"></i>';
+      if (clickedBtn.classList.contains("collapsed")) {
+        clickedBtn.innerHTML =
+          'Read More<i class="fa fa-angle-right ps-2" aria-hidden="true"></i>';
       } else {
-        clickedBtn.innerHTML = 'Read Less<i class="fa fa-angle-up ps-2" aria-hidden="true"></i>';
+        clickedBtn.innerHTML =
+          'Read Less<i class="fa fa-angle-up ps-2" aria-hidden="true"></i>';
       }
     }, 150);
   });
 });
 // btntoggler
+const closeBtn = document.getElementById("closeBtn");
+const searchBtns = document.querySelectorAll(".searchbtn");
+const innerpagesearchSec = document.querySelector(".innerpagesearch_sec");
+
+searchBtns.forEach((btn) => {
+  btn.addEventListener("click", function () {
+    console.log("Search clicked");
+    innerpagesearchSec.classList.remove("d-none");
+    innerpagesearchSec.classList.toggle("d-block");
+  });
+});
+
+
+closeBtn.addEventListener("click", function () {
+  console.log("Close clicked");
+  innerpagesearchSec.classList.remove("d-block");
+  innerpagesearchSec.classList.add("d-none");
+});

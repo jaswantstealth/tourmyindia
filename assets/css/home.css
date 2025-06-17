@@ -58,7 +58,7 @@
 .homepagebanner .content-page {
   padding: 0px 45px;
   @media screen and (max-width: 992px) {
-    padding: 30px 22px;
+    padding: 0;
   }
 }
 .homepagebanner h1 {
@@ -320,14 +320,14 @@
   width: 100%;
   height: 35vh;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   margin-bottom: 24px;
 }
 .travel-stories .blog-area a {
   text-decoration: none;
   font-size: 20px;
   font-weight: 600;
-  line-height: 30px;
+  line-height: 1.2;
   padding-top: 10px;
   color: var(--primary-text-color);
 }
@@ -335,7 +335,6 @@
 @media only screen and (max-width: 992px) {
   .travel-stories .blog-area a {
     font-size: 17px;
-    line-height: 23px;
   }
 }
 
@@ -350,28 +349,19 @@
 
 /* destinationsbyreagion */
 /* trending_sec start */
-.trending_sec {
-  padding-bottom: 20px;
-}
+
 .trending_sec .pack-content {
   padding-top: 20px;
 }
 .trending_sec .pack-content h3 a {
   font-size: 18px;
-  line-height: 26px;
+  line-height: 1.2;
   font-weight: 600;
   color: var(--primary-text-color);
   padding-top: 10px;
 }
 .swiper.comman_slider {
   padding-bottom: 80px;
-}
-.trending_sec .pack-content h3 a {
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: 600;
-  color: var(--primary-text-color);
-  padding-top: 10px;
 }
 
 @media screen and (max-width: 991px) {
@@ -385,9 +375,6 @@
 /* trending_sec end */
 /* tabstypetwo start */
 
-.tabstypetwo {
-  padding-bottom: 50px;
-}
 .tabs_outline {
   min-width: 148px;
   border-bottom: 0px solid #d9d9e8;
@@ -404,7 +391,7 @@
   border: 1px solid var(--secondary-color);
   color: var(--secondary-color);
   font-size: 15px;
-  line-height: 22px;
+  line-height: 1.2;
   font-weight: 600;
 }
 
@@ -418,12 +405,12 @@
   display: block;
   font-weight: 400;
   font-size: 15px;
-  line-height: 26px;
+
   color: var(--primary-text-color);
 }
 @media screen and (max-width: 768px) {
-  .tabstypetwo {
-    padding-bottom: 30px;
+  .pack-sec {
+    text-align: center;
   }
 }
 /* tabstypetwo end */
@@ -628,8 +615,8 @@
 @media screen and (max-width: 1200px) {
   .galleySlider_bg {
     height: 550px;
-   -o-object-fit: cover;
-     object-fit: cover;
+    -o-object-fit: cover;
+    object-fit: cover;
   }
 }
 
@@ -678,7 +665,7 @@
 /* infromation */
 .information_box h3 {
   font-size: 36px;
-  line-height: 54px;
+  line-height: 1.2;
   color: var(--primary-text-color);
 }
 .information_box {
@@ -698,7 +685,14 @@
 .information_box a {
   color: var(--secondary-color);
 }
-
+@media screen and (max-width: 767px) {
+  .information_box {
+    padding: 30px 20px 30px 30px;
+  }
+  .information_box h3 {
+    font-size: 28px;
+  }
+}
 /* infromation */
 /* quick_links */
 .quick_links h4 {
@@ -716,100 +710,6 @@
   color: var(--text-light-color);
 }
 /* quick_links end */
-
-/* faq section */
-.faq {
-  padding: 70px 0px;
-}
-
-.faq .faq-content h5 {
-  font-size: 24px;
-  line-height: 34px;
-  color: var(--primary-text-color);
-  padding-bottom: 20px;
-}
-.faq .faq-content a {
-  padding: 16px 64px;
-  border-radius: 60px;
-  display: inline-block;
-  background-color: var(--secondary-color);
-  color: #fff;
-  border: 1px solid transparent;
-}
-.faq .faq-content a:hover {
-  color: var(--secondary-color);
-  background: #fff;
-  transition: all 0.5s ease-in-out;
-  border: 1px solid var(--secondary-color);
-}
-
-.common_acc .accordion .accordion-item:first-child {
-  border-top: 1px solid #d9d9e8;
-}
-.common_acc .accordion .accordion-item {
-  padding: 15px 0 20px;
-  border-width: 1px 0 1px 0;
-  background-color: transparent;
-}
-.common_acc .accordion .accordion-item .accordion-body a {
-  color: var(--secondary-color);
-}
-.common_acc .accordion .accordion-item .accordion-body {
-  font-size: 16px;
-  line-height: 26px;
-  color: #38404f;
-  padding: 20px 0;
-}
-.common_acc .accordion-item .accordion-button {
-  background-color: transparent;
-  font-size: 20px;
-  line-height: 30px;
-  color: var(--primary-text-color);
-  font-weight: 700;
-  padding-left: 0;
-  gap: 12px;
-}
-@media screen and (max-width: 767px) {
-  .faq .faq-content a {
-    padding: 10px 40px;
-  }
-  .information_box {
-    padding: 30px 20px 30px 30px;
-  }
-  .information_box h3 {
-    font-size: 28px;
-  }
-  .faq .faq-content h5 {
-    font-size: 18px;
-  }
-  .common_acc .accordion .accordion-item {
-    padding: 1px 0 0px;
-  }
-  .common_acc .accordion-item .accordion-button {
-    background-color: transparent;
-    font-size: 18px;
-    line-height: normal;
-  }
-}
-
-.orang_arrow .accordion-button::after {
-  background-image: url("../images/orange-arrow.png");
-}
-.orang_arrow .accordion-button:not(.collapsed)::after {
-  background-image: url("../images/orange-arrowup.png");
-}
-.faq .accordion-button::after {
-  background-image: url("../images/faqarrowdown.png");
-}
-.faq .accordion-button:not(.collapsed)::after {
-  background-image: url("../images/faqarrowup.png");
-}
-
-.faq .accordion-flush > .accordion-item:last-child {
-  border-bottom: 1px solid #dee2e6;
-  margin-bottom: 30px;
-}
-/* faq section */
 
 /* more-info */
 .more-info {
@@ -868,3 +768,4 @@ h4 {
   color: var(--secondary-color);
 }
 /* travel_india */
+

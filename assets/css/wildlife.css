@@ -1,0 +1,189 @@
+/* destinaton_herosec */
+.destinaton_herosec .home-page .breadcrumb-item a {
+  color: var(--secondary-color);
+}
+.destinaton_herosec .breadcrumb-item + .breadcrumb-item::before {
+  color: #fff;
+}
+.destinaton_herosec h1 {
+  font-size: 22px;
+}
+.destinaton_herosec .home-page {
+  padding-left: 20px;
+  border-left: 3px solid var(--secondary-color);
+}
+.destinaton_herosec_img {
+
+  min-height: 60vh;
+}
+
+
+.home-page_wraper{
+ width: 100%; 
+}
+
+
+@media screen  and (min-width:768px){
+  .destinaton_herosec h1 {
+    font-size: 50px;
+  }
+  .destinaton_herosec_img {
+    min-height: 60vh;
+  }
+}
+@media screen  and (min-width:991px){
+  .destinaton_herosec h1 {
+    font-size: 64px;
+  }
+
+}
+/* destinaton_herosec */
+
+/* popular section */
+
+.popular a {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.popular h5 {
+  font-size: 20px;
+  line-height: 33px;
+  font-weight: 600;
+  padding-top: 8px;
+}
+/* popular section end */
+
+/* park section */
+@media screen and (max-width: 967px) {
+  .parks {
+    padding: 35px 0 40px;
+  }
+}
+.park-page h3 {
+  color: var(--secondary-color);
+  padding-bottom: 38px;
+  font-size: 50px;
+}
+@media screen and (max-width: 1199px) {
+  .park-page h3 {
+    font-size: 42px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .park-page h3 {
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 399px) {
+  .park-page h3 {
+    font-size: 28px;
+  }
+}
+.park-page a {
+  font-size: 14px;
+  font-weight: 600;
+  display: inline-block;
+}
+.park-page p {
+  line-height: 25px;
+}
+@media screen and (max-width: 967px) {
+  .park-page p {
+    padding-top: 25px;
+  }
+}
+
+/* park section end */
+
+/* state section */
+
+.state .state-page h4 {
+  font-size: 40px;
+}
+
+/* state section end */
+
+.tour_package p {
+  font-size: 14px;
+  line-height: 1.2;
+  color: #38404f;
+}
+.tour_package h5 {
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 700;
+  color: #38404f;
+}
+.tables-scroll .table_content table td {
+  background-color: transparent !important;
+  border: 1px solid #c7c7c7;
+}
+
+/* package */
+
+.package a {
+  font-size: 18px;
+}
+
+.package .package_content span {
+  color: #555555;
+  font-size: 15px;
+}
+.package .package_content h5 {
+  color: #555555;
+  font-size: 18px;
+  line-height: 1.2;
+}
+.package .package_content img {
+  border-radius: 5px;
+}
+/* package end*/
+/* visitbyseason */
+
+.visitbyseason .season-visit img {
+  filter: brightness(0.8);
+}
+.visitbyseason h3 {
+  font-size: 40px;
+}
+@media screen and (max-width: 1199px) {
+  .visitbyseason h3 {
+    font-size: 36px;
+    line-height: 1.2;
+  }
+}
+@media screen and (max-width: 991px) {
+  .visitbyseason h3 {
+    font-size: 30px;
+    line-height: 1.2;
+  }
+}
+/* visitbyseason end */
+
+/* visithills */
+
+.visit-hills p {
+  line-height: 1.2;
+}
+.visit-hills img {
+  filter: brightness(0.8);
+}
+/* visithills end*/
+
+/* visit-by-month */
+
+.visit-by-month .nav-tabs .nav-link.active {
+  background-color: transparent;
+}
+
+.visit-by-month .month-dest .month-dest-content {
+  border: 1px solid #e7e7e7;
+  gap: 24px;
+}
+.visit-by-month .month-dest .month-dest-content a {
+  font-size: 18px;
+}
+/* visit-by-month end */
