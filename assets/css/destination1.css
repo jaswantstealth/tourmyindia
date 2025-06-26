@@ -1,0 +1,243 @@
+/* overview  section*/
+.overview {
+  background-color: #42485a;
+  padding: 90px 0 40px;
+}
+
+.overview .overview-content li {
+  list-style: none;
+  display: inline-block;
+  padding: 20px 20px;
+}
+.overview .overview-content ul {
+  background-color: white;
+  border-radius: 70px;
+  box-shadow: 0 0 20px rgba(98, 99, 124, 0.2);
+
+  top: -20px;
+  text-align: center;
+}
+@media screen and (max-width: 991px) {
+  .overview .overview-content ul {
+    background-color: white;
+    box-shadow: 0 0 20px rgba(98, 99, 124, 0.2);
+    top: -20px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    width: 100%;
+    border-radius: 0px;
+  }
+}
+.overview .overview-content li a {
+  font-size: 15px;
+  font-weight: 600;
+  padding: 0 15px;
+}
+
+.overview .clander-best img {
+  height: 100%;
+}
+.overview .clander-best p {
+  font-size: 15px;
+  font-weight: bold;
+  position: relative;
+}
+.overview .clander-best p ::after {
+  background: #686c78;
+  position: absolute;
+  left: 177px;
+  top: 3px;
+  content: "";
+  height: 38px;
+  width: 1px;
+}
+.overview .clander-best .visa ::after {
+  display: none;
+}
+
+.overview .clander-best p span {
+  font-size: 14px;
+  font-weight: normal;
+}
+.overview .overview-site-map a {
+  background-color: #ff6612;
+  text-decoration: none;
+  border-radius: 3px;
+  padding: 8px 17px;
+  font-size: 14px;
+}
+
+/* overview  section end*/
+
+/* rajasthan tourism section */
+.rajasthan_tourism p {
+  font-size: 15px;
+  font-weight: normal;
+}
+.rajasthan_tourism li::marker {
+  color: #ff6612;
+}
+.rajasthan_tourism td {
+  border: 1px solid #eee;
+  padding: 5px 15px;
+}
+.rajasthan_tourism .main_heading h3 {
+  font-size: 22px;
+  font-weight: 600;
+}
+.rajasthan_tourism button {
+  font-style: normal;
+
+  font-size: 15px;
+
+  color: #ff6612;
+  line-height: 30px;
+
+  background: none;
+  border: none;
+}
+
+/* rajasthan tourism section end*/
+
+/* for base css */
+/* place to visit section */
+.place_to_visit .visit_box {
+  border-radius: 3px;
+}
+.place_to_visit .visit_box .detail_box {
+  padding: 25px;
+}
+
+.place_to_visit .visit_box .detail_box p {
+  font-size: 15px;
+}
+
+.place_to_visit .visit_box .visit_btn span {
+  border-radius: 25px;
+  font-size: 13px;
+  padding: 0px 15px;
+  color: #9d9fa5;
+}
+
+.place_to_visit .visit_box .visit_btn a {
+  display: inline-block;
+  color: #ff6612;
+  font-size: 14px;
+}
+/* place to visit section end */
+
+/* faq_why */
+
+.faq h4 {
+  font-size: 15px;
+  font-weight: bold;
+  color: #585c66;
+}
+.faq span {
+  color: #ff6612;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.faq .why_choose {
+  border-radius: 3px;
+}
+.faq .why_choose h5 {
+  font-size: 22px;
+}
+.faq .why_choose .why_contentbox h6 {
+  font-size: 15px;
+  font-weight: 300;
+}
+.faq .why_choose .why_choose_content img {
+  margin-left: 24px;
+}
+/* faq_why end*/
+
+/* essential info section */
+.essential_info .essential_info_nav h4{
+  font-size: 22px;
+  color: #3b404b; 
+  border-top: 2px solid #e7e7e7;
+
+     
+}
+.essential_info .essential_info_nav p{
+  font-size: 15px;
+  color: #585c66;
+}
+.essential_info .essential_info_nav li{
+    border-radius: 25px;
+ 
+}
+
+.essential_info .essential_info_nav .nav-link{
+    text-decoration: none;
+    color: #585c66;
+    font-size: 13px;
+}
+.essential_info .essential_info_nav .nav-link:hover{
+    background-color:#ff6612 ;
+    border-radius: 25px;
+    color: #fff;
+}
+.essential_info .essential_info_nav  .nav-link.active{
+   background-color: #ff6612;
+   border-radius: 25px;
+   color: #fff;
+}
+
+.essential_info .enquiry_box .location_img {
+  width: 60px;
+}
+.essential_info .enquiry_box h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #3b404b;
+}
+.essential_info .enquiry_box .enquiry_form {
+  padding: 25px 25px;
+}
+.essential_info .enquiry_box .enquiry_form input {
+  height: 40px;
+  border-radius: 0px;
+}
+
+.essential_info .enquiry_box .enquiry_form label {
+  font-size: 14px;
+  color: #585c66;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+.essential_info .enquiry_box .enquiry_form .form-group button {
+  background: #ff6612;
+  font-size: 17px;
+}
+.essential_info .enquiry_box .enquiry_form .input-group-text {
+  background-color: #fff;
+  border-radius: 0px;
+}
+
+.essential_info .enquiry_box .enquiry_form .input-group .form-control:focus {
+  border-color: #efefef;
+  box-shadow: none;
+}
+/* essential info section end */
+/* trending destination section */
+.trending_holiday .holidays_package_wraper a span {
+  font-size: 18px;
+  text-shadow: 1px 1px 0 #403e4d;
+}
+/* trending destination section end*/
+
+/* travel_information  section */
+.travel_information li{
+    list-style: none;
+    
+}
+
+/* travel_information  section end */
+.quick_links .nav-tabs .nav-link.active{
+   background-color: transparent;
+}

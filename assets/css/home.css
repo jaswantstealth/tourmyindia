@@ -57,10 +57,18 @@
 }
 .homepagebanner .content-page {
   padding: 0px 45px;
-  @media screen and (max-width: 992px) {
-    padding: 0;
-  }
+
 }
+@media screen and (max-width: 992px) {
+  .homepagebanner .content-page {
+    padding: 0 12px;
+  }
+} 
+@media screen and (max-width: 768px) {
+  .homepagebanner .content-page {
+    padding: 0 12px;
+  }
+} 
 .homepagebanner h1 {
   color: var(--primary-text-color);
   font-size: 75px;
@@ -768,4 +776,3 @@ h4 {
   color: var(--secondary-color);
 }
 /* travel_india */
-
