@@ -1,0 +1,238 @@
+.destinaton_herosec .home-page .breadcrumb-item a {
+  color: var(--secondary-color);
+}
+.destinaton_herosec .breadcrumb-item + .breadcrumb-item::before {
+  color: #fff;
+}
+@media screen and (max-width: 340px) {
+  .destinaton_herosec .home-page .breadcrumb-item a {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .destinaton_herosec .home-page .breadcrumb-item {
+    font-size: 12px;
+  }
+}
+.destinaton_herosec .destinaton_herosec_img {
+  height: 540px;
+}
+
+.destinaton_herosec h1 {
+  font-size: 64px;
+}
+@media screen and (max-width: 991px) {
+  .destinaton_herosec h1 {
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .destinaton_herosec h1 {
+    font-size: 20px;
+  }
+}
+.destinaton_herosec .home-page {
+  padding-left: 20px;
+  margin-left: 15%;
+}
+@media screen and (max-width: 768px) {
+  .destinaton_herosec .home-page {
+    margin-left: 0;
+  }
+}
+.destinaton_herosec_img {
+  min-height: 60vh;
+}
+.destinaton_herosec .home-page_wraper {
+  width: 100%;
+  top: 58% !important;
+}
+
+@media screen and (max-width: 540px) {
+  .destinaton_herosec .home-page_wraper {
+    width: 100%;
+    top: 60% !important;
+  }
+}
+.destinaton_herosec input:focus {
+  box-shadow: none;
+}
+.destinaton_herosec .input-group {
+  width: 71%;
+  margin-right: 16%;
+}
+@media screen and (max-width: 1191px) {
+  .destinaton_herosec .input-group {
+    width: 100%;
+    margin-right: 16%;
+  }
+}
+@media screen and (max-width: 540px) {
+  .destinaton_herosec .searchbanner_info {
+    flex-wrap: wrap;
+    margin-left: 14%;
+  }
+}
+.destinaton_herosec .searchbanner_info {
+  margin-left: 14%;
+}
+@media screen and (max-width: 1191px) {
+  .destinaton_herosec .searchbanner_info {
+    margin-left: 0;
+  }
+}
+.custom_tabs button {
+  font-size: 14px;
+}
+.custom_tabs button.active::after {
+  background: #00c27a;
+}
+.about_sec .aboutsec_content .readmore_btn {
+  color: #00c27a;
+  line-height: 24px;
+  font-weight: 400;
+  display: contents;
+}
+.about_sec .aboutsec_content .readmore_btn i {
+  color: #00c27a;
+}
+.about_sec .card {
+  border: none;
+  padding: 0px;
+}
+.about_sec .card p {
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #4f5b70;
+}
+.about_sec {
+  padding: 3rem 0;
+  border-bottom: 1px solid #d9e2e8;
+}
+.resort_hotel_info_sec .img_wraper .likes {
+  top: 10px;
+  right: 10px;
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+  background: #fff;
+  color: #3f3f46;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 100%;
+  transition: all 0.3s ease-in-out;
+}
+.resort_hotel_info_sec .img_wraper img {
+  width: 100%;
+  height: 298px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: all 0.6s ease-in-out;
+}
+.resort_hotel_info_sec .img_wraper :hover {
+  border-radius: 10px;
+}
+.resort_hotel_info_sec .resort_infoarea_content:hover {
+  color: #00c27a;
+}
+.resort_hotel_info_sec .resort_hotel_content {
+  padding: 20px 10px 0;
+}
+.resort_hotel_info_sec .resort_infoarea_content h3 a {
+  font-size: 20px;
+}
+.resort_hotel_info_sec .resort_hotel_list {
+  list-style-position: inside;
+  padding-left: 0;
+  margin: 0;
+}
+
+.resort_hotel_info_sec .resort_hotel_list li {
+  margin-bottom: 6px;
+  font-size: 12px;
+  color: #4f5b70;
+  line-height: 18px;
+}
+.resort_hotel_info_sec .resort_hotel_list li a:hover {
+  color: #00c27a;
+}
+.resort_hotel_info_sec .resort_hotel_list li::marker {
+  color: #00c27a;
+}
+.resort_hotel_info_sec .get_btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid #192024;
+  border-radius: 5px;
+  color: #000;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 21px;
+}
+.resort_hotel_info_sec .get_btn:hover {
+  border: #00c27a 1px solid;
+  color: #00c27a;
+}
+.resort_hotel_info_sec .resort_infoarea_content {
+  font-size: 20px;
+}
+.resort_hotel_info_sec button {
+  font-size: 15px;
+  margin-left: 40px;
+}
+.resort_hotel_info_sec button:hover {
+  color: #00c27a;
+}
+.btm_line {
+  width: 40%;
+  margin: 50px auto 0;
+  height: 1px;
+  background-color: #d9e2e8;
+  position: relative;
+}
+
+.btm_dot {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 102, 18, 0.13);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btm_dot .inner_dot {
+  width: 8px;
+  height: 8px;
+  background: #ff6612;
+  border-radius: 50%;
+}
+
+.resort_hotel_info_sec .resort_infoarea .img_wraper_1  img{
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  transition: all 0.6s ease-in-out;
+}
+.resort_hotel_info_sec .img_wraper_1 .likes {
+  top: 10px;
+  right: 10px;
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+  background: #fff;
+  color: #3f3f46;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 100%;
+  transition: all 0.3s ease-in-out;
+}

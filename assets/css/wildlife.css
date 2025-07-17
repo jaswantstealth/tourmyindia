@@ -5,41 +5,80 @@
 .destinaton_herosec .breadcrumb-item + .breadcrumb-item::before {
   color: #fff;
 }
+@media screen and (max-width:340px) {
+  .destinaton_herosec .home-page .breadcrumb-item  a{
+  font-size: 12px;
+}
+}
+@media screen and (max-width:340px) {
+  .destinaton_herosec .home-page .breadcrumb-item  {
+  font-size: 12px;
+}
+}
+
+
 .destinaton_herosec h1 {
-  font-size: 28px;
+  font-size: 64px;
+}
+@media screen and (max-width: 991px) {
+  .destinaton_herosec h1 {
+    font-size: 28px;
+  }
+}
+@media screen and (max-width:340px) {
+  .destinaton_herosec h1 {
+    font-size: 20px;
+  }
 }
 .destinaton_herosec .home-page {
   padding-left: 20px;
-  border-left: 3px solid var(--secondary-color);
+  margin-left: 15%;
+}
+@media screen and (max-width:768px) {
+  .destinaton_herosec .home-page{
+    margin-left: 0;
+  }
 }
 .destinaton_herosec_img {
   min-height: 60vh;
 }
-
-.home-page_wraper {
+ .destinaton_herosec .home-page_wraper {
   width: 100%;
+  top: 58% !important;
 }
 
-@media screen and (max-width: 768px) {
-  .home-page_wraper {
-    top: 80% !important;
+@media screen and (max-width:540px) {
+  .destinaton_herosec .home-page_wraper {
+  width: 100%;
+  top: 60% !important;
+}
+}
+.destinaton_herosec input:focus {
+  box-shadow: none;
+}
+.destinaton_herosec .input-group {
+  width: 71%;
+  margin-right: 16%;
+}
+@media screen and (max-width: 1191px) {
+  .destinaton_herosec .input-group {
+    width: 100%;
+    margin-right: 16%;
   }
 }
-@media screen and (min-width: 768px) {
-  .home-page_wraper {
-    bottom: 100px !important;
-  }
-  .destinaton_herosec h1 {
-    font-size: 50px;
-  }
-  .destinaton_herosec_img {
-    min-height: 60vh;
+@media screen and (max-width: 540px) {
+  .destinaton_herosec .searchbanner_info {
+    flex-wrap: wrap;
+    margin-left: 14%;
   }
 }
-@media screen and (min-width: 991px) {
-  .destinaton_herosec h1 {
-    font-size: 64px;
-  }
+.destinaton_herosec .searchbanner_info {
+  margin-left: 14%;
+}
+@media screen and (max-width:1191px) {
+  .destinaton_herosec .searchbanner_info {
+  margin-left: 0;
+}
 }
 /* destinaton_herosec */
 
