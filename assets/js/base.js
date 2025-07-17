@@ -69,7 +69,7 @@ var swiper = new Swiper(".itemsfiveSlider", {
     prevEl: ".swiper-button-prev",
   },
 });
-var swiper = new Swiper(".itemsfourSlider", {
+var swiper = new Swiper(".itemstwoSlider", {
   loop: true,
   breakpoints: {
     458: {
@@ -80,11 +80,114 @@ var swiper = new Swiper(".itemsfourSlider", {
       spaceBetween: 10,
     },
     768: {
-      slidesPerView: 3,
+      slidesPerView: 2,
       spaceBetween: 10,
     },
     1024: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+  },
+
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+var swiper = new Swiper(".itemsfourSlider", {
+  loop: true,
+  breakpoints: {
+    458: {
+      slidesPerView: 1,
+    },
+    556: {
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+    1200: {
+      slidesPerView: 3,
+      spaceBetween: 10,
+    },
+    1400: {
       slidesPerView: 4,
+      spaceBetween: 30,
+    },
+  },
+
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+var swiper = new Swiper(".itemsixSlider", {
+  loop: true,
+  breakpoints: {
+    350: {
+      slidesPerView: 1,
+    },
+    458: {
+      slidesPerView: 2,
+    },
+    556: {
+      slidesPerView: 3,
+      spaceBetween: 0,
+    },
+    1200: {
+      slidesPerView: 5,
+      spaceBetween: 0,
+    },
+    1400: {
+      slidesPerView: 6,
+      spaceBetween: 0,
+    },
+  },
+
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+var swiper = new Swiper(".itemsoneSlider", {
+  loop: true,
+  breakpoints: {
+    458: {
+      slidesPerView: 1,
+    },
+    556: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    768: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    1024: {
+      slidesPerView: 1,
+      spaceBetween: 30,
+    },
+  },
+
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+var swiper = new Swiper(".itemsthreeSlider", {
+  loop: true,
+  breakpoints: {
+    458: {
+      slidesPerView: 1,
+    },
+    556: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+    1024: {
+      slidesPerView: 2,
       spaceBetween: 30,
     },
   },
@@ -96,9 +199,9 @@ var swiper = new Swiper(".itemsfourSlider", {
 });
 var swiper = new Swiper(".homebanner-slider", {
   speed: 1000,
-  // autoplay: {
-  //   delay: 3000,
-  // },
+  autoplay: {
+    delay: 3000,
+  },
   slidesPerView: 1,
   loop: true,
 

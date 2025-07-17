@@ -1,0 +1,1939 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tmi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="./assets/css/swiper.min.css" rel="stylesheet" />
+    <!-- <link href="./assets/css/bootsrap.css" rel="stylesheet" /> -->
+
+    <link rel="stylesheet" href="./assets/css/destination1.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/places_to_stay_design2.css" />
+  </head>
+  <body>
+    <header class="header-main bg-white position-fixed w-100">
+      <div class="d-lg-flex d-none d-flex justify-content-between">
+        <div>
+          <a href="/" class="logo position-absolute">
+            <img src="./assets/images/inner_logo.png" alt="logo" />
+          </a>
+          <nav class="navigation">
+            <ul class="list-unstyled">
+              <li class="dropdown">
+                <a href="#" class="fw-semibold">Destinations</a>
+                <ul class="drop-menu destinations-menu">
+                  <div class="drop-menu-submenu1">
+                    <div class="container">
+                      <div class="row justify-content-center">
+                        <div class="col-md-9">
+                          <ul class="list-unstyled p-0">
+                            <li>
+                              <h2 class="fw-semibold">North India</h2>
+                              <ul class="list-unstyled p-0">
+                                <li>
+                                  <a href="#" class="p-0">Rajasthan</a>
+                                </li>
+                                <li>
+                                  <a href="#" class="p-0">Rajasthan</a>
+                                </li>
+                                <li>
+                                  <a href="#" class="p-0">Rajasthan</a>
+                                </li>
+                                <li>
+                                  <a href="#" class="p-0">Rajasthan</a>
+                                </li>
+                                <li>
+                                  <a href="#" class="p-0">Rajasthan</a>
+                                </li>
+
+                                <li class="more">
+                                  <a href="#" class="p-0"
+                                    ><span>More...</span></a
+                                  >
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="col-md-3">
+                          <ul class="list-unstyled p-0">
+                            <li>
+                              <a
+                                href="https://www.tourmyindia.com/packages-tour-india/uttarakhand/"
+                                ><img
+                                  src="https://www.tourmyindia.com/imgnew/destination-packages-menu.jpg"
+                                  alt="package"
+                                  class="img-fluid"
+                              /></a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="nav-right">
+          <ul class="d-flex list-unstyled gap-3 mb-0">
+            <li>
+              <a href="https://www.tourmyindia.com/wedding/" class="fw-semibold"
+                ><img
+                  src="https://www.tourmyindia.com/imgnew/destinaton-wedding.svg"
+                  alt="image"
+                  class="img-fluid pe-2"
+                />
+                Destination Weddings</a
+              >
+            </li>
+            <li>
+              <a href="https://www.tourmyindia.com/mice/" class="fw-semibold"
+                ><img
+                  src="https://www.tourmyindia.com/imgnew/mics.svg"
+                  alt="image"
+                  class="img-fluid pe-2"
+                />MICE</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="d-flex d-lg-none justify-content-end">
+        <a href="https://www.tourmyindia.com/" class="logo position-absolute">
+          <img src="./assets/images/inner_logo.png" alt="logo" />
+        </a>
+        <button
+          class="navbar-toggler p-0 border-0 collapsed"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasWithBothOptions"
+          aria-controls="offcanvasWithBothOptions"
+          aria-expanded="false"
+        >
+          <svg width="50" height="50" viewBox="0 0 100 100">
+            <path
+              class="line line1"
+              d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"
+            ></path>
+            <path class="line line2" d="M 20,50 H 80"></path>
+            <path
+              class="line line3"
+              d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"
+            ></path>
+          </svg>
+        </button>
+      </div>
+    </header>
+    <section class="destinaton_herosec position-relative padding_top">
+      <div div="" class="container-fluid p-0">
+        <div>
+          <img
+            src="./assets/images/bannerplacesdesign2.webp "
+            alt="wildlifebanner"
+            class="w-100 flt-br8 destinaton_herosec_img object-fit-cover"
+          />
+        </div>
+      </div>
+      <div
+        class="position-absolute top-50 start-50 translate-middle home-page_wraper"
+      >
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="home-page">
+                <div class="upper-head">
+                  <nav aria-label="breadcrumb">
+                    <ol
+                      class="breadcrumb font-2"
+                      itemscope=""
+                      itemtype="https://schema.org/BreadcrumbList"
+                    >
+                      <li class="breadcrumb-item">
+                        <a href="https://www.tourmyindia.com/"
+                          ><span itemprop="name" class="text-white">Home</span></a
+                        >
+                      </li>
+                      <li class="breadcrumb-item">
+                        <a
+                          href="https://www.tourmyindia.com/states/jammu-kashmir/"
+                          ><span itemprop="name"  class="text-white">Jammu &amp; Kashmir</span></a
+                        >
+                      </li>
+                      <li class="breadcrumb-item">
+                        <a class="ornge" itemprop="item"
+                          ><span itemprop="name" class="text-white"
+                            >Hotels in Jammu and Kashmir</span
+                          ></a
+                        >
+                      </li>
+                    </ol>
+                  </nav>
+                </div>
+
+                <h1 class="text-white fw-semibold">
+                  Wildlife Sanctuaries in India
+                </h1>
+                <div class="d-flex justify-content-center">
+                  <div class="input-group">
+                    <span
+                      class="input-group-text bg-white border-0 rounded-start"
+                    >
+                      <i
+                        class="fa-solid fa-magnifying-glass"
+                        style="color: #e3e3e3"
+                      ></i>
+                    </span>
+                    <input
+                      type="text"
+                      class="form-control border-0"
+                      placeholder="Search here.."
+                    />
+                  </div>
+                </div>
+                <div class="searchbanner_info d-flex gap-4 mt-3">
+                  <img
+                    src="assets/images/Group 17.png"
+                    alt=""
+                    class="img-fluid"
+                  />
+                  <h6 class="mt-2 text-white">
+                    1k Destination <span class=""></span>
+                  </h6>
+                  <img
+                    src="assets/images/Group (1).png"
+                    alt=""
+                    class="img-fluid"
+                  />
+                  <h6 class="mt-2 text-white">
+                    1k Destination <span class=""></span>
+                  </h6>
+                  <img
+                    src="assets/images/Group (2).png"
+                    alt=""
+                    class="img-fluid"
+                  />
+                  <h6 class="mt-2 text-white">1k Destination</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="banner-btm-link position-relative">
+      <div class="container-fluid p-0">
+        <div class="packages_list">
+          <ul
+            class="nav nav-tabs custom_tabs flex-nowrap overflow-x-auto overflow-y-hidden gap-5 justify-content-center"
+            id="myTab"
+            role="tablist"
+          >
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link active"
+                id="india-1"
+                data-bs-toggle="tab"
+                data-bs-target="#india-1-pane"
+                type="button"
+                role="tab"
+                aria-controls="india-1-pane"
+                aria-selected="true"
+              >
+                Jammu & Kashmir Tourism
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="india-2"
+                data-bs-toggle="tab"
+                data-bs-target="#india-2-pane"
+                type="button"
+                role="tab"
+                aria-controls="india-2-pane"
+                aria-selected="false"
+                tabindex="-1"
+              >
+                Kashmir Tour Packages
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="india-3"
+                data-bs-toggle="tab"
+                data-bs-target="#india-3-pane"
+                type="button"
+                role="tab"
+                aria-controls="india-3-pane"
+                aria-selected="false"
+                tabindex="-1"
+              >
+                Best Time to Visit Jammu & Kashmir
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="india-4"
+                data-bs-toggle="tab"
+                data-bs-target="#india-4-pane"
+                type="button"
+                role="tab"
+                aria-controls="india-4-pane"
+                aria-selected="false"
+                tabindex="-1"
+              >
+                Top Tourist Places
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="india-5"
+                data-bs-toggle="tab"
+                data-bs-target="#india-5-pane"
+                type="button"
+                role="tab"
+                aria-controls="india-5-pane"
+                aria-selected="false"
+                tabindex="-1"
+              >
+                Top Things Do
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="india-6"
+                data-bs-toggle="tab"
+                data-bs-target="#india-6-pane"
+                type="button"
+                role="tab"
+                aria-controls="india-6-pane"
+                aria-selected="false"
+                tabindex="-1"
+              >
+                How to Reach
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="about_sec sec_padd">
+      <div class="container">
+        <div class="main-heading">
+          <h2 class="text-center">Best Hotels & Resorts in Ranthambore</h2>
+        </div>
+        <div class="aboutsec_content">
+          <p>
+            Ranthambore National Park in Sawai Madhopur, Rajasthan draws
+            wildlife enthusiasts globally for its rich Bengal Tiger population.
+            Visitors flock here between October and June eager to experience the
+            thrill of encountering wildlife, making it one of the top wildlife
+            destinations in India. Therefore, the place is replete with a
+            plethora of staying options and a wide array of choices, ensuring
+            the best experience of the Ranthambore wildlife tour.
+          </p>
+          <p>
+            Ranthambore National Park in Sawai Madhopur, Rajasthan draws
+            wildlife enthusiasts globally for its rich Bengal Tiger population.
+            Visitors flock here between October and June eager to experience the
+            thrill of encountering wildlife, making it one of the top wildlife
+            destinations in India. Therefore, the place is replete with a
+            plethora of staying options and a wide array of choices, ensuring
+            the best experience of the Ranthambore wildlife tour.
+          </p>
+          <p>
+            For a balance of modern comforts and affordability, the standard
+            budget hotels and resorts in Ranthambore are an excellent choice.
+            The standard hotels such Ankur Resort Ranthambore, Raj Palace, Tiger
+            Moon Ranthambore and Tiger Den, provide all the necessary amenities
+            for an enjoyable wildlife tour. Ranthambore also offers a variety of
+            lodges, homestays, and eco-friendly resorts, ensuring travelers of
+            all preferences find a perfect stay. Whether you seek luxury,
+            adventure, or a cozy retreat, Ranthambore's hotels and resorts
+            promise an unforgettable staying experience in the wild.
+          </p>
+          <p>
+            <em>
+              Tour My India offers up to 50% discount on hotel and resort
+              bookings in Ranthambore along with wildlife safari tour packages.
+              Call us at +91-9212777223 or fill out the enquiry form to get the
+              best deals on Ranthambore holidays.</em
+            >
+          </p>
+          <div class="collapse " id="collapsefaq" style"">
+          <div class="card card-body p-0">
+            <p>
+              <strong>Top Cities and Localities of Jammu and Kashmir</strong>
+            </p>
+            <p>
+              <strong>Srinagar : </strong>The Summer capital of Jammu and
+              Kashmir, is renowned for its beautiful Dal Lake, houseboats,
+              Mughal gardens, and scenic landscapes. Srinagar provides a variety
+              of accommodations, such as luxurious houseboats, five-star hotels,
+              budget hotels and traditional guesthouses, offering unique stays
+              with stunning views and modern amenities.
+            </p>
+            <p>
+              <strong>Pahalgam : </strong>This picturesque town in Jammu and
+              Kashmir, is famous for its lush meadows, beautiful rivers, and as
+              a starting point for the Amarnath Yatra. Pahalgam offers a wide
+              range of accommodations, including luxury resorts, budget hotels,
+              and charming guesthouses. Visitors can enjoy the stay at riverside
+              cottages as well.
+            </p>
+            <p>
+              <strong>Sonmarg : </strong>Hailed as "Meadow of Gold," is a
+              picturesque destination in Jammu and Kashmir, known for its
+              stunning valleys, glaciers, and pristine landscapes. From luxury
+              hotels and riverside resorts to budget-friendly camps and
+              guesthouses, Sonmarg offers visitors a comfortable stay with
+              scenic views.
+            </p>
+            <p>
+              <strong>Patnitop : </strong>A charming hill station in Jammu and
+              Kashmir, Patnitop is famed for its lush meadows, serene views, and
+              adventure activities like trekking and paragliding. A wide range
+              of accommodations that includes luxury resorts, and
+              budget-friendly hotels and comfortable guesthouses can be easily
+              found in Patnitop.
+            </p>
+            <p>
+              <strong>Katra : </strong>Katra is a popular destination for
+              pilgrims visiting the holy shrine of Mata Vaishno Devi. The city
+              offers an array of accommodations to suit every budget, from
+              budget-friendly guesthouses and dharamshalas to luxurious hotels
+              and resorts.
+            </p>
+            <p>
+              <strong>Gulmarg : </strong>Gulmarg is a breathtaking hill station
+              in Jammu and Kashmir and is renowned for its stunning beauty, with
+              snow-capped peaks, lush meadows, and vibrant flowers.
+              Accommodation options in Gulmarg range from cozy guesthouses and
+              budget-friendly hotels to luxurious resorts with world-class
+              amenities.
+            </p>
+            <p>
+              <strong>Types of Accommodations in Jammu and Kashmir </strong>
+            </p>
+            <p>
+              <strong>Luxury Hotels : </strong>Jammu and Kashmir offers opulent
+              stays at renowned chains like Radisson Hotels in Srinagar and
+              Jammu. These hotels provide high-end amenities, fine dining, and
+              beautiful panoramas, ensuring a lavish experience.
+            </p>
+            <p>
+              <strong>Mid-Range Hotels : </strong>Jammu and Kashmir hosts a
+              number of mid-range hotels. In Srinagar, Gulmarg and Pahalgam, the
+              3-star properties offer cozy rooms, traditional Kashmiri decor,
+              and lake or garden views. In Jammu and Katra, mid-range hotels
+              ensure a comfortable stay for pilgrims, often including shuttle
+              services to Vaishno Devi.
+            </p>
+            <p>
+              <strong>Budget Friendly Hotels : </strong>Budget hotels in Jammu
+              and Kashmir offer affordable yet comfortable stays for travelers.
+              In Srinagar, options near Dal Lake provide basic amenities and
+              easy access to attractions. Jammu and Katra feature budget hotels
+              ideal for pilgrims visiting Vaishno Devi. Many include clean
+              rooms, Wi-Fi, and local cuisine, ensuring a pleasant stay without
+              overspending.
+            </p>
+          </div>
+        </div>
+        <button
+          class="readmore_btn collapsed"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapsefaq"
+          aria-expanded="false"
+          aria-controls="collapsefaq"
+          id="toggleButton"
+        >
+          Read More<i class="fa fa-angle-right ps-2" aria-hidden="true"></i>
+        </button>
+      </div>
+    </section>
+    <section class="resort_hotel_info_sec sec_padd">
+      <div class="container">
+        <h4>hotels</h4>
+        <div class="main-heading">
+          <h2>Luxury Resorts In Ranthambore</h2>
+        </div>
+        <p>
+          Explore top hotels and resorts in Jammu and Kashmir across popular
+          tourist cities, and book your stay at the best<br />
+          price with Tour My India.
+        </p>
+
+        <div
+          class="swiper mySwiper itemsfourSlider topbtn_slider swiper-initialized swiper-horizontal swiper-backface-hidden"
+        >
+          <div
+            class="swiper-wrapper"
+            id="swiper-wrapper-8f31a759cd10431028"
+            aria-live="polite"
+          >
+            <div
+              class="swiper-slide swiper-slide-active"
+              role="group"
+              aria-label="1 / 4"
+              data-swiper-slide-index="0"
+              style="width: 412px; margin-right: 30px"
+            >
+              <div class="mt-5">
+                <a
+                  href=""
+                  class="d-block img_wraper position-relative overflow-hidden border_10"
+                >
+                  <img
+                    src="./assets/images/heewanresortsrinagar.webp"
+                    class="img-fluid w-100 scale1"
+                    alt=""
+                  />
+                  <span class="likes position-absolute"
+                    ><i class="fa-regular fa-heart"></i
+                  ></span>
+                </a>
+                <div class="resort_hotel_content w-100">
+                  <h3>
+                    <a href="" class="resort_infoarea_content"
+                      >Hotels in Srinagar</a
+                    >
+                  </h3>
+
+                  <ul class="resort_hotel_list">
+                    <li><a href="">Blooming Dale Hotel Cottages</a></li>
+                    <li><a href="">Fortune Resort Heevan</a></li>
+                    <li><a href="">Hotel Broadway</a></li>
+                  </ul>
+                  <div class="d-flex p-0 gap-5">
+                    <a href="" class="get_btn">Get a Quote</a>
+                    <a href="" class="fw-semibold resortinfo_btn text-nowrap">
+                      Read More<i
+                        class="fa fa-angle-right ps-2 secondary_color mt-4"
+                        aria-hidden="true"
+                      ></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="swiper-slide swiper-slide-active"
+              role="group"
+              aria-label="1 / 4"
+              data-swiper-slide-index="0"
+              style="width: 412px; margin-right: 30px"
+            >
+              <div class="mt-5">
+                <a
+                  href=""
+                  class="d-block img_wraper position-relative overflow-hidden border_10"
+                >
+                  <img
+                    src="./assets/images/heewanresortsrinagar.webp"
+                    class="img-fluid w-100 scale1"
+                    alt=""
+                  />
+                  <span class="likes position-absolute"
+                    ><i class="fa-regular fa-heart"></i
+                  ></span>
+                </a>
+                <div class="resort_hotel_content w-100">
+                  <h3>
+                    <a href="" class="resort_infoarea_content"
+                      >Hotels in Srinagar</a
+                    >
+                  </h3>
+
+                  <ul class="resort_hotel_list">
+                    <li><a href="">Blooming Dale Hotel Cottages</a></li>
+                    <li><a href="">Fortune Resort Heevan</a></li>
+                    <li><a href="">Hotel Broadway</a></li>
+                  </ul>
+                  <div class="d-flex p-0 gap-5">
+                    <a href="" class="get_btn">Get a Quote</a>
+                    <a href="" class="fw-semibold resortinfo_btn text-nowrap">
+                      Read More<i
+                        class="fa fa-angle-right ps-2 secondary_color mt-4"
+                        aria-hidden="true"
+                      ></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="swiper-slide swiper-slide-active"
+              role="group"
+              aria-label="1 / 4"
+              data-swiper-slide-index="0"
+              style="width: 412px; margin-right: 30px"
+            >
+              <div class="mt-5">
+                <a
+                  href=""
+                  class="d-block img_wraper position-relative overflow-hidden border_10"
+                >
+                  <img
+                    src="./assets/images/heewanresortsrinagar.webp"
+                    class="img-fluid w-100 scale1"
+                    alt=""
+                  />
+                  <span class="likes position-absolute"
+                    ><i class="fa-regular fa-heart"></i
+                  ></span>
+                </a>
+                <div class="resort_hotel_content w-100">
+                  <h3>
+                    <a href="" class="resort_infoarea_content"
+                      >Hotels in Srinagar</a
+                    >
+                  </h3>
+
+                  <ul class="resort_hotel_list">
+                    <li><a href="">Blooming Dale Hotel Cottages</a></li>
+                    <li><a href="">Fortune Resort Heevan</a></li>
+                    <li><a href="">Hotel Broadway</a></li>
+                  </ul>
+                  <div class="d-flex p-0 gap-5">
+                    <a href="" class="get_btn">Get a Quote</a>
+                    <a href="" class="fw-semibold resortinfo_btn text-nowrap">
+                      Read More<i
+                        class="fa fa-angle-right ps-2 secondary_color mt-4"
+                        aria-hidden="true"
+                      ></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="swiper-slide swiper-slide-active"
+              role="group"
+              aria-label="1 / 4"
+              data-swiper-slide-index="0"
+              style="width: 412px; margin-right: 30px"
+            >
+              <div class="mt-5">
+                <a
+                  href=""
+                  class="d-block img_wraper position-relative overflow-hidden border_10"
+                >
+                  <img
+                    src="./assets/images/heewanresortsrinagar.webp"
+                    class="img-fluid w-100 scale1"
+                    alt=""
+                  />
+                  <span class="likes position-absolute"
+                    ><i class="fa-regular fa-heart"></i
+                  ></span>
+                </a>
+                <div class="resort_hotel_content w-100">
+                  <h3>
+                    <a href="" class="resort_infoarea_content"
+                      >Hotels in Srinagar</a
+                    >
+                  </h3>
+
+                  <ul class="resort_hotel_list">
+                    <li><a href="">Blooming Dale Hotel Cottages</a></li>
+                    <li><a href="">Fortune Resort Heevan</a></li>
+                    <li><a href="">Hotel Broadway</a></li>
+                  </ul>
+                  <div class="d-flex p-0 gap-5">
+                    <a href="" class="get_btn text-nowrap">Get a Quote</a>
+                    <a href="" class="fw-semibold resortinfo_btn text-nowrap">
+                      Read More<i
+                        class="fa fa-angle-right ps-2 secondary_color mt-4"
+                        aria-hidden="true"
+                      ></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="swiper-slide swiper-slide-active"
+              role="group"
+              aria-label="1 / 4"
+              data-swiper-slide-index="0"
+              style="width: 412px; margin-right: 30px"
+            >
+              <div class="mt-5">
+                <a
+                  href=""
+                  class="d-block img_wraper position-relative overflow-hidden border_10"
+                >
+                  <img
+                    src="./assets/images/heewanresortsrinagar.webp"
+                    class="img-fluid w-100 scale1"
+                    alt=""
+                  />
+                  <span class="likes position-absolute"
+                    ><i class="fa-regular fa-heart"></i
+                  ></span>
+                </a>
+                <div class="resort_hotel_content w-100">
+                  <h3>
+                    <a href="" class="resort_infoarea_content"
+                      >Hotels in Srinagar</a
+                    >
+                  </h3>
+
+                  <ul class="resort_hotel_list">
+                    <li><a href="">Blooming Dale Hotel Cottages</a></li>
+                    <li><a href="">Fortune Resort Heevan</a></li>
+                    <li><a href="">Hotel Broadway</a></li>
+                  </ul>
+                  <div class="d-flex p-0 gap-5">
+                    <a href="" class="get_btn">Get a Quote</a>
+                    <a href="" class="fw-semibold resortinfo_btn text-nowrap">
+                      Read More<i
+                        class="fa fa-angle-right ps-2 secondary_color mt-4"
+                        aria-hidden="true"
+                      ></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="swiper-button-next"
+            tabindex="0"
+            role="button"
+            aria-label="Next slide"
+            aria-controls="swiper-wrapper-8f31a759cd10431028"
+          >
+            <i class="fas fa-long-arrow-alt-right"></i>
+          </div>
+
+          <div
+            class="swiper-button-prev"
+            tabindex="0"
+            role="button"
+            aria-label="Previous slide"
+            aria-controls="swiper-wrapper-8f31a759cd10431028"
+          >
+            <i class="fas fa-long-arrow-alt-left"></i>
+          </div>
+
+          <span
+            class="swiper-notification"
+            aria-live="assertive"
+            aria-atomic="true"
+          ></span>
+        </div>
+
+        <div class="btm_line position-relative">
+          <span class="btm_dot position-absolute">
+            <span class="inner_dot"></span>
+          </span>
+        </div>
+      </div>
+    </section>
+    <section class="resort_hotel_info_sec sec_padd">
+      <div class="container">
+        <h4>hotels</h4>
+        <div class="main-heading">
+          <h2>
+            Top Tourist Destinations in Jammu<br />
+            and Kashmir
+          </h2>
+        </div>
+        <p>
+          Discover the top tourist destinations in Jammu and Kashmir and find
+          detailed travel and tourism information for <br />each place.
+        </p>
+        <div
+          class="swiper mySwiper itemsixSlider topbtn_slider swiper-initialized swiper-horizontal swiper-backface-hidden"
+        >
+          <div
+            class="swiper-wrapper"
+            id="swiper-wrapper-8f31a759cd10431028"
+            aria-live="polite"
+          >
+            <div
+              class="swiper-slide swiper-slide-active"
+              role="group"
+              aria-label="1 / 4"
+              data-swiper-slide-index="0"
+              style="width: 412px; margin-right: 30px"
+            >
+              <div class="mt-5">
+                <a
+                  href=""
+                  class="d-block img_wraper_1 position-relative overflow-hidden"
+                >
+                  <img
+                    src="./assets/images/dallake.webp"
+                    class="img-fluid w-100 scale1"
+                    alt=""
+                  /><span class="likes position-absolute"
+                    ><i class="fa-regular fa-heart"></i
+                  ></span>
+                </a>
+                <div class="top_tourist_destination">
+                  <h3>
+                    <a href="" class="resort_infoarea_content">Srinagar</a>
+                  </h3>
+                  <p>Lakes & Gardens<br />Best Time: Summer</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="swiper-slide swiper-slide-active"
+              role="group"
+              aria-label="1 / 4"
+              data-swiper-slide-index="0"
+              style="width: 412px; margin-right: 30px"
+            >
+              <div class="mt-5">
+                <a
+                  href=""
+                  class="d-block img_wraper_1 position-relative overflow-hidden"
+                >
+                  <img
+                    src="./assets/images/gulmarg2.webp"
+                    class="img-fluid w-100 scale1"
+                    alt=""
+                  /><span class="likes position-absolute"
+                    ><i class="fa-regular fa-heart"></i
+                  ></span>
+                </a>
+                <div class="top_tourist_destination">
+                  <h3>
+                    <a href="" class="resort_infoarea_content">Srinagar</a>
+                  </h3>
+                  <p>Lakes & Gardens<br />Best Time: Summer</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="swiper-slide swiper-slide-active"
+              role="group"
+              aria-label="1 / 4"
+              data-swiper-slide-index="0"
+              style="width: 412px; margin-right: 30px"
+            >
+              <div class="mt-5">
+                <a
+                  href=""
+                  class="d-block img_wraper_1 position-relative overflow-hidden"
+                >
+                  <img
+                    src="./assets/images/sonmarg2.webp"
+                    class="img-fluid w-100 scale1"
+                    alt=""
+                  /><span class="likes position-absolute"
+                    ><i class="fa-regular fa-heart"></i
+                  ></span>
+                </a>
+                <div class="top_tourist_destination">
+                  <h3>
+                    <a href="" class="resort_infoarea_content">Srinagar</a>
+                  </h3>
+                  <p>Lakes & Gardens<br />Best Time: Summer</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="swiper-slide swiper-slide-active"
+              role="group"
+              aria-label="1 / 4"
+              data-swiper-slide-index="0"
+              style="width: 412px; margin-right: 30px"
+            >
+              <div class="mt-5">
+                <a
+                  href=""
+                  class="d-block img_wraper_1 position-relative overflow-hidden"
+                >
+                  <img
+                    src="./assets/images/pahalgam2.webp"
+                    class="img-fluid w-100 scale1"
+                    alt=""
+                  /><span class="likes position-absolute"
+                    ><i class="fa-regular fa-heart"></i
+                  ></span>
+                </a>
+                <div class="top_tourist_destination">
+                  <h3>
+                    <a href="" class="resort_infoarea_content">Srinagar</a>
+                  </h3>
+                  <p>Lakes & Gardens<br />Best Time: Summer</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="swiper-slide swiper-slide-active"
+              role="group"
+              aria-label="1 / 4"
+              data-swiper-slide-index="0"
+              style="width: 412px; margin-right: 30px"
+            >
+              <div class="mt-5">
+                <a
+                  href=""
+                  class="d-block img_wraper_1 position-relative overflow-hidden"
+                >
+                  <img
+                    src="./assets/images/katravaishnodevi.webp"
+                    class="img-fluid w-100 scale1"
+                    alt=""
+                  /><span class="likes position-absolute"
+                    ><i class="fa-regular fa-heart"></i
+                  ></span>
+                </a>
+                <div class="top_tourist_destination">
+                  <h3>
+                    <a href="" class="resort_infoarea_content">Srinagar</a>
+                  </h3>
+                  <p>Lakes & Gardens<br />Best Time: Summer</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="swiper-slide swiper-slide-active"
+              role="group"
+              aria-label="1 / 4"
+              data-swiper-slide-index="0"
+              style="width: 412px; margin-right: 30px"
+            >
+              <div class="mt-5">
+                <a
+                  href=""
+                  class="d-block img_wraper_1 position-relative overflow-hidden"
+                >
+                  <img
+                    src="./assets/images/patnitop1.webp"
+                    class="img-fluid w-100 scale1"
+                    alt=""
+                  /><span class="likes position-absolute"
+                    ><i class="fa-regular fa-heart"></i
+                  ></span>
+                </a>
+                <div class="top_tourist_destination">
+                  <h3>
+                    <a href="" class="resort_infoarea_content">Srinagar</a>
+                  </h3>
+                  <p>Lakes & Gardens<br />Best Time: Summer</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="swiper-slide swiper-slide-active"
+              role="group"
+              aria-label="1 / 4"
+              data-swiper-slide-index="0"
+              style="width: 412px; margin-right: 30px"
+            >
+              <div class="mt-5">
+                <a
+                  href=""
+                  class="d-block img_wraper_1 position-relative overflow-hidden"
+                >
+                  <img
+                    src="./assets/images/dallake.webp"
+                    class="img-fluid w-100 scale1"
+                    alt=""
+                  /><span class="likes position-absolute"
+                    ><i class="fa-regular fa-heart"></i
+                  ></span>
+                </a>
+                <div class="top_tourist_destination">
+                  <h3>
+                    <a href="" class="resort_infoarea_content">Srinagar</a>
+                  </h3>
+                  <p>Lakes & Gardens<br />Best Time: Summer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="swiper-button-next"
+            tabindex="0"
+            role="button"
+            aria-label="Next slide"
+            aria-controls="swiper-wrapper-8f31a759cd10431028"
+          >
+            <i class="fas fa-long-arrow-alt-right"></i>
+          </div>
+          <div
+            class="swiper-button-prev"
+            tabindex="0"
+            role="button"
+            aria-label="Previous slide"
+            aria-controls="swiper-wrapper-8f31a759cd10431028"
+          >
+            <i class="fas fa-long-arrow-alt-left"></i>
+          </div>
+          <span
+            class="swiper-notification"
+            aria-live="assertive"
+            aria-atomic="true"
+          ></span>
+        </div>
+
+        <!-- <div class="resort_infoarea">
+          <div class="row">
+            <div class="col-md-2 p-0">
+              <div class="mt-5">
+                <a
+                  href=""
+                  class="d-block img_wraper_1 position-relative overflow-hidden"
+                >
+                  <img
+                    src="./assets/images/dallake.webp"
+                    class="img-fluid w-100 scale1"
+                    alt=""
+                  /><span class="likes position-absolute"
+                    ><i class="fa-regular fa-heart"></i
+                  ></span>
+                </a>
+                <div class="top_tourist_destination">
+                  <h3>
+                    <a href="" class="resort_infoarea_content">Srinagar</a>
+                  </h3>
+                  <p>Lakes & Gardens<br />Best Time: Summer</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2 p-0">
+              <div class="mt-5">
+                <a
+                  href=""
+                  class="d-block img_wraper_1 position-relative overflow-hidden"
+                >
+                  <img
+                    src="./assets/images/gulmarg2.webp"
+                    class="img-fluid w-100 scale1"
+                    alt=""
+                  /><span class="likes position-absolute"
+                    ><i class="fa-regular fa-heart"></i
+                  ></span>
+                </a>
+                <div class="top_tourist_destination">
+                  <h3>
+                    <a href="" class="resort_infoarea_content">Gulmarg</a>
+                  </h3>
+                  <p>Adventure & Spiritualism<br />Best Time: Summer</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2 p-0">
+              <div class="mt-5">
+                <a
+                  href=""
+                  class="d-block img_wraper_1 position-relative overflow-hidden"
+                >
+                  <img
+                    src="./assets/images/sonmarg2.webp"
+                    class="img-fluid w-100 scale1"
+                    alt=""
+                  /><span class="likes position-absolute"
+                    ><i class="fa-regular fa-heart"></i
+                  ></span>
+                </a>
+                <div class="top_tourist_destination">
+                  <h3>
+                    <a href="" class="resort_infoarea_content">Sonmarg</a>
+                  </h3>
+                  <p>Meadows & Mountains<br />Best Time: Summer</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2 p-0">
+              <div class="mt-5">
+                <a
+                  href=""
+                  class="d-block img_wraper_1 position-relative overflow-hidden"
+                >
+                  <img
+                    src="./assets/images/pahalgam2.webp"
+                    class="img-fluid w-100 scale1"
+                    alt=""
+                  /><span class="likes position-absolute"
+                    ><i class="fa-regular fa-heart"></i
+                  ></span>
+                </a>
+                <div class="top_tourist_destination">
+                  <h3>
+                    <a href="" class="resort_infoarea_content">Pahalgam</a>
+                  </h3>
+                  <p>Nature Sightseeing<br />Best Time: Summer</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2 p-0">
+              <div class="mt-5">
+                <a
+                  href=""
+                  class="d-block img_wraper_1 position-relative overflow-hidden"
+                >
+                  <img
+                    src="./assets/images/katravaishnodevi.webp"
+                    class="img-fluid w-100 scale1"
+                    alt=""
+                  /><span class="likes position-absolute"
+                    ><i class="fa-regular fa-heart"></i
+                  ></span>
+                </a>
+                <div class="top_tourist_destination">
+                  <h3>
+                    <a href="" class="resort_infoarea_content">katra</a>
+                  </h3>
+                  <p>Vaishno Devi Temple<br />Best Time: Summer</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2 p-0">
+              <div class="mt-5">
+                <a
+                  href=""
+                  class="d-block img_wraper_1 position-relative overflow-hidden"
+                >
+                  <img
+                    src="./assets/images/patnitop1.webp"
+                    class="img-fluid w-100 scale1"
+                    alt=""
+                  /><span class="likes position-absolute"
+                    ><i class="fa-regular fa-heart"></i
+                  ></span>
+                </a>
+                <div class="top_tourist_destination">
+                  <h3>
+                    <a href="" class="resort_infoarea_content">Patnitop</a>
+                  </h3>
+                  <p>Nature Sightseeing<br />Best Time: Summer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="btm_line position-relative">
+            <span class="btm_dot position-absolute">
+              <span class="inner_dot"></span>
+            </span>
+          </div>
+        </div> -->
+      </div>
+    </section>
+    <section class="resort_hotel_info_sec sec_padd">
+      <div class="container">
+        <h4>hotels</h4>
+        <div class="main-heading">
+          <h2>Jammu and Kashmir Tour Packages</h2>
+        </div>
+        <p>
+          Explore our best-selling Jammu & Kashmir holiday tour packages and
+          enjoy up to 30% off when you book with<br />
+          Tour My India.
+        </p>
+        <div
+          class="swiper mySwiper itemstwoSlider topbtn_slider swiper-initialized swiper-horizontal swiper-backface-hidden"
+        >
+          <div
+            class="swiper-wrapper"
+            id="swiper-wrapper-8f31a759cd10431028"
+            aria-live="polite"
+          >
+            <div
+              class="swiper-slide swiper-slide-active"
+              role="group"
+              aria-label="1 / 4"
+              data-swiper-slide-index="0"
+              style="width: 412px; margin-right: 30px"
+            >
+              <div class="float-content-wraper">
+                <a
+                  href=""
+                  class="d-block img_wraper_1 position-relative overflow-hidden"
+                >
+                  <img
+                    src="./assets/images/kashmirhoneymoon.webp"
+                    class="img-fluid w-100 scale1 img_bright"
+                    alt=""
+                  />
+                  <span class="likes position-absolute"
+                    ><i class="fa-regular fa-heart"></i
+                  ></span>
+                </a>
+
+                <div class="content-wraper">
+                  <h6 class="text-white fs-14">6 Nights - 7 Days</h6>
+                  <a href="" class=""> Kashmir Honeymoon Tour </a>
+                  <ul
+                    class="text-white d-flex gap-1 flex-wrap align-items-center tour-route mb-0 list-unstyled fs-12"
+                  >
+                    <li class="">
+                      Srinagar
+                      <i
+                        class="fa fa-long-arrow-right ms-2"
+                        aria-hidden="true"
+                      ></i>
+                    </li>
+                    <li class="">
+                      Sonmarg
+                      <i
+                        class="fa fa-long-arrow-right ms-2"
+                        aria-hidden="true"
+                      ></i>
+                    </li>
+                    <li class="">
+                      pahalgam
+                      <i
+                        class="fa fa-long-arrow-right ms-2"
+                        aria-hidden="true"
+                      ></i>
+                    </li>
+                    <li class="">
+                      Gulmarg
+                      <i
+                        class="fa fa-long-arrow-right ms-2"
+                        aria-hidden="true"
+                      ></i>
+                    </li>
+                    <li class="">Srinagar</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div
+              class="swiper-slide swiper-slide-active"
+              role="group"
+              aria-label="1 / 4"
+              data-swiper-slide-index="0"
+              style="width: 412px; margin-right: 30px"
+            >
+              <div class="float-content-wraper">
+                <a
+                  href=""
+                  class="d-block img_wraper_1 position-relative overflow-hidden"
+                >
+                  <img
+                    src="./assets/images/kashmirhoneymoon.webp"
+                    class="img-fluid w-100 scale1 img_bright"
+                    alt=""
+                  />
+                  <span class="likes position-absolute"
+                    ><i class="fa-regular fa-heart"></i
+                  ></span>
+                </a>
+
+                <div class="content-wraper">
+                  <h6 class="text-white fs-14">6 Nights - 7 Days</h6>
+                  <a href="" class=""> Kashmir Honeymoon Tour </a>
+                  <ul
+                    class="text-white d-flex gap-1 flex-wrap align-items-center tour-route mb-0 list-unstyled fs-12"
+                  >
+                    <li class="">
+                      Srinagar
+                      <i
+                        class="fa fa-long-arrow-right ms-2"
+                        aria-hidden="true"
+                      ></i>
+                    </li>
+                    <li class="">
+                      Sonmarg
+                      <i
+                        class="fa fa-long-arrow-right ms-2"
+                        aria-hidden="true"
+                      ></i>
+                    </li>
+                    <li class="">
+                      pahalgam
+                      <i
+                        class="fa fa-long-arrow-right ms-2"
+                        aria-hidden="true"
+                      ></i>
+                    </li>
+                    <li class="">
+                      Gulmarg
+                      <i
+                        class="fa fa-long-arrow-right ms-2"
+                        aria-hidden="true"
+                      ></i>
+                    </li>
+                    <li class="">Srinagar</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div
+              class="swiper-slide swiper-slide-active"
+              role="group"
+              aria-label="1 / 4"
+              data-swiper-slide-index="0"
+              style="width: 412px; margin-right: 30px"
+            >
+              <div class="float-content-wraper">
+                <a
+                  href=""
+                  class="d-block img_wraper_1 position-relative overflow-hidden"
+                >
+                  <img
+                    src="./assets/images/kashmirhoneymoon.webp"
+                    class="img-fluid w-100 scale1 img_bright"
+                    alt=""
+                  />
+                  <span class="likes position-absolute"
+                    ><i class="fa-regular fa-heart"></i
+                  ></span>
+                </a>
+
+                <div class="content-wraper">
+                  <h6 class="text-white fs-14">6 Nights - 7 Days</h6>
+                  <a href="" class=""> Kashmir Honeymoon Tour </a>
+                  <ul
+                    class="text-white d-flex gap-1 flex-wrap align-items-center tour-route mb-0 list-unstyled fs-12"
+                  >
+                    <li class="">
+                      Srinagar
+                      <i
+                        class="fa fa-long-arrow-right ms-2"
+                        aria-hidden="true"
+                      ></i>
+                    </li>
+                    <li class="">
+                      Sonmarg
+                      <i
+                        class="fa fa-long-arrow-right ms-2"
+                        aria-hidden="true"
+                      ></i>
+                    </li>
+                    <li class="">
+                      pahalgam
+                      <i
+                        class="fa fa-long-arrow-right ms-2"
+                        aria-hidden="true"
+                      ></i>
+                    </li>
+                    <li class="">
+                      Gulmarg
+                      <i
+                        class="fa fa-long-arrow-right ms-2"
+                        aria-hidden="true"
+                      ></i>
+                    </li>
+                    <li class="">Srinagar</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div
+              class="swiper-slide swiper-slide-active"
+              role="group"
+              aria-label="1 / 4"
+              data-swiper-slide-index="0"
+              style="width: 412px; margin-right: 30px"
+            >
+              <div class="float-content-wraper">
+                <a
+                  href=""
+                  class="d-block img_wraper_1 position-relative overflow-hidden"
+                >
+                  <img
+                    src="./assets/images/kashmirhoneymoon.webp"
+                    class="img-fluid w-100 scale1 img_bright"
+                    alt=""
+                  />
+                  <span class="likes position-absolute"
+                    ><i class="fa-regular fa-heart"></i
+                  ></span>
+                </a>
+
+                <div class="content-wraper">
+                  <h6 class="text-white fs-14">6 Nights - 7 Days</h6>
+                  <a href="" class=""> Kashmir Honeymoon Tour </a>
+                  <ul
+                    class="text-white d-flex gap-1 flex-wrap align-items-center tour-route mb-0 list-unstyled fs-12"
+                  >
+                    <li class="">
+                      Srinagar
+                      <i
+                        class="fa fa-long-arrow-right ms-2"
+                        aria-hidden="true"
+                      ></i>
+                    </li>
+                    <li class="">
+                      Sonmarg
+                      <i
+                        class="fa fa-long-arrow-right ms-2"
+                        aria-hidden="true"
+                      ></i>
+                    </li>
+                    <li class="">
+                      pahalgam
+                      <i
+                        class="fa fa-long-arrow-right ms-2"
+                        aria-hidden="true"
+                      ></i>
+                    </li>
+                    <li class="">
+                      Gulmarg
+                      <i
+                        class="fa fa-long-arrow-right ms-2"
+                        aria-hidden="true"
+                      ></i>
+                    </li>
+                    <li class="">Srinagar</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div
+              class="swiper-slide swiper-slide-active"
+              role="group"
+              aria-label="1 / 4"
+              data-swiper-slide-index="0"
+              style="width: 412px; margin-right: 30px"
+            >
+              <div class="float-content-wraper">
+                <a
+                  href=""
+                  class="d-block img_wraper_1 position-relative overflow-hidden"
+                >
+                  <img
+                    src="./assets/images/kashmirhoneymoon.webp"
+                    class="img-fluid w-100 scale1 img_bright"
+                    alt=""
+                  />
+                  <span class="likes position-absolute"
+                    ><i class="fa-regular fa-heart"></i
+                  ></span>
+                </a>
+
+                <div class="content-wraper">
+                  <h6 class="text-white fs-14">6 Nights - 7 Days</h6>
+                  <a href="" class=""> Kashmir Honeymoon Tour </a>
+                  <ul
+                    class="text-white d-flex gap-1 flex-wrap align-items-center tour-route mb-0 list-unstyled fs-12"
+                  >
+                    <li class="">
+                      Srinagar
+                      <i
+                        class="fa fa-long-arrow-right ms-2"
+                        aria-hidden="true"
+                      ></i>
+                    </li>
+                    <li class="">
+                      Sonmarg
+                      <i
+                        class="fa fa-long-arrow-right ms-2"
+                        aria-hidden="true"
+                      ></i>
+                    </li>
+                    <li class="">
+                      pahalgam
+                      <i
+                        class="fa fa-long-arrow-right ms-2"
+                        aria-hidden="true"
+                      ></i>
+                    </li>
+                    <li class="">
+                      Gulmarg
+                      <i
+                        class="fa fa-long-arrow-right ms-2"
+                        aria-hidden="true"
+                      ></i>
+                    </li>
+                    <li class="">Srinagar</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="swiper-button-next"
+            tabindex="0"
+            role="button"
+            aria-label="Next slide"
+            aria-controls="swiper-wrapper-8f31a759cd10431028"
+          >
+            <i class="fas fa-long-arrow-alt-right"></i>
+          </div>
+          <div
+            class="swiper-button-prev"
+            tabindex="0"
+            role="button"
+            aria-label="Previous slide"
+            aria-controls="swiper-wrapper-8f31a759cd10431028"
+          >
+            <i class="fas fa-long-arrow-alt-left"></i>
+          </div>
+          <span
+            class="swiper-notification"
+            aria-live="assertive"
+            aria-atomic="true"
+          ></span>
+        </div>
+
+        <div class="btm_line position-relative">
+          <span class="btm_dot position-absolute">
+            <span class="inner_dot"></span>
+          </span>
+        </div>
+      </div>
+    </section>
+    <section class="quick_links sec_padd">
+      <div class="container">
+        <h4 class="fw-bold mb-0">Quick Links</h4>
+        <p class="">These Popular Destinations Have A Lot To Offer</p>
+        <ul
+          class="nav nav-tabs custom_tabs flex-nowrap overflow-x-auto overflow-y-hidden gap-3"
+          id="myTab"
+          role="tablist"
+        >
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active text-uppercase"
+              id="quick-1"
+              data-bs-toggle="tab"
+              data-bs-target="#quick-1-pane"
+              type="button"
+              role="tab"
+              aria-controls="quick-1-pane"
+              aria-selected="true"
+            >
+              Top Destination
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link text-uppercase"
+              id="quick-2"
+              data-bs-toggle="tab"
+              data-bs-target="#quick-2-pane"
+              type="button"
+              role="tab"
+              aria-controls="quick-2-pane"
+              aria-selected="false"
+            >
+              Beach Vacation
+            </button>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div
+            class="tab-pane fade show active"
+            id="quick-1-pane"
+            role="tabpanel"
+            aria-labelledby="quick-1"
+            tabindex="0"
+          >
+            <div class="row">
+              <div class="col-md-3 col-sm-6 col-6">
+                <ul class="list-unstyled ps-0">
+                  <li>
+                    <a href="#">Taj Mahal</a>
+                  </li>
+                  <li>
+                    <a href="#">Taj Mahal</a>
+                  </li>
+                  <li>
+                    <a href="#">Taj Mahal</a>
+                  </li>
+                  <li>
+                    <a href="#">Taj Mahal</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-3 col-sm-6 col-6">
+                <ul class="list-unstyled ps-0">
+                  <li>
+                    <a href="#">Mussoorie</a>
+                  </li>
+                  <li>
+                    <a href="#">Mussoorie</a>
+                  </li>
+                  <li>
+                    <a href="#">Mussoorie</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-3 col-sm-6 col-6">
+                <ul class="list-unstyled ps-0">
+                  <li>
+                    <a href="#">Bandhavgarh</a>
+                  </li>
+                  <li>
+                    <a href="#">Bandhavgarh</a>
+                  </li>
+                  <li>
+                    <a href="#">Bandhavgarh</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-3 col-sm-6 col-6">
+                <ul class="list-unstyled ps-0">
+                  <li>
+                    <a href="#">Ooty</a>
+                  </li>
+                  <li>
+                    <a href="#">Ooty</a>
+                  </li>
+                  <li>
+                    <a href="#">Ooty</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="quick-2-pane"
+            role="tabpanel"
+            aria-labelledby="quick-2"
+            tabindex="0"
+          >
+            <div class="row">
+              <div class="col-md-3 col-sm-6 col-6">
+                <ul class="list-unstyled ps-0">
+                  <li>
+                    <a href="#">Taj Mahal</a>
+                  </li>
+                  <li>
+                    <a href="#">Taj Mahal</a>
+                  </li>
+                  <li>
+                    <a href="#">Taj Mahal</a>
+                  </li>
+                  <li>
+                    <a href="#">Taj Mahal</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-3 col-sm-6 col-6">
+                <ul class="list-unstyled ps-0">
+                  <li>
+                    <a href="#">Mussoorie</a>
+                  </li>
+                  <li>
+                    <a href="#">Mussoorie</a>
+                  </li>
+                  <li>
+                    <a href="#">Mussoorie</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-3 col-sm-6 col-6">
+                <ul class="list-unstyled ps-0">
+                  <li>
+                    <a href="#">Bandhavgarh</a>
+                  </li>
+                  <li>
+                    <a href="#">Bandhavgarh</a>
+                  </li>
+                  <li>
+                    <a href="#">Bandhavgarh</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-3 col-sm-6 col-6">
+                <ul class="list-unstyled ps-0">
+                  <li>
+                    <a href="#">Ooty</a>
+                  </li>
+                  <li>
+                    <a href="#">Ooty</a>
+                  </li>
+                  <li>
+                    <a href="#">Ooty</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <footer class="sec_padd">
+      <div class="container position-relative">
+        <div class="footer_top_contnt position-absolute">
+          <div class="footer_top_contnt_inner_top">
+            <div class="row align-items-center gy-4">
+              <div class="col-6 d-flex align-items-center">
+                <div class="border-end border-1 pe-3">
+                  <img
+                    src="./assets/images/tmi-logo.png"
+                    alt=""
+                    class="img-fluid"
+                    loading="lazy"
+                    importance="low"
+                    decoding="async"
+                  />
+                </div>
+                <div>
+                  <p class="mb-0 ps-md-3 d-md-inline d-none">
+                    It's time for new Experiences
+                  </p>
+                </div>
+              </div>
+              <div class="col-6">
+                <div
+                  class="footer_top_contnt_right d-flex align-items-center justify-content-end"
+                >
+                  <p class="d-lg-inline d-none mb-0 pe-3">
+                    Find The Perfect Escape
+                  </p>
+                  <a href="#">Book Your Trip</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer_top_contnt_inner_bottom">
+            <div class="row gy-4 gy-lg-0">
+              <div class="col-lg-3 col-6">
+                <h5 class="mb-0">Company</h5>
+                <ul class="list-unstyled mb-0 p-0">
+                  <li>
+                    <a href="">About Us</a>
+                  </li>
+                  <li>
+                    <a href="">About Us</a>
+                  </li>
+                  <li>
+                    <a href="">About Us</a>
+                  </li>
+                  <li>
+                    <a href="">About Us</a>
+                  </li>
+                  <li>
+                    <a href="">About Us</a>
+                  </li>
+                  <li>
+                    <a href="">About Us</a>
+                  </li>
+                  <li>
+                    <a href="">About Us</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-3 col-6">
+                <h5 class="mb-0">Company</h5>
+                <ul class="list-unstyled mb-0 p-0">
+                  <li>
+                    <a href="">About Us</a>
+                  </li>
+                  <li>
+                    <a href="">About Us</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-3 col-6">
+                <h5 class="mb-0">Company</h5>
+                <ul class="list-unstyled mb-0 p-0">
+                  <li>
+                    <a href="">About Us</a>
+                  </li>
+                  <li>
+                    <a href="">About Us</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer_partners">
+          <div
+            class="d-flex align-items-center justify-content-center flex-wrap gap-3"
+          >
+            <img
+              src="./assets/images/incridble.webp"
+              alt="inner-collapseOne"
+              importance="low"
+              loading="lazy"
+              decoding="async"
+              class="img-fluid"
+            />
+            <img
+              src="./assets/images/tigers.webp"
+              alt="inner-collapseOne"
+              importance="low"
+              loading="lazy"
+              decoding="async"
+              class="img-fluid"
+            />
+            <img
+              src="./assets/images/incridble.webp"
+              alt="inner-collapseOne"
+              importance="low"
+              loading="lazy"
+              decoding="async"
+              class="img-fluid"
+            />
+            <img
+              src="./assets/images/triangle.webp"
+              alt="inner-collapseOne"
+              importance="low"
+              loading="lazy"
+              decoding="async"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+        <div class="footer-info-content position-relative">
+          <ul
+            class="footer-info d-flex align-items-center justify-content-center flex-wrap"
+          >
+            <li>
+              <i class="fa-solid fa-location-dot"></i>C - 81C, Sector - 8, Noida
+              - 201301
+            </li>
+            <li>
+              <i class="fa fa-phone" aria-hidden="true"></i>+91-120-4052615 - 99
+              (85 hunting lines are available)
+            </li>
+            <li><i class="fa fa-fax" aria-hidden="true"></i>+91-120-4052699</li>
+            <li>
+              <i class="fa fa-mobile" aria-hidden="true"></i>+91-9212777223/24
+            </li>
+            <li>
+              <i class="fa fa-envelope-o" aria-hidden="true"></i
+              >info@tourmyindia.com
+            </li>
+            <li>
+              <i class="fa-brands fa-whatsapp"></i>+91-9212777225 (Only for
+              Whatsapp)
+            </li>
+            <li><i class="fa-brands fa-skype"></i>tourmyindiadelhi</li>
+          </ul>
+          <div
+            class="social-icons d-flex position-absolute start-50 translate-middle"
+          >
+            <a href="https://twitter.com/tourmyindiaa" target="_blank"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+            <a href="https://www.facebook.com/tourmyindia" target="_blank"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/company/tour-my-india--india-tours-&amp;-travel-agency"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+            <a href="https://www.youtube.com/tourmyindia" target="_blank"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+          </div>
+        </div>
+        <p class="text-center text-white mb-0 pt-4 footer_bottom">
+          Copyright©2025, Tour My India Pvt. Ltd
+        </p>
+      </div>
+    </footer>
+    <section
+      id="sticky-box"
+      class="sticky-box position-fixed bottom-0 bg-white w-100"
+    >
+      <div class="container">
+        <ul
+          class="w-100 text-center d-flex justify-content-center list-unstyled mb-0"
+        >
+          <li class="text-center">
+            <a href="#">
+              <img
+                src="./assets/images/india-tour.svg"
+                alt="india tour"
+                loading="lazy"
+                decoding="async"
+                importance="low"
+              />
+              <h3>India Tours</h3>
+            </a>
+          </li>
+          <li class="text-center">
+            <a href="#">
+              <img
+                src="./assets/images/international-tour.svg"
+                alt="international-tour"
+                loading="lazy"
+                decoding="async"
+                importance="low"
+              />
+              <h3>International Tours</h3>
+            </a>
+          </li>
+          <li class="text-center">
+            <a href="#">
+              <img
+                src="/assets/images/destinaton-wedding.svg"
+                alt="destinaton-wedding"
+                loading="lazy"
+                decoding="async"
+                importance="low"
+              />
+              <h3>Destination Wedding</h3>
+            </a>
+          </li>
+
+          <li class="enquire position-absolute">
+            <a
+              class="cont bg-white d-flex justify-content-center align-items-center d-md-inline-block"
+              href="tel:+91-9212777225"
+            >
+              <img
+                src="./assets/images/phone.png"
+                alt="phone"
+                loading="lazy"
+                decoding="async"
+                importance="low"
+              />
+              <span class="d-none d-md-inline fw-medium">
+                +91-9212777225</span
+              ></a
+            >
+            <a
+              href="javascript:void(0)"
+              class="open-popup myBtn"
+              data-id="popup_default"
+              tabindex="0"
+            >
+              <span
+                class="loc text-center text-white text-capitalize d-block d-md-inline-block"
+              >
+                <img
+                  src="./assets/images/plan-location.png"
+                  alt="plan-location"
+                  loading="lazy"
+                  decoding="async"
+                  importance="low"
+                />Plan Your trip
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section> -->
+  </body>
+  <script src="./assets/js/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/base.js"></script>
+</html>
