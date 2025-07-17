@@ -11,6 +11,13 @@
   font-size: 12px;
 }
 }
+@media screen and (max-width:340px) {
+  .destinaton_herosec .home-page .breadcrumb-item  {
+  font-size: 12px;
+}
+}
+
+
 .destinaton_herosec h1 {
   font-size: 64px;
 }
@@ -123,9 +130,6 @@
 }
 /* about section end */
  /* resortinfo section */
-
-  
-
 .resort_hotel_info_sec h4 {
   font-size: 14px;
   font-weight: 700;
@@ -270,7 +274,7 @@
 }
 .resort_hotel_info_sec .content-wraper a:hover{
     color: #00c27a;
-} 
+}
 @media screen and (max-width:767px) {
     .topbtn_slider .swiper-button-prev
  {
@@ -278,7 +282,6 @@
   right: 68px;
 }
 }
-
 @media screen and (max-width:767px) {
     .topbtn_slider .swiper-button-prev,
     .topbtn_slider .swiper-button-next
